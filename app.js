@@ -1,23 +1,45 @@
 const express = require('express');
+const hbs = require('hbs');
 const path = require('path');
+const livereload = require('livereload'); // Live Reload
+const connectLiveReload = require('connect-livereload');// Live Reload
 
 const indexRouter = require('./routes/index');
+const badRequestRouter = require('./routes/404');
+
+
+
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 const publicDirPath = path.join(__dirname, './public');
 const viewsPath = path.join(__dirname, './templates/views');
 const partialsPath = path.join(__dirname, './templates/partials');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+//Live Reload ----------------------------------
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(publicDirPath);
+liveReloadServer.server.once('connection', () => {
+    setTimeout(() => {
+        liveReloadServer.refresh('/');
+    }, 100);
+});
+
+app.use(connectLiveReload());
+//Finish Live Reload ----------------------------
 
 app.set('view engine', 'hbs');
 app.set('views', viewsPath);
-app.set('partials', partialsPath);
+hbs.registerPartials(partialsPath);
 
 app.use(express.static(publicDirPath));
 
 app.use('/', indexRouter);
+app.use('/*', badRequestRouter)
 // router.initialize(app);
+
+
+
 
 app.listen(PORT, () => {
     console.log(`Server is up on port: ${PORT}`);
