@@ -1,21 +1,38 @@
 {{>head}}
 
 {{>header}}
-
+{{>languages}}
 <div class="container-fluid" id="first-section">
     <div class="row first-row">
-        <div class="col-lg-4 d-none d-lg-flex align-items-end">
+        <div class="col-lg-3 d-none d-lg-flex align-items-end">
             <img src="/img/soccer-player.png" alt="Soccer Player" class="img-fluid animated fadeInLeft delay-1s">
             <img src="/img/ball.png" alt="Soccer Ball" class="img-fluid">
         </div>
-        <div class="col-12 col-lg-8 ">
-            <h1>Lorem, ipsum dolor</h1>
-            <div class="row">
-                <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-9 ">
 
+            <div class="row">
+                <div class="col-12 col-lg-8 animated fadeIn delay-2s" id="next-match-column">
+                    <h2>NEXT MATCH</h2>
+                    <div class="next-match-teams">
+                        <div>
+                            <img class="img-fluid" src="/img/teams/avai.png" alt="">
+                            <h3 class="text-center">{{team1.name}}</h3>
+                        </div>
+                        <div>
+                            <img class="img-fluid" src="/img/teams/spfc.png" alt="">
+                            <h3 class="text-center">{{team2.name}}</h3>
+                        </div>
+                    </div>
+                    <div class="next-match-info">
+                        <p><i class="fas fa-map-marker fa-lg"></i> {{event.location}}</p>
+                        <p><i class="fas fa-calendar-check fa-lg"></i> {{event.date}}</p>
+                        <p><i class="fas fa-clock fa-lg"></i>{{event.hour}}</p>
+
+                    </div>
+                    <a class="btn btn-primary" href="/users"> ORDER YOUR TICKET NOW</a>
                 </div>
-                <div class="col-12 col-lg-4" id="teams-column">
-                    <h4>Series A Current Ranking</h4>
+                <div class="col-12 col-lg-3 ml-auto " id="teams-column">
+                    <h3>Series A <br>Current Ranking</h3>
                     <ol class="teams-list">
                         <div>
                             <li><img src="/img/teams/acdf.png" alt=""><span class="team-name">Lorem Lorem</span> <span class="team-points">10</span></li>

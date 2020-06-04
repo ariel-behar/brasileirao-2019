@@ -4,8 +4,34 @@ const router = express.Router();
 router.get('/', (req, res, next) => {
     res.render('index', {
         title: 'HOME | Brasileirao 2019',
+        team1: {
+            name: 'Avaí FC',
+            image: ''
+        },
+        team2: {
+            name: 'SPFC',
+            image: ''
+        },
+        event: {
+            series: 'A',
+            location: 'Estádio Cícero Pompeu de Toledo (Morumbi)',
+            date: '28/09/2019',
+            hour: '19:00'
+        }
     });
 });
+
+router.get('/teams', (req, res, next) => {
+    res.render('teams')
+})
+
+
+router.get('/*', (req, res, next) => {
+    res.render('404', {
+        title: '404 | Brasileirao 2019'
+    })
+})
+
 
 module.exports = router;
 
