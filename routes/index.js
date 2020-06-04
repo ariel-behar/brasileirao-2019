@@ -25,6 +25,10 @@ router.get('/teams', (req, res, next) => {
     res.render('teams')
 })
 
+router.get('/tickets', (req, res, next) => {
+    res.render('tickets')
+})
+
 
 router.get('/*', (req, res, next) => {
     res.render('404', {

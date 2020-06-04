@@ -11,6 +11,7 @@
 $grassBackground: url("../img/grass-small.png");
 $greenBackgroundTransp:rgba(42,83,26,0.6);
 $elementGlow: 0px 0px 40px 10px #f2fafc;
+$bodyBackground: #f2fafc;
 
 $blueButtonColor: #0b51c5;
 $blueButtonHover: #0043af;
@@ -26,6 +27,7 @@ $buttonFont: himalaya;
 
 body {
     overflow-x: hidden ;
+    background-color: $bodyBackground;
 }
 
 //Languages
@@ -256,6 +258,26 @@ body {
 }
 
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    // right: 50%;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    a {
+        color: rgb(129, 129, 129);
+        &:hover {
+            color: rgb(187, 187, 187);
+        }
+        img {
+            height: 17px;
+        }
+    }
+    
+}
 
 
 
