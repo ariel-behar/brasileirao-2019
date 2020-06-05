@@ -8,16 +8,32 @@
     src: url("../font/himalaya.ttf");
 }
 
+//Background images
 $grassBackground: url("../img/grass-small.png");
-$greenBackgroundTransp:rgba(42,83,26,0.6);
-$elementGlow: 0px 0px 40px 10px #f2fafc;
-$bodyBackground: #f2fafc;
 
+//Background colors
+$greenBackgroundTransp:rgba(42,83,26,0.6);
+
+//Colors
+$bodyBackground: #f2fafc;
 $blueButtonColor: #0b51c5;
 $blueButtonHover: #0043af;
 
+//Glows
+$elementGlow: 0px 0px 40px 10px #f2fafc;
+
+//Fonts
 $menuFont: copperplate;
 $buttonFont: himalaya;
+
+//Font sizes
+$h1: 5vw;
+$h2: 4.5vw;
+$h3: 4vw;
+$h4: 3.5vw;
+$h5: 3vw;
+$h6: 2.5vw;
+$p: 1vw;
 
 
 .row {
@@ -26,8 +42,13 @@ $buttonFont: himalaya;
 }
 
 body {
-    overflow-x: hidden ;
+    overflow-x: hidden;
     background-color: $bodyBackground;
+}
+
+
+* {
+    z-index: 5;
 }
 
 //Languages
@@ -50,6 +71,64 @@ body {
 }
 //Finish Languages
 
+// White Boxes
+.white-box {
+    background-color: $bodyBackground;
+    position: absolute; 
+
+}
+// Finish White boxes
+
+//Header 
+header {
+    &#league-page-id {
+        background-image: url('/img/stadium1.png');
+    }
+    &#teams-page-id {
+        background-image: url('/img/soccer-team.jpg');
+    }
+    &#fanclub-page-id {
+        background-image: url('/img/soccer-fans1.png');
+    }
+    &#events-page-id {
+        background-image: url('/img/soccer-event.jpg');
+    }
+    &#tickets-page-id {
+        background-image: url('/img/tickets.jpg');
+    }
+    position: relative;
+    background-attachment: fixed;
+    min-height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .white-box {
+        bottom: -430px;
+        left: -150px;
+        // background-color: green;
+        height: 500px;
+        width: 150%;
+        transform:rotate(5deg);   
+        z-index: 1;
+    }
+    .header-page-elements {
+        z-index: 2;
+        position: absolute;
+        width: 70%;
+        left: 10vw;
+        bottom: 0;
+        .header-page-title {
+            font-size: $h2;
+        }
+        .header-page-summary {
+            font-size: $p;
+        }
+    }
+}
+
+//Finish Header
+
 
 // Navbar
 .navbar {
@@ -66,7 +145,7 @@ body {
         width: 95%;
     }
     .navbar-collapse {
-        z-index: 5;
+        z-index: 6;
         .nav-item {
             .nav-link {
                 color: #b6b5b5!important;
@@ -97,6 +176,7 @@ body {
             margin-right: 0;
             img {
                 height: 70px;
+                z-index: 6;
             }
         }
         
@@ -177,7 +257,7 @@ body {
         background-color: $blueButtonColor!important;
         width: 75%;
         align-self: center;
-        font-size: 2.3rem;
+        font-size: $h6;
         padding: 0;
         font-family: $buttonFont;
         &:hover {
@@ -288,6 +368,18 @@ footer {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
 
+    //White boxes
+    #top-white-box{ 
+        height: 500px;
+        width: 100px;
+        top: -250px;
+        left: 100px;
+        transform: rotate(50deg);
+        z-index: 2;
+        display: inline-block;
+    }
+
+    //Finish White boxes
     #languages-div{
         position: absolute;
         right: 10px;
@@ -309,12 +401,15 @@ footer {
             display: block;
             order: 0;
             text-align: center;
-            position: absolute;
-            right: 25px;
+            width: 20%;
             a.navbar-brand {
                 margin-right: 0;
+                position: absolute;
+                right: 46%;
+                top: -40px;
                 img {
                     height: 120px;
+
                 }
             }
         }
