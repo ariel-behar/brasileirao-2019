@@ -4,7 +4,7 @@
     "description": "A fictional site about the Brasileirao 2019 Soccer Championship",
     "main": "app.js",
     "scripts": {
-        "start": "node ./bin/www",
+        "start": "node app.js",
         "dev": "nodemon -e js,hbs --ignore public"
     },
     "author": "Ariel Behar",
