@@ -59,6 +59,10 @@ body {
 main {
     border-top: $mainBorders;
     border-bottom: $mainBorders;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 //Languages
@@ -488,8 +492,36 @@ header {
     }
 
 }
-
 //---------------- FINISH LEAGE PAGE ------------
+
+#teams-info-div {
+    .teams-football-player {
+            background-image: url('/img/player-holding-ball.jpg');
+            // background-color: green;
+            background-position: left center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100%;
+        }
+    .teams-info-logos {
+        
+        .team-column {
+            margin-bottom: 10px;
+        }
+        .team-card {
+            height: 100%;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding:10px;
+            }
+        }
+    }
+}
 
 // Trademark
 #trademark {
