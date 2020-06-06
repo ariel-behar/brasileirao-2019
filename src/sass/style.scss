@@ -82,7 +82,7 @@ body {
 //Header 
 header {
     &#league-page-id {
-        background-image: url('/img/stadium1.png');
+        background-image: url('/img/soccer-field.jpg');
     }
     &#teams-page-id {
         background-image: url('/img/soccer-team.jpg');
@@ -91,10 +91,10 @@ header {
         background-image: url('/img/soccer-fans1.png');
     }
     &#events-page-id {
-        background-image: url('/img/soccer-event.jpg');
+        background-image: url('/img/soccer-fans.jpg');
     }
     &#tickets-page-id {
-        background-image: url('/img/tickets.jpg');
+        background-image: url('/img/ticket1.jpg');
     }
     position: relative;
     background-attachment: fixed;
@@ -185,9 +185,9 @@ header {
 }
 // Finish Navbar 
 
-
-// #first-section
-#first-section {
+// ---------------INDEX PAGE -----------------
+// #index-first-section
+#index-first-section {
     background-image: url('../img/soccer-field.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -305,8 +305,6 @@ header {
 
 }
 
-
-
 @keyframes ball-kick {
    
     0%{
@@ -336,8 +334,58 @@ header {
         display: none;
     }
 }
+// Finish index-first-section
+// ---------------FINISH INDEX PAGE -----------------
 
+// --------------- LEAGUE PAGE-----------------
+#main-league {
 
+}
+
+#league-first-section {
+    .league-first-section-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .league-first-section-image {
+        text-align: center;        
+        img {
+            max-height: 400px;
+        }
+    }
+}
+
+#league-second-section {
+    .stadium-dropdown-div {
+        .stadiums-dropdown-menu {
+            max-height: 150px;
+            // overflow-y: auto;
+        }
+    }
+    .stadium-list-div {
+        max-height: 300px;
+        min-width: 100%;
+        overflow: scroll;
+    }
+    .stadiums-output {
+        background-color: green;
+        .stadium-content-div {
+            padding: 20px;
+        }
+        .stadium-image-div {
+            padding: 20px;
+             .stadium-image {
+                max-height: 300px;
+            }
+        }
+       
+    }
+}
+
+//---------------- FINISH LEAGE PAGE ------------
+
+// Footer
 footer {
     position: absolute;
     bottom: 10px;
@@ -358,7 +406,7 @@ footer {
     }
     
 }
-
+// Finish Footer
 
 
 // Small devices (landscape phones, 576px and up)
