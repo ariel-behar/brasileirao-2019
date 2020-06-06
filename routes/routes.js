@@ -24,36 +24,38 @@ router.get('/', (req, res, next) => {
 router.get('/league', (req, res, next) => {
     res.render('league', {
         title: 'LEAGUE',
-        headerID: 'league-page-id',
-        pageSummary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic quia molestias debitis. Reprehenderit voluptatibus rem sint esse dicta perferendis corporis dolorum, ut a eligendi, quisquam tempore quos debitis doloremque.'
+        pageClass: 'league-page-class',
+        pageSummary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic quia molestias debitis. Reprehenderit voluptatibus rem sint esse dicta perferendis corporis dolorum, ut a eligendi, quisquam tempore quos debitis doloremque.',
+        footerTitleCTA: 'asdsad',
+        footerCTA: `<p>asdadsasddsa</p>`
     })
 })
 
 router.get('/teams', (req, res, next) => {
     res.render('teams', {
         title: 'TEAMS',
-        headerID: 'teams-page-id'
+        pageClass: 'teams-page-class'
     })
 })
 
 router.get('/fanclub', (req, res, next) => {
     res.render('fanclub', {
         title: 'FAN CLUB',
-        headerID: 'fanclub-page-id'
+        pageClass: 'fanclub-page-class'
     })
 })
 
 router.get('/events', (req, res, next) => {
     res.render('events', {
         title: 'EVENTS',
-        headerID: 'events-page-id'
+        pageClass: 'events-page-class'
     })
 })
 
 router.get('/tickets', (req, res, next) => {
     res.render('tickets', {
         title: 'GET TICKETS',
-        headerID: 'tickets-page-id',
+        pageClass: 'tickets-page-class',
     })
 })
 

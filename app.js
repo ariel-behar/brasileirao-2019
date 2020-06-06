@@ -6,8 +6,8 @@ const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 
 
-// const livereload = require('livereload'); // Live Reload
-// const connectLiveReload = require('connect-livereload');// Live Reload
+const livereload = require('livereload'); // Live Reload
+const connectLiveReload = require('connect-livereload');// Live Reload
 
 const indexRouter = require('./routes/routes');
 
@@ -19,15 +19,15 @@ const viewsPath = path.join(__dirname, './templates/views');
 const partialsPath = path.join(__dirname, './templates/partials');
 
 //Live Reload ----------------------------------
-// const liveReloadServer = livereload.createServer();
-// liveReloadServer.watch(publicDirPath);
-// liveReloadServer.server.once('connection', () => {
-//     setTimeout(() => {
-//         liveReloadServer.refresh('/');
-//     }, 100);
-// });
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(publicDirPath);
+liveReloadServer.server.once('connection', () => {
+    setTimeout(() => {
+        liveReloadServer.refresh('/');
+    }, 100);
+});
 
-// app.use(connectLiveReload());
+app.use(connectLiveReload());
 //Finish Live Reload ----------------------------
 
 app.set('view engine', 'hbs');

@@ -1,4 +1,3 @@
-
 let stadiumsDropMenu = document.querySelector('.stadium-dropdown-div .stadiums-dropdown-menu')
 let stadiumList = document.querySelector('.stadium-list');
 
@@ -35,7 +34,6 @@ stadiums.forEach(stadium => {
 
 let stadiumItems = document.querySelectorAll('.stadium-item');
 
-// console.log(stadiumItems[2]);
 
 stadiumItems.forEach(item => {
     let stdName = item.innerText;
@@ -44,13 +42,14 @@ stadiumItems.forEach(item => {
         return item.stadium == stdName;
     });
 
-    // console.log(stadiumObj);
 
     item.addEventListener('click', () => {
         stadiumName.textContent = stadiumObj.stadium;
         stadiumCity.textContent = stadiumObj.city;
         stadiumCapacity.textContent = stadiumObj.capacity;
-        stadiumYearOpened.textContent = stadiumObj.stadiumYearOpened;
-        stadiumImageDiv.innerHTML = `<img class="stadium-image" src="/img/${stadiumObj.image}.jpg" alt="${stadiumObj.name} Stadium">`;
+        stadiumYearOpened.textContent = stadiumObj.yearOpened;
+        stadiumHomeTeam.textContent = stadiumObj.homeTeam;
+
+        stadiumImageDiv.innerHTML = `<img class="stadium-image img-fluid" src="/img/stadiums/${stadiumObj.stadium}.jpg" alt="${stadiumObj.stadium} Stadium">`;
     })
 })

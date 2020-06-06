@@ -1,7 +1,7 @@
 [
     {
         "stadium": "Maracanã",
-        "capacity": "78.838",
+        "capacity": "78,838",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "yearOpened": "1950",
@@ -9,7 +9,7 @@
     },
     {
         "stadium": "Mané Garrincha",
-        "capacity": "72.888",
+        "capacity": "72,888",
         "city": "Brasília",
         "state": "Distrito Federal",
         "yearOpened": "1974",
@@ -17,7 +17,7 @@
     },
     {
         "stadium": "Morumbi",
-        "capacity": "67.052",
+        "capacity": "67,052",
         "city": "São Paulo",
         "state": "São Paulo",
         "yearOpened": "1960",
@@ -25,7 +25,7 @@
     },
     {
         "stadium": "Castelão",
-        "capacity": "63.903",
+        "capacity": "63,903",
         "city": "Fortaleza",
         "state": "Ceará",
         "yearOpened": "1973",
@@ -33,7 +33,7 @@
     },
     {
         "stadium": "Mineirão",
-        "capacity": "61.846",
+        "capacity": "61,846",
         "city": "Belo Horizonte",
         "state": "Minas Gerais",
         "yearOpened": "1959",
@@ -41,7 +41,7 @@
     },
     {
         "stadium": "Estádio do Arruda",
-        "capacity": "60.044",
+        "capacity": "60,044",
         "city": "Recife",
         "state": "Pernambuco",
         "yearOpened": "1972",
@@ -49,7 +49,7 @@
     },
     {
         "stadium": "Arena do Grêmio",
-        "capacity": "55.662",
+        "capacity": "55,662",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "yearOpened": "2012",
@@ -57,7 +57,7 @@
     },
     {
         "stadium": "Parque do Sabiá",
-        "capacity": "53.35",
+        "capacity": "53,35",
         "city": "Uberlândia",
         "state": "Minas Gerais",
         "yearOpened": "1982",
@@ -65,7 +65,7 @@
     },
     {
         "stadium": "Fonte Nova",
-        "capacity": "51.708",
+        "capacity": "51,708",
         "city": "Salvador",
         "state": "Bahia",
         "yearOpened": "2013",
@@ -73,7 +73,7 @@
     },
     {
         "stadium": "Beira-Rio",
-        "capacity": "50.128",
+        "capacity": "50,128",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "yearOpened": "1969",
@@ -81,7 +81,7 @@
     },
     {
         "stadium": "Serra Dourada",
-        "capacity": "50.049",
+        "capacity": "50,049",
         "city": "Goiânia",
         "state": "Goiás",
         "yearOpened": "1975",
@@ -89,7 +89,7 @@
     },
     {
         "stadium": "Arena Corinthians",
-        "capacity": "48.234",
+        "capacity": "48,234",
         "city": "São Paulo",
         "state": "São Paulo",
         "yearOpened": "2014",
@@ -97,7 +97,7 @@
     },
     {
         "stadium": "Estádio Olímpico Nilton Santos",
-        "capacity": "46.931",
+        "capacity": "46,931",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "yearOpened": "2007",
@@ -105,7 +105,7 @@
     },
     {
         "stadium": "Arena Pernambuco",
-        "capacity": "46.154",
+        "capacity": "46,154",
         "city": "Recife",
         "state": "Pernambuco",
         "yearOpened": "2013",
@@ -113,7 +113,7 @@
     },
     {
         "stadium": "Mangueirão",
-        "capacity": "45.007",
+        "capacity": "45,007",
         "city": "Belém",
         "state": "Pará",
         "yearOpened": "1978",
@@ -121,7 +121,7 @@
     },
     {
         "stadium": "Morenão",
-        "capacity": "45",
+        "capacity": "45,000",
         "city": "Campo Grande",
         "state": "Mato Grosso do Sul",
         "yearOpened": "1971",
@@ -129,7 +129,7 @@
     },
     {
         "stadium": "Farahzão",
-        "capacity": "44.414",
+        "capacity": "44,414",
         "city": "Presidente Prudente",
         "state": "São Paulo",
         "yearOpened": "1982",
@@ -137,7 +137,7 @@
     },
     {
         "stadium": "Albertão",
-        "capacity": "44.2",
+        "capacity": "44,200",
         "city": "Teresina",
         "state": "Piauí",
         "yearOpened": "1973",
@@ -145,7 +145,7 @@
     },
     {
         "stadium": "Allianz Parque",
-        "capacity": "43.6",
+        "capacity": "43,600",
         "city": "São Paulo",
         "state": "São Paulo",
         "yearOpened": "2014",
@@ -153,7 +153,7 @@
     },
     {
         "stadium": "Arena da Baixada",
-        "capacity": "43",
+        "capacity": "43,000",
         "city": "Curitiba",
         "state": "Paraná",
         "yearOpened": "1999",
@@ -161,7 +161,7 @@
     },
     {
         "stadium": "Arena Pantanal",
-        "capacity": "42.968",
+        "capacity": "42,968",
         "city": "Cuiabá",
         "state": "Mato Grosso",
         "yearOpened": "2014",
@@ -169,7 +169,7 @@
     },
     {
         "stadium": "Arena da Amazônia",
-        "capacity": "41.374",
+        "capacity": "41,374",
         "city": "Manaus",
         "state": "Amazonas",
         "yearOpened": "2014",
@@ -177,7 +177,7 @@
     },
     {
         "stadium": "Couto Pereira",
-        "capacity": "40.31",
+        "capacity": "40,310",
         "city": "Curitiba",
         "state": "Paraná",
         "yearOpened": "1932",
@@ -185,7 +185,7 @@
     },
     {
         "stadium": "Pacaembu",
-        "capacity": "40.199",
+        "capacity": "40,199",
         "city": "São Paulo",
         "state": "São Paulo",
         "yearOpened": "1940",
@@ -209,7 +209,7 @@
     },
     {
         "stadium": "Barradão",
-        "capacity": "35.632",
+        "capacity": "35,632",
         "city": "Salvador",
         "state": "Bahia",
         "yearOpened": "1986",
@@ -217,7 +217,7 @@
     },
     {
         "stadium": "Ilha do Retiro",
-        "capacity": "35.02",
+        "capacity": "35,020",
         "city": "Recife",
         "state": "Pernambuco",
         "yearOpened": "1937",
@@ -225,7 +225,7 @@
     },
     {
         "stadium": "Amigão",
-        "capacity": "35",
+        "capacity": "35,000",
         "city": "Campina Grande",
         "state": "Paraíba",
         "yearOpened": "1975",
@@ -233,7 +233,7 @@
     },
     {
         "stadium": "JK",
-        "capacity": "33",
+        "capacity": "33,000",
         "city": "Itumbiara",
         "state": "Goiás",
         "yearOpened": "1977",
@@ -241,7 +241,7 @@
     },
     {
         "stadium": "Teixeirão",
-        "capacity": "32.936",
+        "capacity": "32,936",
         "city": "São José do Rio Preto",
         "state": "São Paulo",
         "yearOpened": "1996",
@@ -249,7 +249,7 @@
     },
     {
         "stadium": "Estádio Brinco de Ouro",
-        "capacity": "32.453",
+        "capacity": "32,453",
         "city": "Campinas",
         "state": "São Paulo",
         "yearOpened": "1953",
@@ -257,7 +257,7 @@
     },
     {
         "stadium": "Estádio de Pituaçu",
-        "capacity": "31.667",
+        "capacity": "31,667",
         "city": "Salvador",
         "state": "Bahia",
         "yearOpened": "1979",
@@ -265,7 +265,7 @@
     },
     {
         "stadium": "Arena das Dunas",
-        "capacity": "31.375",
+        "capacity": "31,375",
         "city": "Natal",
         "state": "Rio Grande do Norte",
         "yearOpened": "2014",
@@ -273,7 +273,7 @@
     },
     {
         "stadium": "Estádio do Café",
-        "capacity": "31.019",
+        "capacity": "31,019",
         "city": "Londrina",
         "state": "Paraná",
         "yearOpened": "1976",
@@ -281,7 +281,7 @@
     },
     {
         "stadium": "Estádio Centenário",
-        "capacity": "30.822",
+        "capacity": "30,822",
         "city": "Caxias do Sul",
         "state": "Rio Grande do Sul",
         "yearOpened": "1976",
@@ -289,7 +289,7 @@
     },
     {
         "stadium": "Alfredo Jaconi",
-        "capacity": "30.519",
+        "capacity": "30,519",
         "city": "Caxias do Sul",
         "state": "Rio Grande do Sul",
         "yearOpened": "1975",

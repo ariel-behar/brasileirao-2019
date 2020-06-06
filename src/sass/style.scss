@@ -18,6 +18,11 @@ $greenBackgroundTransp:rgba(42,83,26,0.6);
 $bodyBackground: #f2fafc;
 $blueButtonColor: #0b51c5;
 $blueButtonHover: #0043af;
+$mainBorders: 1px dotted #bfd9e2;
+
+$navbar: #b6b5b5;
+$navbarActive: white;
+
 
 //Glows
 $elementGlow: 0px 0px 40px 10px #f2fafc;
@@ -51,6 +56,11 @@ body {
     z-index: 5;
 }
 
+main {
+    border-top: $mainBorders;
+    border-bottom: $mainBorders;
+}
+
 //Languages
 #languages-div{
     position: fixed;
@@ -81,19 +91,19 @@ body {
 
 //Header 
 header {
-    &#league-page-id {
+     &.league-page-class {
         background-image: url('/img/soccer-field.jpg');
     }
-    &#teams-page-id {
+    &.teams-page-class {
         background-image: url('/img/soccer-team.jpg');
     }
-    &#fanclub-page-id {
+    &.fanclub-page-class {
         background-image: url('/img/soccer-fans1.png');
     }
-    &#events-page-id {
+    &.events-page-class {
         background-image: url('/img/soccer-fans.jpg');
     }
-    &#tickets-page-id {
+    &.tickets-page-class {
         background-image: url('/img/ticket1.jpg');
     }
     position: relative;
@@ -106,7 +116,6 @@ header {
     .white-box {
         bottom: -430px;
         left: -150px;
-        // background-color: green;
         height: 500px;
         width: 150%;
         transform:rotate(5deg);   
@@ -126,7 +135,6 @@ header {
         }
     }
 }
-
 //Finish Header
 
 
@@ -148,7 +156,7 @@ header {
         z-index: 6;
         .nav-item {
             .nav-link {
-                color: #b6b5b5!important;
+                color: $navbar!important;
                 font-family: $menuFont;
                 padding: .2rem 1rem;
                 text-transform: uppercase;
@@ -156,7 +164,7 @@ header {
             }
             &.active {
                 .nav-link {
-                    color: white!important;
+                    color: $navbarActive!important;
                     
                 }
             }
@@ -338,15 +346,16 @@ header {
 // ---------------FINISH INDEX PAGE -----------------
 
 // --------------- LEAGUE PAGE-----------------
-#main-league {
-
-}
 
 #league-first-section {
+    margin-top:40px;
+    margin-bottom: 0;
     .league-first-section-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        padding:20px;
+        text-align: justify;
     }
     .league-first-section-image {
         text-align: center;        
@@ -357,36 +366,133 @@ header {
 }
 
 #league-second-section {
+    margin-top: 0;
+    margin-bottom: 40px;
+    position: relative;
+    .attached-title {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: -30px;
+        left: 38%;
+        background-image: $grassBackground;
+        background-repeat: repeat;
+        background-size: 200px;
+        border-radius: 30px;
+        border: 3px solid white;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+    background-image: $grassBackground;
+    background-repeat: repeat;
+    background-size: 200px;
+    border-radius: 30px;
+    border: 3px solid white;
+    box-shadow: 0 0 40px 5px $greenBackgroundTransp;
+
+    padding: 20px;
+    //On small screens
     .stadium-dropdown-div {
+        margin-top: 50px;
         .stadiums-dropdown-menu {
-            max-height: 150px;
-            // overflow-y: auto;
+            max-height: 200px;
+            overflow-y: scroll;
+        }
+        button {
+            background-color: rgb(49, 95, 30)!important;
         }
     }
+    //On big screens
     .stadium-list-div {
-        max-height: 300px;
-        min-width: 100%;
-        overflow: scroll;
-    }
-    .stadiums-output {
-        background-color: green;
-        .stadium-content-div {
-            padding: 20px;
+        h5 {
+            color: white;
+            font-weight: bold;
         }
-        .stadium-image-div {
-            padding: 20px;
-             .stadium-image {
-                max-height: 300px;
+        border-right: 3px solid white;
+        ul {
+            max-height: 310px;
+            min-width: 100%;
+            overflow-y: scroll;
+            direction: rtl;
+            list-style-type: none;
+            padding-left: 15px;
+            li {
+                a {
+                    color: $navbar;
+                    font-weight: bold;
+                    &:hover {
+                        color: $navbarActive;
+                    }
+                }
             }
         }
+    }
+    .stadiums-output {
+        
+        max-height: auto;
+        overflow: hidden;
+        .stadiums-output-content-image {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .stadium-content-div {
+                padding-bottom: 10px;
+                max-width: 100%;
+                h4,p {
+                    font-weight: bold;
+                    color: $navbar;
+                    margin-bottom: 0.4rem;
+                    span {
+                        font-weight: normal;
+                        color: $navbarActive;
+                    }
+                }
+            }
+            .stadium-image-div {
+                z-index: 2;
+                .stadium-image {
+                    max-height: 300px;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                }
+            }
+        }
+        
        
     }
 }
 
+#league-third-section {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-image: url('../img/flying-kick.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .competition-format-div {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: justify;
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .competition-format-first-list {
+            padding-right: 15px;
+            padding-left: 15px;
+            list-style-type: none;
+        }
+    }
+
+}
+
 //---------------- FINISH LEAGE PAGE ------------
 
-// Footer
-footer {
+// Trademark
+#trademark {
     position: absolute;
     bottom: 10px;
     left: 40%;
@@ -406,7 +512,51 @@ footer {
     }
     
 }
-// Finish Footer
+// Finish Trademark
+
+//Footer
+footer {
+    &.league-page-class {
+        background-image: url('/img/soccer-field.jpg');
+    }
+    &.teams-page-class {
+        background-image: url('/img/soccer-team.jpg');
+    }
+    &.fanclub-page-class {
+        background-image: url('/img/soccer-fans1.png');
+    }
+    &.events-page-class {
+        background-image: url('/img/soccer-fans.jpg');
+    }
+    &.tickets-page-class {
+        background-image: url('/img/ticket1.jpg');
+    }
+    position: relative;
+    background-attachment: fixed;
+    min-height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    .white-box {
+        top: -400px;
+        right: -150px;
+        height: 500px;
+        width: 150%;
+        transform:rotate(-5deg);   
+        z-index: 1;
+    }
+    .footer-page-elements {
+        z-index: 5;
+        position: absolute;
+        width: 70%;
+        left: 10vw;
+        top: 0;
+        color: black;
+
+    }
+}
+//Finish Footer
 
 
 // Small devices (landscape phones, 576px and up)
@@ -485,7 +635,31 @@ footer {
             }
         }
     }
-    
+
+    #league-second-section {
+        .stadiums-output {
+            .stadiums-output-content-image {
+                padding-top: 30px;
+                .stadium-content-div {
+                    max-width: 30%;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    #league-third-section {
+        background-size: contain;
+        background-position: bottom;
+        .competition-format-div {
+            padding-right: 15px;
+            padding-left: 15px;
+            .competition-format-first-list {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+    }
  }
 
 // Large devices (desktops, 992px and up)
