@@ -1,0 +1,50 @@
+[
+    {
+        "teamOne": "Avaí",
+        "teamTwo": "São Paulo",
+        "date": "28/09/2019",
+        "hour": "19:00",
+        "city": "São Paulo",
+        "stadium": "Morumbi"
+    },
+    {
+        "teamOne": "Palmeiras",
+        "teamTwo": "Vasco da Gama",
+        "date": "01/10/2019",
+        "hour": "18:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Allianz Parque"
+    },
+    {
+        "teamOne": "Grêmio",
+        "teamTwo": "Fluminense",
+        "date": "03/10/2019",
+        "hour": "14:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Maracanã"
+    },
+    {
+        "teamOne": "Cruzeiro",
+        "teamTwo": "Corinthians",
+        "date": "03/10/2019",
+        "hour": "18:00",
+        "city": "São Paulo",
+        "stadium": "Arena Corinthians"
+    },
+    {
+        "teamOne": "Bahia",
+        "teamTwo": "Atlético Mineiro",
+        "date": "04/10/2019",
+        "hour": "19:00",
+        "city": "Salvador",
+        "stadium": "Fonte Nova"
+    },
+    {
+        "teamOne": "Athletico Paranaense",
+        "teamTwo": "Botafogo",
+        "date": "06/10/2019",
+        "hour": "14:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Estádio Olímpico Nilton Santos"
+    }
+]

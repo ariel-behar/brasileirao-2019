@@ -1,4 +1,4 @@
-// //Stadiums related DOM elements
+// // Stadiums related DOM elements
 // let stadiumsDropMenu = document.querySelector('.stadium-dropdown-div .stadiums-dropdown-menu')
 // let stadiumList = document.querySelector('.stadium-list');
 

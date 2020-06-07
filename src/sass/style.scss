@@ -31,16 +31,6 @@ $elementGlow: 0px 0px 40px 10px #f2fafc;
 $menuFont: copperplate;
 $buttonFont: himalaya;
 
-//Font sizes
-$h1: 5vw;
-$h2: 4.5vw;
-$h3: 4vw;
-$h4: 3.5vw;
-$h5: 3vw;
-$h6: 2.5vw;
-$p: 1vw;
-
-
 .row {
     margin-left: 0;
     margin-right: 0;
@@ -54,6 +44,27 @@ body {
 
 * {
     z-index: 5;
+    h1 {
+        font-size: 4.2rem;
+    } 
+    h2 {
+        font-size: 4rem;;
+    } 
+    h3 {
+        font-size: 3.5rem;;
+    } 
+    h4 {
+        font-size: 3rem;;
+    } 
+    h5 {
+        font-size: 2rem;;
+    } 
+    h6 {
+        font-size: 1.3rem;;
+    } 
+    p {
+        font-size: 1rem;;
+    }
 }
 
 // main {
@@ -105,8 +116,16 @@ body {
 
 //Header 
 header {
+    position: relative;
+    background-attachment: fixed;
+    min-height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
      &.league-page-class {
         background-image: url('/img/soccer-field.jpg');
+            background-position: bottom;
     }
     &.teams-page-class {
         background-image: url('/img/soccer-team.jpg');
@@ -115,18 +134,14 @@ header {
         background-image: url('/img/soccer-fans.jpg');
     }
     &.events-page-class {
-        background-image: url('/img/soccer-fans1.png');
+        background-image: url('/img/events.png');
+        background-size: contain;
+            background-position: top;
     }
     &.tickets-page-class {
         background-image: url('/img/ticket1.jpg');
     }
-    position: relative;
-    background-attachment: fixed;
-    min-height: 350px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+
     .white-box {
         bottom: -430px;
         left: -150px;
@@ -141,12 +156,8 @@ header {
         width: 70%;
         left: 10vw;
         bottom: 0;
-        .header-page-title {
-            font-size: $h2;
-        }
-        .header-page-summary {
-            font-size: $p;
-        }
+
+   
     }
 }
 //Finish Header
@@ -172,7 +183,7 @@ header {
             .nav-link {
                 color: $navbar!important;
                 font-family: $menuFont;
-                padding: .2rem 1rem;
+                padding: .2rem 0.8vw;
                 text-transform: uppercase;
                 letter-spacing: 0.4px;  
             }
@@ -246,47 +257,45 @@ header {
     box-shadow: $elementGlow;
     padding-left: 0;
     padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 3;
-    h2 {
-        color: black;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
+ 
     .next-match-teams {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        h3 {
-            color: black;
-        }
-        img {
-            max-height: 120px;
-            margin: 20px;
-        }
-        
-    }
-    .next-match-info {
-        padding: 5px 10px 0;
-        i {
-            margin-right: 20px;
-        }
-    }
-    a.btn {
-        background-color: $blueButtonColor!important;
-        width: 75%;
-        align-self: center;
-        font-size: $h6;
-        padding: 0;
-        font-family: $buttonFont;
-        &:hover {
-            background-color: $blueButtonHover!important;
+         .card {
+            background-color: transparent;
+            box-shadow: none;
+            display: flex;
+            .card-body {
+                display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .card-title-date {
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                    }
+                .card-text {
+                    font-size: 1.2rem;
+                    color: #000000;
+                }
+                img {
+                    max-height: 50px;
+                }
+                
+            }
+            .stadium-pic-div {
+                text-align: center;;
+                img {
+                    max-width: 100%;
 
+                }
+            }
         }
     }
+   
+    z-index: 3;
+
 }
 
 #teams-column {
@@ -295,36 +304,28 @@ header {
     margin: 40px 0 10px 0;
     border-radius: 20px;
     border: 3px solid white;
-    h3 {
-        text-align: center;
+    h6 {
         color: white;
-        text-decoration: underline;
         margin-bottom: 20px;
+        border-bottom:1px solid white;
     }
     .teams-list {
-        padding-left: 10px;
-        list-style-type: decimal;
+        list-style-type: none;
+
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         li {
             color: white;
             margin: 8px 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            counter-increment: counterName;
-            &:before {
-                content: counter(counterName);
-                position: absolute;
-
-            }
             img {
                 height: 30px;
                 text-align: center;
-                position: relative;
-                left: 25px;
             }
         }
     }
-
 }
 
 @keyframes ball-kick {
@@ -388,7 +389,7 @@ header {
         color: white;
         position: absolute;
         top: -30px;
-        left: 38%;
+        left: 40%;
         background-image: $grassBackground;
         background-repeat: repeat;
         background-size: 200px;
@@ -418,7 +419,7 @@ header {
     }
     //On big screens
     .stadium-list-div {
-        h5 {
+        h6 {
             color: white;
             font-weight: bold;
         }
@@ -441,6 +442,7 @@ header {
             }
         }
     }
+
     .stadiums-output {
         
         max-height: auto;
@@ -451,7 +453,7 @@ header {
             .stadium-content-div {
                 padding-bottom: 10px;
                 max-width: 100%;
-                h4,p {
+                h6,p {
                     font-weight: bold;
                     color: $navbar;
                     margin-bottom: 0.4rem;
@@ -569,18 +571,17 @@ header {
     margin-top: 50px;
     padding-top: 0;
     padding-bottom: 20px;
-    // border: 1px solid $mainBordersColor;
     border-radius: 30px;
     background-color: #e4efff;
     .row {
-        h2 {
+        h4 {
             margin-top: 40px;
             text-transform: uppercase;
         }
         p {
             margin-bottom: 30px;
         }
-        h2,p {
+        h4,p {
             text-align: center;
 
         }
@@ -602,9 +603,21 @@ header {
     padding:30px 10vw;
     text-align: center;
 }
-
-
 //----------------- FINISH FANCLUB PAGE-------------
+
+//----------------- EVENTS PAGE------------------
+#events-second-section {
+    .col-12.col-lg-4 {
+        margin: 40px 0;
+
+    }
+    .card {
+        height: 100%;
+    }
+}
+
+
+//----------------- FINISH EVENTS PAGE------------
 
 
 // Trademark
@@ -616,7 +629,6 @@ header {
     color: rgb(49, 49, 49);
     font-weight: bold;
     text-align: center;
-    font-size: 15px;
     a {
         color: rgb(129, 129, 129);
         &:hover {
@@ -632,6 +644,13 @@ header {
 
 //Footer
 footer {
+    position: relative;
+    background-attachment: fixed;
+    min-height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     &.league-page-class {
         background-image: url('/img/soccer-field.jpg');
     }
@@ -642,18 +661,15 @@ footer {
         background-image: url('/img/soccer-fans.jpg');
     }
     &.events-page-class {
-        background-image: url('/img/soccer-fans1.png');
+        background-image: url('/img/events.png');
+        background-size: contain;
+
+        background-position: bottom;
     }
     &.tickets-page-class {
         background-image: url('/img/ticket1.jpg');
     }
-    position: relative;
-    background-attachment: fixed;
-    min-height: 350px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+
     .white-box {
         top: -400px;
         right: -150px;
@@ -731,23 +747,21 @@ footer {
     #next-match-column {
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 20px;
-        h2 {
-            margin-top: 20px;
-            margin-bottom: 0;
-        }
+
         .next-match-teams {
-            h3 {
-                color: black;
-            }
-            img {
-                max-height: 200px;
-            }
-        }
-        .next-match-info {
-            padding: 5px 50px 0;
-            i {
-                margin-right: 50px;
+            .card {
+                .card-body {
+                    img {
+                        max-height: 100px;
+                    }
+                }
+                .stadium-pic-div {
+                    text-align: center;;
+                    img {
+                        max-height: 250px;
+
+                    }
+                }
             }
         }
     }
