@@ -18,7 +18,7 @@ $greenBackgroundTransp:rgba(42,83,26,0.6);
 $bodyBackground: #f2fafc;
 $blueButtonColor: #0b51c5;
 $blueButtonHover: #0043af;
-$mainBorders: 1px dotted #bfd9e2;
+$mainBordersColor:  #bfd9e2;
 
 $navbar: #b6b5b5;
 $navbarActive: white;
@@ -56,12 +56,22 @@ body {
     z-index: 5;
 }
 
-main {
-    border-top: $mainBorders;
-    border-bottom: $mainBorders;
+// main {
+//     border-top: $mainBorders;
+//     border-bottom: $mainBorders;
+
+// }
+
+.main-borders-top {
+    border-top: 1px dotted $mainBordersColor;
     margin-top: 40px;
-    margin-bottom: 40px;
     padding-top: 40px;
+    
+}
+
+.main-borders-bottom {
+    border-bottom: 1px dotted $mainBordersColor;
+    margin-bottom: 40px;
     padding-bottom: 40px;
 }
 
@@ -102,10 +112,10 @@ header {
         background-image: url('/img/soccer-team.jpg');
     }
     &.fanclub-page-class {
-        background-image: url('/img/soccer-fans1.png');
+        background-image: url('/img/soccer-fans.jpg');
     }
     &.events-page-class {
-        background-image: url('/img/soccer-fans.jpg');
+        background-image: url('/img/soccer-fans1.png');
     }
     &.tickets-page-class {
         background-image: url('/img/ticket1.jpg');
@@ -494,7 +504,12 @@ header {
 }
 //---------------- FINISH LEAGE PAGE ------------
 
-#teams-info-div {
+//---------------- TEAMS PAGE -------------------
+#teams-first-section {
+    margin-bottom: 30px;
+}
+
+#teams-second-section {
     .teams-football-player {
             background-image: url('/img/player-holding-ball.jpg');
             // background-color: green;
@@ -511,7 +526,7 @@ header {
         }
         .team-card {
             height: 100%;
-
+            padding:10px;
             .card-body {
                 display: flex;
                 flex-direction: column;
@@ -521,7 +536,76 @@ header {
             }
         }
     }
+    
 }
+
+#teams-third-section {
+    margin-top: 30px;
+}
+//---------------- FINISH TEAMS PAGE ---------------
+
+//---------------- FANCLUB PAGE------------------
+#fanclub-first-section {
+    padding:30px 5vw;
+    text-align: center;
+    margin-bottom: 30px;
+    .row {
+        &:nth-child(2) {
+            margin-top: 50px;
+            text-align: justify;
+        }
+    }
+}
+
+#fanclub-second-section {
+    min-height: 200px;
+    background-image: url('../img/stadium-fans.png');
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#fanclub-third-section {
+    margin-top: 50px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    // border: 1px solid $mainBordersColor;
+    border-radius: 30px;
+    background-color: #e4efff;
+    .row {
+        h2 {
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        h2,p {
+            text-align: center;
+
+        }
+    }
+        
+    .col-img-container {
+        padding: 0;
+        max-height: 300px;
+        p {
+            margin-top: 15px;
+            text-align: center;
+            font-style: italic;
+            padding:5px;
+        }
+    }
+}
+
+#fanclub-fourth-section {
+    padding:30px 10vw;
+    text-align: center;
+}
+
+
+//----------------- FINISH FANCLUB PAGE-------------
+
 
 // Trademark
 #trademark {
@@ -555,10 +639,10 @@ footer {
         background-image: url('/img/soccer-team.jpg');
     }
     &.fanclub-page-class {
-        background-image: url('/img/soccer-fans1.png');
+        background-image: url('/img/soccer-fans.jpg');
     }
     &.events-page-class {
-        background-image: url('/img/soccer-fans.jpg');
+        background-image: url('/img/soccer-fans1.png');
     }
     &.tickets-page-class {
         background-image: url('/img/ticket1.jpg');
@@ -691,6 +775,10 @@ footer {
             }
         }
 
+    }
+    #fanclub-second-section {
+        background-size: cover;
+        min-height: 500px;
     }
  }
 

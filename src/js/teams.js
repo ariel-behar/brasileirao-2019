@@ -20,7 +20,7 @@ const teams = (() => {
 teams.forEach(team => {
     teamsInfoLogos.innerHTML += `
     <div class="col-3 col-lg-3 team-column">
-    <div class="card team-card">
+    <div class="card team-card hoverable">
         <img class="card-img-top" src="/img/teams/${team.team}.png" alt="${team.team} LOGO">
         <div class="card-body">
             <p class="card-text">${team.team}</p>
