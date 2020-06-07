@@ -1,21 +1,22 @@
 
 // // let upcomingEventDiv = document.querySelector('.next-match-teams');
 // let eventsSection = document.getElementById('events-second-section');
+let eventsSelect = document.querySelector('#events-multi-select');
 
-// // Loading Events JSON
-// const events = (() => {
-//     let json = null;
-//     $.ajax({
-//         'async': false,
-//         'global': false,
-//         'url': '../util/events.json',
-//         'dataType': 'json',
-//         'success': data => {
-//             json = data;
-//         }
-//     });
-//     return json;
-// })();
+// Loading Events JSON
+const events = (() => {
+    let json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': '../util/events.json',
+        'dataType': 'json',
+        'success': data => {
+            json = data;
+        }
+    });
+    return json;
+})();
 
 // // function loadUpcomingEvent() {
 // //     let eventTemplate = `
@@ -127,3 +128,57 @@
 // }
 
 // loadEvents();
+
+
+//Events Dropdown related Functions
+events.forEach(event => {
+    eventsSelect.innerHTML += `<option class="event-dropdown-item">$${event.price} - ${event.date} - ${event.teamOne} VS ${event.teamTwo} (Football Match)</option>`
+
+})
+
+//Tickets Form handling
+let form = document.getElementById('tickets-form');
+
+form.addEventListener('click', form => {
+    form.preventDefault();
+    // console.log('working');
+});
+
+form.addEventListener('submit', form => {
+    form.preventDefault();
+    // console.log('working');
+});
+
+function calcTicketsPrice() {
+    let event = document.querySelector('#events-multi-select option:checked').value;
+    let ticketQuantity = document.querySelector('#tickets-quantity option:checked').value;
+    let calculatedPrice = document.getElementById('calculated-price');
+
+    let eventPrice = parseFloat(event.substring(1, 6));
+    let ticketQuantityNum = parseInt(ticketQuantity);
+
+    calculatedPrice.value = `$${(ticketQuantityNum * eventPrice).toFixed(2)}`;
+}
+
+// let eventDropdownItem = document.querySelectorAll('.event-dropdown-item');
+
+
+// eventDropdownItem.forEach(item => {
+//     let stdName = item.innerText;
+
+//     let stadiumObj = stadiums.find(item => {
+//         return item.stadium == stdName;
+//     });
+
+
+//     item.addEventListener('click', () => {
+//         stadiumName.textContent = stadiumObj.stadium;
+//         stadiumCity.textContent = stadiumObj.city;
+//         stadiumCapacity.textContent = stadiumObj.capacity;
+//         stadiumYearOpened.textContent = stadiumObj.yearOpened;
+//         stadiumHomeTeam.textContent = stadiumObj.homeTeam;
+
+//         stadiumImageDiv.innerHTML = `<img class="stadium-image img-fluid" src="/img/stadiums/${stadiumObj.stadium}.jpg" alt="${stadiumObj.stadium} Stadium">`;
+//     })
+// })
+//Finished Events Dropdown Related Functions

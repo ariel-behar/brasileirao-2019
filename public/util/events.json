@@ -5,7 +5,8 @@
         "date": "28/09/2019",
         "hour": "19:00",
         "city": "São Paulo",
-        "stadium": "Morumbi"
+        "stadium": "Morumbi",
+        "price": 20.99
     },
     {
         "teamOne": "Palmeiras",
@@ -13,7 +14,8 @@
         "date": "01/10/2019",
         "hour": "18:00",
         "city": "Rio de Janeiro",
-        "stadium": "Allianz Parque"
+        "stadium": "Allianz Parque",
+        "price": 22.99
     },
     {
         "teamOne": "Grêmio",
@@ -21,7 +23,8 @@
         "date": "03/10/2019",
         "hour": "14:00",
         "city": "Rio de Janeiro",
-        "stadium": "Maracanã"
+        "stadium": "Maracanã",
+        "price": 23.99
     },
     {
         "teamOne": "Cruzeiro",
@@ -29,7 +32,8 @@
         "date": "03/10/2019",
         "hour": "18:00",
         "city": "São Paulo",
-        "stadium": "Arena Corinthians"
+        "stadium": "Arena Corinthians",
+        "price": 24.99
     },
     {
         "teamOne": "Bahia",
@@ -37,7 +41,8 @@
         "date": "04/10/2019",
         "hour": "19:00",
         "city": "Salvador",
-        "stadium": "Fonte Nova"
+        "stadium": "Fonte Nova",
+        "price": 21.99
     },
     {
         "teamOne": "Athletico Paranaense",
@@ -45,6 +50,7 @@
         "date": "06/10/2019",
         "hour": "14:00",
         "city": "Rio de Janeiro",
-        "stadium": "Estádio Olímpico Nilton Santos"
+        "stadium": "Estádio Olímpico Nilton Santos",
+        "price": 20.99
     }
 ]

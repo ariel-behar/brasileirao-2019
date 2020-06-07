@@ -25,7 +25,7 @@ router.get('/league', (req, res, next) => {
     res.render('league', {
         title: 'LEAGUE',
         pageClass: 'league-page-class',
-        pageSummary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic quia molestias debitis. Reprehenderit voluptatibus rem sint esse dicta perferendis corporis dolorum, ut a eligendi, quisquam tempore quos debitis doloremque.',
+        pageSummary: '',
         footerTitleCTA: 'asdsad',
         footerCTA: `<p>asdadsasddsa</p>`
     })
@@ -54,7 +54,7 @@ router.get('/events', (req, res, next) => {
 
 router.get('/tickets', (req, res, next) => {
     res.render('tickets', {
-        title: 'GET TICKETS',
+        title: 'ORDER TICKETS',
         pageClass: 'tickets-page-class',
     })
 })

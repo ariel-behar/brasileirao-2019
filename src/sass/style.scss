@@ -39,6 +39,7 @@ $buttonFont: himalaya;
 body {
     overflow-x: hidden;
     background-color: $bodyBackground;
+    position: relative;
 }
 
 
@@ -89,7 +90,8 @@ body {
 //Languages
 #languages-div{
     position: fixed;
-    right: 36%;
+    right: 50%;
+    transform: translateX(50%);
     top: 0;
     z-index: 1050;
 
@@ -135,11 +137,12 @@ header {
     }
     &.events-page-class {
         background-image: url('/img/events.png');
-        background-size: contain;
-            background-position: top;
+        background-size: cover;
+        background-position: top center;
     }
     &.tickets-page-class {
-        background-image: url('/img/ticket1.jpg');
+        background-image: url('/img/ticket1.png');
+        background-position: center;
     }
 
     .white-box {
@@ -162,6 +165,55 @@ header {
 }
 //Finish Header
 
+
+//Footer
+footer {
+    position: relative;
+    background-attachment: fixed;
+    min-height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &.league-page-class {
+        background-image: url('/img/soccer-field.jpg');
+    }
+    &.teams-page-class {
+        background-image: url('/img/soccer-team.jpg');
+    }
+    &.fanclub-page-class {
+        background-image: url('/img/soccer-fans.jpg');
+    }
+    &.events-page-class {
+        background-image: url('/img/events.png');
+        background-size: cover;
+
+        background-position: bottom right;
+    }
+    &.tickets-page-class {
+        background-image: url('/img/ticket1.png');
+        background-position: top;
+    }
+
+    .white-box {
+        top: -400px;
+        right: -150px;
+        height: 500px;
+        width: 150%;
+        transform:rotate(-5deg);   
+        z-index: 1;
+    }
+    .footer-page-elements {
+        z-index: 5;
+        position: absolute;
+        width: 70%;
+        left: 10vw;
+        top: 0;
+        color: black;
+
+    }
+}
+//Finish Footer
 
 // Navbar
 .navbar {
@@ -389,7 +441,8 @@ header {
         color: white;
         position: absolute;
         top: -30px;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
         background-image: $grassBackground;
         background-repeat: repeat;
         background-size: 200px;
@@ -431,14 +484,15 @@ header {
             direction: rtl;
             list-style-type: none;
             padding-left: 15px;
-            li {
+            li.nav-item {
                 a {
                     color: $navbar;
                     font-weight: bold;
                     &:hover {
-                        color: $navbarActive;
+                        color: $navbarActive!important;
                     }
                 }
+               
             }
         }
     }
@@ -615,17 +669,44 @@ header {
         height: 100%;
     }
 }
-
-
 //----------------- FINISH EVENTS PAGE------------
 
+//-----------------TICKETS PAGE----------------
+
+#tickets-second-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    form { 
+        text-align: center;
+        .forms-container{
+            text-align: left;
+        }
+        .form-group {
+            padding: 0;
+        }
+        label {
+            font-weight: bold;
+        }
+    }
+}
+
+#tickets-submit-button {
+    margin-top: 30px;
+}
+
+
+
+//-----------------FINISH TICKETS PAGE----------
 
 // Trademark
 #trademark {
     position: absolute;
+    width: 100%;
     bottom: 10px;
-    left: 40%;
-    // right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
     color: rgb(49, 49, 49);
     font-weight: bold;
     text-align: center;
@@ -642,53 +723,6 @@ header {
 }
 // Finish Trademark
 
-//Footer
-footer {
-    position: relative;
-    background-attachment: fixed;
-    min-height: 350px;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    &.league-page-class {
-        background-image: url('/img/soccer-field.jpg');
-    }
-    &.teams-page-class {
-        background-image: url('/img/soccer-team.jpg');
-    }
-    &.fanclub-page-class {
-        background-image: url('/img/soccer-fans.jpg');
-    }
-    &.events-page-class {
-        background-image: url('/img/events.png');
-        background-size: contain;
-
-        background-position: bottom;
-    }
-    &.tickets-page-class {
-        background-image: url('/img/ticket1.jpg');
-    }
-
-    .white-box {
-        top: -400px;
-        right: -150px;
-        height: 500px;
-        width: 150%;
-        transform:rotate(-5deg);   
-        z-index: 1;
-    }
-    .footer-page-elements {
-        z-index: 5;
-        position: absolute;
-        width: 70%;
-        left: 10vw;
-        top: 0;
-        color: black;
-
-    }
-}
-//Finish Footer
 
 
 // Small devices (landscape phones, 576px and up)
@@ -697,6 +731,21 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
+    header {
+        &.events-page-class {
+            background-size: contain;
+            background-position: top;
+        }
+    }
+
+    footer {
+        &.events-page-class {
+            background-size: contain;
+            background-position: bottom;
+        }
+    }
+
+
 
     //White boxes
     #top-white-box{ 
@@ -793,6 +842,24 @@ footer {
     #fanclub-second-section {
         background-size: cover;
         min-height: 500px;
+    }
+
+    #tickets-second-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-radius: 30px;
+        background-color: #e4efff;
+        form { 
+            .form-group {
+                padding-left: 0.7rem;
+                padding-right: 0.7rem;
+            }
+        }
+    }
+
+    #tickets-submit-button {
+        margin-top: 30px;
+        width: 40%;
     }
  }
 
