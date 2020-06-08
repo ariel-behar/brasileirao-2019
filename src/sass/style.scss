@@ -74,11 +74,6 @@ body {
     }
 }
 
-// main {
-//     border-top: $mainBorders;
-//     border-bottom: $mainBorders;
-
-// }
 
 .main-borders-top {
     border-top: 1px dotted $mainBordersColor;
@@ -357,8 +352,12 @@ footer {
     margin: 40px 0 10px 0;
     border-radius: 20px;
     border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     h6 {
         color: white;
+        padding-bottom: 10px;
         margin-bottom: 20px;
         border-bottom:1px solid white;
     }
@@ -704,10 +703,22 @@ footer {
 #tickets-submit-button {
     margin-top: 30px;
 }
-
-
-
 //-----------------FINISH TICKETS PAGE----------
+
+//-----------------404 PAGE-------------------
+#body-404 {
+    height: 100vh;
+}
+#main-404 {
+    height: 100%;
+    img {
+        max-height: 300px;
+        
+    }
+}
+
+//-----------------FINISH 404 PAGE------------
+
 
 // Trademark
 #trademark {

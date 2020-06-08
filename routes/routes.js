@@ -13,8 +13,8 @@ router.get('/league', (req, res, next) => {
         jsFile: 'league',
         title: 'LEAGUE',
         pageClass: 'league-page-class',
-        footerTitleCTA: 'asdsad',
-        footerCTA: `<p>asdadsasddsa</p>`
+        footerTitleCTA: '',
+        footerCTA: ''
     })
 })
 
@@ -54,7 +54,8 @@ router.get('/tickets', (req, res, next) => {
 
 router.get('/*', (req, res, next) => {
     res.render('404', {
-        title: '404'
+        title: '404',
+        bodyId: 'body-404'
     })
 })
 
