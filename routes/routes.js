@@ -3,29 +3,16 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
     res.render('index', {
-        title: 'HOME',
-        team1: {
-            name: 'Avaí FC',
-            image: ''
-        },
-        team2: {
-            name: 'SPFC',
-            image: ''
-        },
-        event: {
-            series: 'A',
-            location: 'Estádio Cícero Pompeu de Toledo (Morumbi)',
-            date: '28/09/2019',
-            hour: '19:00'
-        }
+        jsFile: 'main',
+        title: 'HOME'
     });
 });
 
 router.get('/league', (req, res, next) => {
     res.render('league', {
+        jsFile: 'league',
         title: 'LEAGUE',
         pageClass: 'league-page-class',
-        pageSummary: '',
         footerTitleCTA: 'asdsad',
         footerCTA: `<p>asdadsasddsa</p>`
     })
@@ -33,6 +20,7 @@ router.get('/league', (req, res, next) => {
 
 router.get('/teams', (req, res, next) => {
     res.render('teams', {
+        jsFile: 'teams',
         title: 'TEAMS',
         pageClass: 'teams-page-class'
     })
@@ -40,6 +28,7 @@ router.get('/teams', (req, res, next) => {
 
 router.get('/fanclub', (req, res, next) => {
     res.render('fanclub', {
+        jsFile: 'fanclub',
         title: 'FAN CLUB',
         pageClass: 'fanclub-page-class'
     })
@@ -47,6 +36,7 @@ router.get('/fanclub', (req, res, next) => {
 
 router.get('/events', (req, res, next) => {
     res.render('events', {
+        jsFile: 'events',
         title: 'EVENTS',
         pageClass: 'events-page-class'
     })
@@ -54,7 +44,8 @@ router.get('/events', (req, res, next) => {
 
 router.get('/tickets', (req, res, next) => {
     res.render('tickets', {
-        title: 'ORDER TICKETS',
+        jsFile: 'tickets',
+        title: 'TICKETS',
         pageClass: 'tickets-page-class',
     })
 })
