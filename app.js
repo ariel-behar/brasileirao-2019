@@ -2,7 +2,6 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const favicon = require('serve-favicon');
-// const soccerAPI = require('./soccer-api');
 const bodyParser = require('body-parser');
 
 
@@ -41,11 +40,6 @@ app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 
-
-// router.initialize(app);
-
-// POSSIBLY API???????????????????????????
-// console.log(soccerAPI);
 
 app.listen(PORT, () => {
     console.log(`Server is up on port: ${PORT}`);

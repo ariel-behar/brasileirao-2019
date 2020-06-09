@@ -280,6 +280,7 @@ footer {
     .first-row {
         height: 100%;
         padding-top: 130px;
+
     }
     img[alt="Soccer Player"] {
         max-height: 600px;
@@ -616,7 +617,7 @@ footer {
 }
 
 #fanclub-second-section {
-    min-height: 200px;
+    min-height: 150px;
     background-image: url('../img/stadium-fans.png');
     
     background-repeat: no-repeat;
@@ -860,10 +861,11 @@ footer {
         }
 
     }
+
     #fanclub-second-section {
-        background-size: cover;
-        min-height: 500px;
+        min-height: 300px;
     }
+
 
     #tickets-second-section {
         padding-top: 2rem;
@@ -885,7 +887,17 @@ footer {
  }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    #fanclub-second-section {
+        background-size: cover;
+        min-height: 350px;
+    }
+ }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    #fanclub-second-section {
+        background-size: cover;
+        min-height: 500px;
+    }
+ }
