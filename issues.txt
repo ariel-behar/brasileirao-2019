@@ -1,0 +1,1 @@
+the devDependency gulp-sass is deprecated. If you want to deploy to heroku, you need to temporarily delete it from the package.json, commit and then deploy. Once done and everything is good, you can return it to how it was until the day that you will MAYBE update the site with non-deprecated dependencies.
