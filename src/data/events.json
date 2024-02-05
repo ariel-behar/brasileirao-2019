@@ -1,0 +1,56 @@
+[
+    {
+        "teamOne": "Avaí",
+        "teamTwo": "São Paulo",
+        "date": "28/09/2019",
+        "hour": "19:00",
+        "city": "São Paulo",
+        "stadium": "Morumbi",
+        "price": 20.99
+    },
+    {
+        "teamOne": "Palmeiras",
+        "teamTwo": "Vasco da Gama",
+        "date": "01/10/2019",
+        "hour": "18:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Allianz Parque",
+        "price": 22.99
+    },
+    {
+        "teamOne": "Grêmio",
+        "teamTwo": "Fluminense",
+        "date": "03/10/2019",
+        "hour": "14:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Maracanã",
+        "price": 23.99
+    },
+    {
+        "teamOne": "Cruzeiro",
+        "teamTwo": "Corinthians",
+        "date": "03/10/2019",
+        "hour": "18:00",
+        "city": "São Paulo",
+        "stadium": "Arena Corinthians",
+        "price": 24.99
+    },
+    {
+        "teamOne": "Bahia",
+        "teamTwo": "Atlético Mineiro",
+        "date": "04/10/2019",
+        "hour": "19:00",
+        "city": "Salvador",
+        "stadium": "Fonte Nova",
+        "price": 21.99
+    },
+    {
+        "teamOne": "Athletico Paranaense",
+        "teamTwo": "Botafogo",
+        "date": "06/10/2019",
+        "hour": "14:00",
+        "city": "Rio de Janeiro",
+        "stadium": "Estádio Olímpico Nilton Santos",
+        "price": 20.99
+    }
+]

@@ -1,0 +1,298 @@
+[
+    {
+        "stadium": "Maracanã",
+        "capacity": "78,838",
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "yearOpened": "1950",
+        "homeTeam": "Flamengo, Fluminense"
+    },
+    {
+        "stadium": "Mané Garrincha",
+        "capacity": "72,888",
+        "city": "Brasília",
+        "state": "Distrito Federal",
+        "yearOpened": "1974",
+        "homeTeam": "Brasília, Legião"
+    },
+    {
+        "stadium": "Morumbi",
+        "capacity": "67,052",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "yearOpened": "1960",
+        "homeTeam": "São Paulo"
+    },
+    {
+        "stadium": "Castelão",
+        "capacity": "63,903",
+        "city": "Fortaleza",
+        "state": "Ceará",
+        "yearOpened": "1973",
+        "homeTeam": "Ceará, Fortaleza"
+    },
+    {
+        "stadium": "Mineirão",
+        "capacity": "61,846",
+        "city": "Belo Horizonte",
+        "state": "Minas Gerais",
+        "yearOpened": "1959",
+        "homeTeam": "Cruzeiro"
+    },
+    {
+        "stadium": "Estádio do Arruda",
+        "capacity": "60,044",
+        "city": "Recife",
+        "state": "Pernambuco",
+        "yearOpened": "1972",
+        "homeTeam": "Santa Cruz"
+    },
+    {
+        "stadium": "Arena do Grêmio",
+        "capacity": "55,662",
+        "city": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "yearOpened": "2012",
+        "homeTeam": "Grêmio"
+    },
+    {
+        "stadium": "Parque do Sabiá",
+        "capacity": "53,35",
+        "city": "Uberlândia",
+        "state": "Minas Gerais",
+        "yearOpened": "1982",
+        "homeTeam": "Uberlândia"
+    },
+    {
+        "stadium": "Fonte Nova",
+        "capacity": "51,708",
+        "city": "Salvador",
+        "state": "Bahia",
+        "yearOpened": "2013",
+        "homeTeam": "Bahia"
+    },
+    {
+        "stadium": "Beira-Rio",
+        "capacity": "50,128",
+        "city": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "yearOpened": "1969",
+        "homeTeam": "Internacional"
+    },
+    {
+        "stadium": "Serra Dourada",
+        "capacity": "50,049",
+        "city": "Goiânia",
+        "state": "Goiás",
+        "yearOpened": "1975",
+        "homeTeam": "Goiás, Vila Nova"
+    },
+    {
+        "stadium": "Arena Corinthians",
+        "capacity": "48,234",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "yearOpened": "2014",
+        "homeTeam": "Corinthians"
+    },
+    {
+        "stadium": "Estádio Olímpico Nilton Santos",
+        "capacity": "46,931",
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "yearOpened": "2007",
+        "homeTeam": "Botafogo"
+    },
+    {
+        "stadium": "Arena Pernambuco",
+        "capacity": "46,154",
+        "city": "Recife",
+        "state": "Pernambuco",
+        "yearOpened": "2013",
+        "homeTeam": "Náutico"
+    },
+    {
+        "stadium": "Mangueirão",
+        "capacity": "45,007",
+        "city": "Belém",
+        "state": "Pará",
+        "yearOpened": "1978",
+        "homeTeam": "Paysandu, Remo"
+    },
+    {
+        "stadium": "Morenão",
+        "capacity": "45,000",
+        "city": "Campo Grande",
+        "state": "Mato Grosso do Sul",
+        "yearOpened": "1971",
+        "homeTeam": "Comercial, Operário"
+    },
+    {
+        "stadium": "Farahzão",
+        "capacity": "44,414",
+        "city": "Presidente Prudente",
+        "state": "São Paulo",
+        "yearOpened": "1982",
+        "homeTeam": "Grêmio Prudente"
+    },
+    {
+        "stadium": "Albertão",
+        "capacity": "44,200",
+        "city": "Teresina",
+        "state": "Piauí",
+        "yearOpened": "1973",
+        "homeTeam": "Flamengo (PI)"
+    },
+    {
+        "stadium": "Allianz Parque",
+        "capacity": "43,600",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "yearOpened": "2014",
+        "homeTeam": "Palmeiras"
+    },
+    {
+        "stadium": "Arena da Baixada",
+        "capacity": "43,000",
+        "city": "Curitiba",
+        "state": "Paraná",
+        "yearOpened": "1999",
+        "homeTeam": "Atlético Paranaense"
+    },
+    {
+        "stadium": "Arena Pantanal",
+        "capacity": "42,968",
+        "city": "Cuiabá",
+        "state": "Mato Grosso",
+        "yearOpened": "2014",
+        "homeTeam": "Cuiabá, Mixto"
+    },
+    {
+        "stadium": "Arena da Amazônia",
+        "capacity": "41,374",
+        "city": "Manaus",
+        "state": "Amazonas",
+        "yearOpened": "2014",
+        "homeTeam": "Nacional (AM)"
+    },
+    {
+        "stadium": "Couto Pereira",
+        "capacity": "40,310",
+        "city": "Curitiba",
+        "state": "Paraná",
+        "yearOpened": "1932",
+        "homeTeam": "Coritiba"
+    },
+    {
+        "stadium": "Pacaembu",
+        "capacity": "40,199",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "yearOpened": "1940",
+        "homeTeam": "–"
+    },
+    {
+        "stadium": "Castelão",
+        "capacity": "40",
+        "city": "São Luís",
+        "state": "Maranhão",
+        "yearOpened": "1982",
+        "homeTeam": "Moto Club, Sampaio Corrêa"
+    },
+    {
+        "stadium": "Almeidão",
+        "capacity": "39",
+        "city": "João Pessoa",
+        "state": "Paraíba",
+        "yearOpened": "1975",
+        "homeTeam": "Botafogo (PB)"
+    },
+    {
+        "stadium": "Barradão",
+        "capacity": "35,632",
+        "city": "Salvador",
+        "state": "Bahia",
+        "yearOpened": "1986",
+        "homeTeam": "Vitória"
+    },
+    {
+        "stadium": "Ilha do Retiro",
+        "capacity": "35,020",
+        "city": "Recife",
+        "state": "Pernambuco",
+        "yearOpened": "1937",
+        "homeTeam": "Sport"
+    },
+    {
+        "stadium": "Amigão",
+        "capacity": "35,000",
+        "city": "Campina Grande",
+        "state": "Paraíba",
+        "yearOpened": "1975",
+        "homeTeam": "Treze Futebol Clube, Campinense"
+    },
+    {
+        "stadium": "JK",
+        "capacity": "33,000",
+        "city": "Itumbiara",
+        "state": "Goiás",
+        "yearOpened": "1977",
+        "homeTeam": "Itumbiara"
+    },
+    {
+        "stadium": "Teixeirão",
+        "capacity": "32,936",
+        "city": "São José do Rio Preto",
+        "state": "São Paulo",
+        "yearOpened": "1996",
+        "homeTeam": "América (SP)"
+    },
+    {
+        "stadium": "Estádio Brinco de Ouro",
+        "capacity": "32,453",
+        "city": "Campinas",
+        "state": "São Paulo",
+        "yearOpened": "1953",
+        "homeTeam": "Guarani"
+    },
+    {
+        "stadium": "Estádio de Pituaçu",
+        "capacity": "31,667",
+        "city": "Salvador",
+        "state": "Bahia",
+        "yearOpened": "1979",
+        "homeTeam": "–"
+    },
+    {
+        "stadium": "Arena das Dunas",
+        "capacity": "31,375",
+        "city": "Natal",
+        "state": "Rio Grande do Norte",
+        "yearOpened": "2014",
+        "homeTeam": "ABC, América (RN)"
+    },
+    {
+        "stadium": "Estádio do Café",
+        "capacity": "31,019",
+        "city": "Londrina",
+        "state": "Paraná",
+        "yearOpened": "1976",
+        "homeTeam": "Londrina, Matsubara"
+    },
+    {
+        "stadium": "Estádio Centenário",
+        "capacity": "30,822",
+        "city": "Caxias do Sul",
+        "state": "Rio Grande do Sul",
+        "yearOpened": "1976",
+        "homeTeam": "Caxias do Sul"
+    },
+    {
+        "stadium": "Alfredo Jaconi",
+        "capacity": "30,519",
+        "city": "Caxias do Sul",
+        "state": "Rio Grande do Sul",
+        "yearOpened": "1975",
+        "homeTeam": "Juventude"
+    }
+]

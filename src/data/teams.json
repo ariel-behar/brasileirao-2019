@@ -1,0 +1,162 @@
+[
+    {
+        "team": "Athletico Paranaense",
+        "location": "Curitiba",
+        "state": "Paraná",
+        "stadium": "Arena da Baixada",
+        "capacity": "42.37",
+        "ranking": "1"
+    },
+    {
+        "team": "Atlético Mineiro",
+        "location": "Belo Horizonte",
+        "state": "Minas Gerais",
+        "stadium": "Independência",
+        "capacity": "23.018",
+        "ranking": "2"
+    },
+    {
+        "team": "Avaí",
+        "location": "Florianópolis",
+        "state": "Santa Catarina",
+        "stadium": "Ressacada",
+        "capacity": "17.8",
+        "ranking": "3"
+    },
+    {
+        "team": "Bahia",
+        "location": "Salvador",
+        "state": "Bahia",
+        "stadium": "Arena Fonte Nova",
+        "capacity": "47.907",
+        "ranking": "4"
+    },
+    {
+        "team": "Botafogo",
+        "location": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "stadium": "Olímpico Nilton Santos",
+        "capacity": "44.661",
+        "ranking": "5"
+    },
+    {
+        "team": "Ceará",
+        "location": "Fortaleza",
+        "state": "Ceará",
+        "stadium": "Arena Castelão",
+        "capacity": "63.903",
+        "ranking": "6"
+    },
+    {
+        "team": "Chapecoense",
+        "location": "Chapecó",
+        "state": "Santa Catarina",
+        "stadium": "Arena Condá",
+        "capacity": "20.089",
+        "ranking": "7"
+    },
+    {
+        "team": "Corinthians",
+        "location": "São Paulo",
+        "state": "São Paulo",
+        "stadium": "Arena Corinthians",
+        "capacity": "47.605",
+        "ranking": "8"
+    },
+    {
+        "team": "Cruzeiro",
+        "location": "Belo Horizonte",
+        "state": "Minas Gerais",
+        "stadium": "Mineirão",
+        "capacity": "61.846",
+        "ranking": "9"
+    },
+    {
+        "team": "CSA",
+        "location": "Maceió",
+        "state": "Alagoas",
+        "stadium": "Rei Pelé",
+        "capacity": "17.126",
+        "ranking": "10"
+    },
+    {
+        "team": "Flamengo",
+        "location": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "stadium": "Maracanã",
+        "capacity": "78.838",
+        "ranking": "11"
+    },
+    {
+        "team": "Fluminense",
+        "location": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "stadium": "Maracanã",
+        "capacity": "78.838",
+        "ranking": "12"
+    },
+    {
+        "team": "Fortaleza",
+        "location": "Fortaleza",
+        "state": "Ceará",
+        "stadium": "Arena Castelão",
+        "capacity": "63.903",
+        "ranking": "13"
+    },
+    {
+        "team": "Goiás",
+        "location": "Goiânia",
+        "state": "Goiás",
+        "stadium": "Serra Dourada",
+        "capacity": "50.049",
+        "ranking": "14"
+    },
+    {
+        "team": "Grêmio",
+        "location": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "stadium": "Arena do Grêmio",
+        "capacity": "55.662",
+        "ranking": "15"
+    },
+    {
+        "team": "Internacional",
+        "location": "Porto Alegre",
+        "state": "Rio Grande do Sul",
+        "stadium": "Beira-Rio",
+        "capacity": "50.128",
+        "ranking": "16"
+    },
+    {
+        "team": "Palmeiras",
+        "location": "São Paulo",
+        "state": "São Paulo",
+        "stadium": "Allianz Parque",
+        "capacity": "43.713",
+        "ranking": "17"
+    },
+    {
+        "team": "Santos",
+        "location": "Santos",
+        "state": "São Paulo",
+        "stadium": "Urbano Caldeira",
+        "capacity": "16.068",
+        "ranking": "18"
+    },
+    {
+        "team": "São Paulo",
+        "location": "São Paulo",
+        "state": "São Paulo",
+        "stadium": "Morumbi",
+        "capacity": "72.039",
+        "ranking": "19"
+    },
+    {
+        "team": "Vasco da Gama",
+        "location": "Rio de Janeiro",
+        "state": "Rio de Janeiro",
+        "stadium": "São Januário",
+        "capacity": "24.584",
+        "ranking": "20"
+    }
+]
