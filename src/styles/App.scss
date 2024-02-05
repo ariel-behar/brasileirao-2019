@@ -1,4 +1,12 @@
-@import '_fonts.scss';
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@import '_custom-fonts.scss';
 
 @import '_custom-variables.scss';
 
