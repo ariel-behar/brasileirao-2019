@@ -1,6 +1,6 @@
 [
     {
-        "team": "Athletico Paranaense",
+        "name": "Athletico Paranaense",
         "location": "Curitiba",
         "state": "Paraná",
         "stadium": "Arena da Baixada",
@@ -9,7 +9,7 @@
         "image": "athletico-paranaense.png"
     },
     {
-        "team": "Atlético Mineiro",
+        "name": "Atlético Mineiro",
         "location": "Belo Horizonte",
         "state": "Minas Gerais",
         "stadium": "Independência",
@@ -18,7 +18,7 @@
         "image": "atletico-mineiro.png"
     },
     {
-        "team": "Avaí",
+        "name": "Avaí",
         "location": "Florianópolis",
         "state": "Santa Catarina",
         "stadium": "Ressacada",
@@ -27,7 +27,7 @@
         "image": "avai.png"
     },
     {
-        "team": "Bahia",
+        "name": "Bahia",
         "location": "Salvador",
         "state": "Bahia",
         "stadium": "Arena Fonte Nova",
@@ -36,7 +36,7 @@
         "image": "bahia.png"
     },
     {
-        "team": "Botafogo",
+        "name": "Botafogo",
         "location": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "stadium": "Olímpico Nilton Santos",
@@ -45,7 +45,7 @@
         "image": "botafogo.png"
     },
     {
-        "team": "Ceará",
+        "name": "Ceará",
         "location": "Fortaleza",
         "state": "Ceará",
         "stadium": "Arena Castelão",
@@ -54,7 +54,7 @@
         "image": "ceara.png"
     },
     {
-        "team": "Chapecoense",
+        "name": "Chapecoense",
         "location": "Chapecó",
         "state": "Santa Catarina",
         "stadium": "Arena Condá",
@@ -63,7 +63,7 @@
         "image": "chapecoense.png"
     },
     {
-        "team": "Corinthians",
+        "name": "Corinthians",
         "location": "São Paulo",
         "state": "São Paulo",
         "stadium": "Arena Corinthians",
@@ -72,7 +72,7 @@
         "image": "corinthians.png"
     },
     {
-        "team": "Cruzeiro",
+        "name": "Cruzeiro",
         "location": "Belo Horizonte",
         "state": "Minas Gerais",
         "stadium": "Mineirão",
@@ -81,7 +81,7 @@
         "image": "cruzeiro.png"
     },
     {
-        "team": "CSA",
+        "name": "CSA",
         "location": "Maceió",
         "state": "Alagoas",
         "stadium": "Rei Pelé",
@@ -91,7 +91,7 @@
 
     },
     {
-        "team": "Flamengo",
+        "name": "Flamengo",
         "location": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "stadium": "Maracanã",
@@ -100,7 +100,7 @@
         "image": "flamengo.png"
     },
     {
-        "team": "Fluminense",
+        "name": "Fluminense",
         "location": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "stadium": "Maracanã",
@@ -109,7 +109,7 @@
         "image": "fluminense.png"
     },
     {
-        "team": "Fortaleza",
+        "name": "Fortaleza",
         "location": "Fortaleza",
         "state": "Ceará",
         "stadium": "Arena Castelão",
@@ -118,7 +118,7 @@
         "image": "fortaleza.png"
     },
     {
-        "team": "Goiás",
+        "name": "Goiás",
         "location": "Goiânia",
         "state": "Goiás",
         "stadium": "Serra Dourada",
@@ -127,7 +127,7 @@
         "image": "goias.png"
     },
     {
-        "team": "Grêmio",
+        "name": "Grêmio",
         "location": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "stadium": "Arena do Grêmio",
@@ -136,7 +136,7 @@
         "image": "gremio.png"
     },
     {
-        "team": "Internacional",
+        "name": "Internacional",
         "location": "Porto Alegre",
         "state": "Rio Grande do Sul",
         "stadium": "Beira-Rio",
@@ -145,7 +145,7 @@
         "image": "internacional.png"
     },
     {
-        "team": "Palmeiras",
+        "name": "Palmeiras",
         "location": "São Paulo",
         "state": "São Paulo",
         "stadium": "Allianz Parque",
@@ -154,7 +154,7 @@
         "image": "palmeiras.png"
     },
     {
-        "team": "Santos",
+        "name": "Santos",
         "location": "Santos",
         "state": "São Paulo",
         "stadium": "Urbano Caldeira",
@@ -163,7 +163,7 @@
         "image": "santos.png"
     },
     {
-        "team": "São Paulo",
+        "name": "São Paulo",
         "location": "São Paulo",
         "state": "São Paulo",
         "stadium": "Morumbi",
@@ -172,7 +172,7 @@
         "image": "sao-paulo.png"
     },
     {
-        "team": "Vasco da Gama",
+        "name": "Vasco da Gama",
         "location": "Rio de Janeiro",
         "state": "Rio de Janeiro",
         "stadium": "São Januário",
