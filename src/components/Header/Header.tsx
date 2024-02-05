@@ -17,6 +17,7 @@ const StyledHeader = styled('header')`
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 0 0 40px 10px #f2fafc;;
 
     margin-top: 35px;
     padding: 0 20px;
