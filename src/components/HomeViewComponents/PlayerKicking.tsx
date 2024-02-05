@@ -7,8 +7,8 @@ import Image from "react-bootstrap/Image";
 function PlayerKicking() {
     return (
         <>
-            <Image src={soccerPlayer} alt="Soccer Player" />
-            <Image src={ball} alt="Soccer Ball" />
+            <Image src={soccerPlayer} alt="Soccer Player" fluid/>
+            <Image src={ball} alt="Soccer Ball" fluid/>
         </>
 
     )
