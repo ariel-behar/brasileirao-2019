@@ -1,6 +1,7 @@
 [
     {
         "stadium": "Maracanã",
+        "stadiumImage": "maracana.jpg",
         "capacity": "78,838",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
@@ -9,6 +10,7 @@
     },
     {
         "stadium": "Mané Garrincha",
+        "stadiumImage": "mane-garrincha.jpg",
         "capacity": "72,888",
         "city": "Brasília",
         "state": "Distrito Federal",
@@ -17,6 +19,7 @@
     },
     {
         "stadium": "Morumbi",
+        "stadiumImage": "morumbi.jpg",
         "capacity": "67,052",
         "city": "São Paulo",
         "state": "São Paulo",
@@ -25,6 +28,7 @@
     },
     {
         "stadium": "Castelão",
+        "stadiumImage": "castelao.jpg",
         "capacity": "63,903",
         "city": "Fortaleza",
         "state": "Ceará",
@@ -33,6 +37,7 @@
     },
     {
         "stadium": "Mineirão",
+        "stadiumImage": "mineirao.jpg",
         "capacity": "61,846",
         "city": "Belo Horizonte",
         "state": "Minas Gerais",
@@ -41,6 +46,7 @@
     },
     {
         "stadium": "Estádio do Arruda",
+        "stadiumImage": "estadio-do-arruda.jpg",
         "capacity": "60,044",
         "city": "Recife",
         "state": "Pernambuco",
@@ -49,6 +55,7 @@
     },
     {
         "stadium": "Arena do Grêmio",
+        "stadiumImage": "arena-do-gremio.jpg",
         "capacity": "55,662",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
@@ -57,6 +64,7 @@
     },
     {
         "stadium": "Parque do Sabiá",
+        "stadiumImage": "parque-do-sabia.jpg",
         "capacity": "53,35",
         "city": "Uberlândia",
         "state": "Minas Gerais",
@@ -65,6 +73,7 @@
     },
     {
         "stadium": "Fonte Nova",
+        "stadiumImage": "fonte-nova.jpg",
         "capacity": "51,708",
         "city": "Salvador",
         "state": "Bahia",
@@ -73,6 +82,7 @@
     },
     {
         "stadium": "Beira-Rio",
+        "stadiumImage": "beira-rio.jpg",
         "capacity": "50,128",
         "city": "Porto Alegre",
         "state": "Rio Grande do Sul",
@@ -81,6 +91,7 @@
     },
     {
         "stadium": "Serra Dourada",
+        "stadiumImage": "serra-dourada.jpg",
         "capacity": "50,049",
         "city": "Goiânia",
         "state": "Goiás",
@@ -89,6 +100,7 @@
     },
     {
         "stadium": "Arena Corinthians",
+        "stadiumImage": "arena-corinthians.jpg",
         "capacity": "48,234",
         "city": "São Paulo",
         "state": "São Paulo",
@@ -97,6 +109,7 @@
     },
     {
         "stadium": "Estádio Olímpico Nilton Santos",
+        "stadiumImage": "estadio-olimpico-nilton-santos.jpg",
         "capacity": "46,931",
         "city": "Rio de Janeiro",
         "state": "Rio de Janeiro",
@@ -105,6 +118,7 @@
     },
     {
         "stadium": "Arena Pernambuco",
+        "stadiumImage": "arena-pernambuco.jpg",
         "capacity": "46,154",
         "city": "Recife",
         "state": "Pernambuco",
@@ -113,6 +127,7 @@
     },
     {
         "stadium": "Mangueirão",
+        "stadiumImage": "mangueirao.jpg",
         "capacity": "45,007",
         "city": "Belém",
         "state": "Pará",
@@ -121,6 +136,7 @@
     },
     {
         "stadium": "Morenão",
+        "stadiumImage": "morenao.jpg",
         "capacity": "45,000",
         "city": "Campo Grande",
         "state": "Mato Grosso do Sul",
@@ -129,6 +145,7 @@
     },
     {
         "stadium": "Farahzão",
+        "stadiumImage": "farahzao.jpg",
         "capacity": "44,414",
         "city": "Presidente Prudente",
         "state": "São Paulo",
@@ -137,6 +154,7 @@
     },
     {
         "stadium": "Albertão",
+        "stadiumImage": "albertao.jpg",
         "capacity": "44,200",
         "city": "Teresina",
         "state": "Piauí",
@@ -145,6 +163,7 @@
     },
     {
         "stadium": "Allianz Parque",
+        "stadiumImage": "allianz-parque.jpg",
         "capacity": "43,600",
         "city": "São Paulo",
         "state": "São Paulo",
@@ -153,6 +172,7 @@
     },
     {
         "stadium": "Arena da Baixada",
+        "stadiumImage": "arena-da-baixada.jpg",
         "capacity": "43,000",
         "city": "Curitiba",
         "state": "Paraná",
@@ -161,6 +181,7 @@
     },
     {
         "stadium": "Arena Pantanal",
+        "stadiumImage": "arena-pantanal.jpg",
         "capacity": "42,968",
         "city": "Cuiabá",
         "state": "Mato Grosso",
@@ -169,6 +190,7 @@
     },
     {
         "stadium": "Arena da Amazônia",
+        "stadiumImage": "arena-da-amazonia.jpg",
         "capacity": "41,374",
         "city": "Manaus",
         "state": "Amazonas",
@@ -177,6 +199,7 @@
     },
     {
         "stadium": "Couto Pereira",
+        "stadiumImage": "couto-pereira.jpg",
         "capacity": "40,310",
         "city": "Curitiba",
         "state": "Paraná",
@@ -185,6 +208,7 @@
     },
     {
         "stadium": "Pacaembu",
+        "stadiumImage": "pacaembu.jpg",
         "capacity": "40,199",
         "city": "São Paulo",
         "state": "São Paulo",
@@ -193,6 +217,7 @@
     },
     {
         "stadium": "Castelão",
+        "stadiumImage": "castelao.jpg",
         "capacity": "40",
         "city": "São Luís",
         "state": "Maranhão",
@@ -201,6 +226,7 @@
     },
     {
         "stadium": "Almeidão",
+        "stadiumImage": "almeidao.jpg",
         "capacity": "39",
         "city": "João Pessoa",
         "state": "Paraíba",
@@ -209,6 +235,7 @@
     },
     {
         "stadium": "Barradão",
+        "stadiumImage": "barradao.jpg",
         "capacity": "35,632",
         "city": "Salvador",
         "state": "Bahia",
@@ -217,6 +244,7 @@
     },
     {
         "stadium": "Ilha do Retiro",
+        "stadiumImage": "ilha-do-retiro.jpg",
         "capacity": "35,020",
         "city": "Recife",
         "state": "Pernambuco",
@@ -225,6 +253,7 @@
     },
     {
         "stadium": "Amigão",
+        "stadiumImage": "amigao.jpg",
         "capacity": "35,000",
         "city": "Campina Grande",
         "state": "Paraíba",
@@ -233,6 +262,7 @@
     },
     {
         "stadium": "JK",
+        "stadiumImage": "jk.jpg",
         "capacity": "33,000",
         "city": "Itumbiara",
         "state": "Goiás",
@@ -241,6 +271,7 @@
     },
     {
         "stadium": "Teixeirão",
+        "stadiumImage": "teixeirao.jpg",
         "capacity": "32,936",
         "city": "São José do Rio Preto",
         "state": "São Paulo",
@@ -249,6 +280,7 @@
     },
     {
         "stadium": "Estádio Brinco de Ouro",
+        "stadiumImage": "estadio-brinco-de-ouro.jpg",
         "capacity": "32,453",
         "city": "Campinas",
         "state": "São Paulo",
@@ -257,6 +289,7 @@
     },
     {
         "stadium": "Estádio de Pituaçu",
+        "stadiumImage": "estadio-de-pituacu.jpg",
         "capacity": "31,667",
         "city": "Salvador",
         "state": "Bahia",
@@ -265,6 +298,7 @@
     },
     {
         "stadium": "Arena das Dunas",
+        "stadiumImage": "arena-das-dunas.jpg",
         "capacity": "31,375",
         "city": "Natal",
         "state": "Rio Grande do Norte",
@@ -273,6 +307,7 @@
     },
     {
         "stadium": "Estádio do Café",
+        "stadiumImage": "estadio-do-cafe.jpg",
         "capacity": "31,019",
         "city": "Londrina",
         "state": "Paraná",
@@ -281,6 +316,7 @@
     },
     {
         "stadium": "Estádio Centenário",
+        "stadiumImage": "estadio-centenario.jpg",
         "capacity": "30,822",
         "city": "Caxias do Sul",
         "state": "Rio Grande do Sul",
@@ -289,6 +325,7 @@
     },
     {
         "stadium": "Alfredo Jaconi",
+        "stadiumImage": "alfredo-jaconi.jpg",
         "capacity": "30,519",
         "city": "Caxias do Sul",
         "state": "Rio Grande do Sul",

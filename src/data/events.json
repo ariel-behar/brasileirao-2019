@@ -8,6 +8,7 @@
         "hour": "19:00",
         "city": "São Paulo",
         "stadium": "Morumbi",
+        "stadiumImage": "morumbi.jpg",
         "price": 20.99
     },
     {
@@ -19,6 +20,7 @@
         "hour": "18:00",
         "city": "Rio de Janeiro",
         "stadium": "Allianz Parque",
+        "stadiumImage": "allianz-parque.jpg",
         "price": 22.99
     },
     {
@@ -30,6 +32,7 @@
         "hour": "14:00",
         "city": "Rio de Janeiro",
         "stadium": "Maracanã",
+        "stadiumImage": "maracana.jpg",
         "price": 23.99
     },
     {
@@ -41,6 +44,7 @@
         "hour": "18:00",
         "city": "São Paulo",
         "stadium": "Arena Corinthians",
+        "stadiumImage": "arena-corinthians.jpg",
         "price": 24.99
     },
     {
@@ -52,6 +56,7 @@
         "hour": "19:00",
         "city": "Salvador",
         "stadium": "Fonte Nova",
+        "stadiumImage": "fonte-nova.jpg",
         "price": 21.99
     },
     {
@@ -63,6 +68,7 @@
         "hour": "14:00",
         "city": "Rio de Janeiro",
         "stadium": "Estádio Olímpico Nilton Santos",
+        "stadiumImage": "estadio-olimpico-nilton-santos.jpg",
         "price": 20.99
     }
 ]
