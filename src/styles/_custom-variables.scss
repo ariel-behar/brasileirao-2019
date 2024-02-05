@@ -2,7 +2,8 @@
 @import "/node_modules/bootstrap/scss/_variables.scss";
 
 $custom-theme-colors: (
-    "custom-gray" : #b6b5b5
+    "custom-light-gray" : #b6b5b5,
+    "custom-dark-gray" : #545454,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);

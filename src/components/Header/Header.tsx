@@ -84,7 +84,7 @@ function Header() {
                                     routes.map((route, index) => {
                                         if (index <= 2) {
                                             return (
-                                                <Nav.Link className="py-0 nav-link text-custom-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
+                                                <Nav.Link className="py-0 nav-link text-custom-light-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
                                                     {route.route}
                                                 </Nav.Link>
                                             )
@@ -99,7 +99,7 @@ function Header() {
                                     routes.map((route, index) => {
                                         if (index >= 3) {
                                             return (
-                                                <Nav.Link className="py-0 nav-link text-custom-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
+                                                <Nav.Link className="py-0 nav-link text-custom-light-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
                                                     {route.route}
                                                 </Nav.Link>
                                             )
