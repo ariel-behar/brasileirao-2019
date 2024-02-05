@@ -1,7 +1,9 @@
 [
     {
         "teamOne": "Avaí",
+        "imageTeamOne": "avai.png",
         "teamTwo": "São Paulo",
+        "imageTeamTwo": "sao-paulo.png",
         "date": "28/09/2019",
         "hour": "19:00",
         "city": "São Paulo",
@@ -10,7 +12,9 @@
     },
     {
         "teamOne": "Palmeiras",
+        "imageTeamOne": "palmeiras.png",
         "teamTwo": "Vasco da Gama",
+        "imageTeamTwo": "vasco-da-gama.png",
         "date": "01/10/2019",
         "hour": "18:00",
         "city": "Rio de Janeiro",
@@ -19,7 +23,9 @@
     },
     {
         "teamOne": "Grêmio",
+        "imageTeamOne": "gremio.png",
         "teamTwo": "Fluminense",
+        "imageTeamTwo": "fluminense.png",
         "date": "03/10/2019",
         "hour": "14:00",
         "city": "Rio de Janeiro",
@@ -28,7 +34,9 @@
     },
     {
         "teamOne": "Cruzeiro",
+        "imageTeamOne": "cruzeiro.png",
         "teamTwo": "Corinthians",
+        "imageTeamTwo": "corinthians.png",
         "date": "03/10/2019",
         "hour": "18:00",
         "city": "São Paulo",
@@ -37,7 +45,9 @@
     },
     {
         "teamOne": "Bahia",
+        "imageTeamOne": "bahia.png",
         "teamTwo": "Atlético Mineiro",
+        "imageTeamTwo": "atletico-mineiro.png",
         "date": "04/10/2019",
         "hour": "19:00",
         "city": "Salvador",
@@ -46,7 +56,9 @@
     },
     {
         "teamOne": "Athletico Paranaense",
+        "imageTeamOne": "athletico-paranaense.png",
         "teamTwo": "Botafogo",
+        "imageTeamTwo": "botafogo.png",
         "date": "06/10/2019",
         "hour": "14:00",
         "city": "Rio de Janeiro",
