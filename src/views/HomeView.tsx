@@ -6,7 +6,7 @@ import PlayerKicking from '../components/HomeViewComponents/PlayerKicking'
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
-import NextMatchCard from '../components/Cards/NextMatchCard';
+import NextMatchDisplay from '../components/HomeViewComponents/NextMatchDisplay';
 
 function HomeView() {
 	return (
@@ -24,7 +24,7 @@ function HomeView() {
 				</Col>
 
 				<Col xs={12} lg={{span: 5, offset: 1}} className='mx-auto'>
-					<NextMatchCard />
+					<NextMatchDisplay />
 				</Col>
 
 				<Col xs={12} lg={{span: 2, offset: 1}} className='mx-auto'>

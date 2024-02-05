@@ -25,7 +25,7 @@ export interface UpcomingMatch {
     price: number;
 }
 
-const StyledNextMatchCard = styled('div')`
+const StyledNextMatchDisplay = styled('div')`
     background-color: rgba(242, 250, 252, 0.8);
     box-shadow: 0 0 40px 10px #f2fafc;
     border-radius: 20px;
@@ -37,9 +37,9 @@ const StyledNextMatchCard = styled('div')`
 
 const upcomingMatch: UpcomingMatch = events[0];
 
-function NextMatchCard() {
+function NextMatchDisplay() {
     return (
-        <StyledNextMatchCard>
+        <StyledNextMatchDisplay>
             <Row className='p-3'>
                 <Col xs={3} className='d-flex justify-content-center'>
                     <Image className='team-logo' src={getImageUrl('teams', upcomingMatch.imageTeamOne)} alt={upcomingMatch.teamOne} fluid />
@@ -86,8 +86,8 @@ function NextMatchCard() {
             </Row>
 
 
-        </StyledNextMatchCard >
+        </StyledNextMatchDisplay >
     )
 }
 
-export default NextMatchCard
+export default NextMatchDisplay
