@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
 import NextMatchDisplay from '../components/HomeViewComponents/NextMatchDisplay';
+import RankingDisplay from '../components/HomeViewComponents/RankingDisplay';
 
 function HomeView() {
 	return (
@@ -23,11 +24,12 @@ function HomeView() {
 					<PlayerKicking />
 				</Col>
 
-				<Col xs={12} lg={{span: 5, offset: 1}} className='mx-auto'>
+				<Col xs={12} lg={{span: 4, offset: 1}}>
 					<NextMatchDisplay />
 				</Col>
 
-				<Col xs={12} lg={{span: 2, offset: 1}} className='mx-auto'>
+				<Col xs={12} lg={3} className='mx-auto'>
+					<RankingDisplay />
 				</Col>
 			</Row>
 
