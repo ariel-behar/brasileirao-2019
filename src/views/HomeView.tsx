@@ -6,10 +6,11 @@ import PlayerKicking from '../components/HomeViewComponents/PlayerKicking'
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
+import NextMatchCard from '../components/Cards/NextMatchCard';
 
 function HomeView() {
 	return (
-		<div style={{
+		<Container fluid style={{
 			backgroundImage: `url('${soccerField}')`,
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
@@ -17,19 +18,21 @@ function HomeView() {
 		}}>
 			<HelmetSEO title="HOME" description="Home page of the fictional website about the Brasileirao 2019 Soccer Championship" />
 
-			<div>HomeView</div>
+			<Row className='h-100 d-flex align-items-center'>
+				<Col lg={3} className='d-none d-lg-flex align-items-end'>
+					<PlayerKicking />
+				</Col>
 
-		
-			<Container fluid>
-            <Row>
-                <Col>
-				<PlayerKicking />
-                </Col>
-            </Row>
-        </Container>
+				<Col xs={12} lg={{span: 5, offset: 1}} className='mx-auto'>
+					<NextMatchCard />
+				</Col>
 
-			
-		</div>
+				<Col xs={12} lg={{span: 2, offset: 1}} className='mx-auto'>
+				</Col>
+			</Row>
+
+
+		</Container>
 
 	)
 }
