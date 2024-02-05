@@ -8,6 +8,11 @@ import router from './router/router'
 
 import Loader from './components/Loader'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faCalendar, faClock, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faCalendar, faClock, faLocationDot)
+
 function App() {
 	return (
 		<>
