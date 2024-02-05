@@ -1,4 +1,4 @@
-import soccerField from '../assets/img/soccer-field.jpg'
+import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
 
 import HelmetSEO from '../components/HelmetSEO'
 import PlayerKicking from '../components/HomeViewComponents/PlayerKicking'
