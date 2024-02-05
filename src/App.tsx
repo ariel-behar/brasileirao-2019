@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 
-import './App.scss'
+import './styles/App.scss'
 
 import router from './router/router'
 
