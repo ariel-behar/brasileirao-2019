@@ -5,7 +5,8 @@
         "state": "Paraná",
         "stadium": "Arena da Baixada",
         "capacity": "42.37",
-        "ranking": "1"
+        "ranking": "1",
+        "image": "athletico-paranaense.png"
     },
     {
         "team": "Atlético Mineiro",
@@ -13,7 +14,8 @@
         "state": "Minas Gerais",
         "stadium": "Independência",
         "capacity": "23.018",
-        "ranking": "2"
+        "ranking": "2",
+        "image": "atletico-mineiro.png"
     },
     {
         "team": "Avaí",
@@ -21,7 +23,8 @@
         "state": "Santa Catarina",
         "stadium": "Ressacada",
         "capacity": "17.8",
-        "ranking": "3"
+        "ranking": "3",
+        "image": "avai.png"
     },
     {
         "team": "Bahia",
@@ -29,7 +32,8 @@
         "state": "Bahia",
         "stadium": "Arena Fonte Nova",
         "capacity": "47.907",
-        "ranking": "4"
+        "ranking": "4",
+        "image": "bahia.png"
     },
     {
         "team": "Botafogo",
@@ -37,7 +41,8 @@
         "state": "Rio de Janeiro",
         "stadium": "Olímpico Nilton Santos",
         "capacity": "44.661",
-        "ranking": "5"
+        "ranking": "5",
+        "image": "botafogo.png"
     },
     {
         "team": "Ceará",
@@ -45,7 +50,8 @@
         "state": "Ceará",
         "stadium": "Arena Castelão",
         "capacity": "63.903",
-        "ranking": "6"
+        "ranking": "6",
+        "image": "ceara.png"
     },
     {
         "team": "Chapecoense",
@@ -53,7 +59,8 @@
         "state": "Santa Catarina",
         "stadium": "Arena Condá",
         "capacity": "20.089",
-        "ranking": "7"
+        "ranking": "7",
+        "image": "chapecoense.png"
     },
     {
         "team": "Corinthians",
@@ -61,7 +68,8 @@
         "state": "São Paulo",
         "stadium": "Arena Corinthians",
         "capacity": "47.605",
-        "ranking": "8"
+        "ranking": "8",
+        "image": "corinthians.png"
     },
     {
         "team": "Cruzeiro",
@@ -69,7 +77,8 @@
         "state": "Minas Gerais",
         "stadium": "Mineirão",
         "capacity": "61.846",
-        "ranking": "9"
+        "ranking": "9",
+        "image": "cruzeiro.png"
     },
     {
         "team": "CSA",
@@ -77,7 +86,9 @@
         "state": "Alagoas",
         "stadium": "Rei Pelé",
         "capacity": "17.126",
-        "ranking": "10"
+        "ranking": "10",
+        "image": "csa.png"
+
     },
     {
         "team": "Flamengo",
@@ -85,7 +96,8 @@
         "state": "Rio de Janeiro",
         "stadium": "Maracanã",
         "capacity": "78.838",
-        "ranking": "11"
+        "ranking": "11",
+        "image": "flamengo.png"
     },
     {
         "team": "Fluminense",
@@ -93,7 +105,8 @@
         "state": "Rio de Janeiro",
         "stadium": "Maracanã",
         "capacity": "78.838",
-        "ranking": "12"
+        "ranking": "12",
+        "image": "fluminense.png"
     },
     {
         "team": "Fortaleza",
@@ -101,7 +114,8 @@
         "state": "Ceará",
         "stadium": "Arena Castelão",
         "capacity": "63.903",
-        "ranking": "13"
+        "ranking": "13",
+        "image": "fortaleza.png"
     },
     {
         "team": "Goiás",
@@ -109,7 +123,8 @@
         "state": "Goiás",
         "stadium": "Serra Dourada",
         "capacity": "50.049",
-        "ranking": "14"
+        "ranking": "14",
+        "image": "goias.png"
     },
     {
         "team": "Grêmio",
@@ -117,7 +132,8 @@
         "state": "Rio Grande do Sul",
         "stadium": "Arena do Grêmio",
         "capacity": "55.662",
-        "ranking": "15"
+        "ranking": "15",
+        "image": "gremio.png"
     },
     {
         "team": "Internacional",
@@ -125,7 +141,8 @@
         "state": "Rio Grande do Sul",
         "stadium": "Beira-Rio",
         "capacity": "50.128",
-        "ranking": "16"
+        "ranking": "16",
+        "image": "internacional.png"
     },
     {
         "team": "Palmeiras",
@@ -133,7 +150,8 @@
         "state": "São Paulo",
         "stadium": "Allianz Parque",
         "capacity": "43.713",
-        "ranking": "17"
+        "ranking": "17",
+        "image": "palmeiras.png"
     },
     {
         "team": "Santos",
@@ -141,7 +159,8 @@
         "state": "São Paulo",
         "stadium": "Urbano Caldeira",
         "capacity": "16.068",
-        "ranking": "18"
+        "ranking": "18",
+        "image": "santos.png"
     },
     {
         "team": "São Paulo",
@@ -149,7 +168,8 @@
         "state": "São Paulo",
         "stadium": "Morumbi",
         "capacity": "72.039",
-        "ranking": "19"
+        "ranking": "19",
+        "image": "sao-paulo.png"
     },
     {
         "team": "Vasco da Gama",
@@ -157,6 +177,7 @@
         "state": "Rio de Janeiro",
         "stadium": "São Januário",
         "capacity": "24.584",
-        "ranking": "20"
+        "ranking": "20",
+        "image": "vasco-da-gama.png"
     }
 ]
