@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image'
 
 function AboutLeague() {
     return (
-        <Row as='section'>
+        <Row as='section' className='pt-5'>
             <Col
                 xs={12}
                 md={{ span: 4, order: 1 }}
