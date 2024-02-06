@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 
 const StyledPageHeader = styled('div')`
     position: relative;
-    height: 300px;
+    height: 350px;
     .page-header-white-box {
         position: absolute;
         bottom: -430px;
@@ -22,7 +22,7 @@ const StyledPageHeader = styled('div')`
 
 const StyledPageFooter = styled('div')`
     position: relative;
-    height: 300px;
+    height: 350px;
     .page-footer-white-box {
         position: absolute;
         height: 500px;
@@ -37,31 +37,37 @@ const StyledPageFooter = styled('div')`
 interface Props {
     viewTitle: string
     pageHeaderImage: string
-    pageHeaderImagePosition?: string
+    pageHeaderBackgroundPosition?: string
+    pageHeaderBackgroundSize?: string
     pageFooterImage: string
-    pageFooterImagePosition?: string
+    pageFooterBackgroundPosition?: string
+    pageFooterBackgroundSize?: string
 }
 
 function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
     viewTitle,
     pageHeaderImage,
-    pageHeaderImagePosition,
+    pageHeaderBackgroundPosition,
+    pageHeaderBackgroundSize = 'cover',
+
     pageFooterImage,
-    pageFooterImagePosition,
+    pageFooterBackgroundPosition,
+    pageFooterBackgroundSize = 'cover',
 }: Props) {
     return (props: T) => (
         <>
             <StyledPageHeader style={{
                 backgroundImage: `url(${pageHeaderImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: pageHeaderImagePosition,
+                backgroundSize: pageHeaderBackgroundSize,
+                backgroundPosition: pageHeaderBackgroundPosition,
                 backgroundAttachment: 'fixed',
+                backgroundRepeat: 'no-repeat'
 
             }}>
                 <div className='page-header-white-box z-1'></div>
                 <Container className='position-relative z-3' style={{ height: '100%', borderBottom: "1px solid #bfd9e2" }}>
                     <div className='d-flex align-items-end h-100 '>
-                        <h1 className='page-header-title'>{viewTitle}</h1>
+                        <h2 className='page-header-title'>{viewTitle}</h2>
                     </div>
                 </Container>
             </StyledPageHeader>
@@ -72,9 +78,10 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
 
             <StyledPageFooter style={{
                 backgroundImage: `url(${pageFooterImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: pageFooterImagePosition,
+                backgroundSize: pageFooterBackgroundSize,
+                backgroundPosition: pageFooterBackgroundPosition,
                 backgroundAttachment: 'fixed',
+                backgroundRepeat: 'no-repeat'
             }}>
                 <div className='page-footer-white-box z-1'></div>
                 <Container className='position-relative z-3' style={{ borderTop: "1px solid #bfd9e2" }} />
