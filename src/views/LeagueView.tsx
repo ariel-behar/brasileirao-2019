@@ -1,3 +1,6 @@
+import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
+
+import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
 import HelmetSEO from "../components/HelmetSEO"
 
 function LeagueView() {
@@ -9,4 +12,10 @@ function LeagueView() {
     )
 }
 
-export default LeagueView
+export default hasPageHeaderFooter(LeagueView, {
+    viewTitle: 'LEAGUE',
+    pageHeaderImage: soccerField,
+    pageHeaderImagePosition: 'center',
+    pageFooterImage: soccerField,
+    pageFooterImagePosition: 'center',
+}) 

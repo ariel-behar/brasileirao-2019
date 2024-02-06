@@ -1,25 +1,36 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import Container from 'react-bootstrap/Container'
 
 const StyledPageHeader = styled('div')`
-    .white-box {
+    position: relative;
+    height: 300px;
+    .page-header-white-box {
+        position: absolute;
         bottom: -430px;
         left: -150px;
+        background-color: white;
         height: 500px;
         width: 150%;
         transform: rotate(5deg);
-        z-index: 1;
+    }
+
+    .page-header-title {
+
     }
 `
 
 const StyledPageFooter = styled('div')`
-    .white-box {
-        top: -400px;
-        right: -150px;
+    position: relative;
+    height: 300px;
+    .page-footer-white-box {
+        position: absolute;
         height: 500px;
         width: 150%;
-        transform: rotate(-5deg);
-        z-index: 1;
+        top: -400px;
+        right: -150px;
+        background-color: white;
+        transform: rotate(-4.5deg);
     }
 `
 
@@ -44,20 +55,29 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
                 backgroundImage: `url(${pageHeaderImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: pageHeaderImagePosition,
+                backgroundAttachment: 'fixed',
 
             }}>
-                <div className='white-box'></div>
-                <h2>{viewTitle}</h2>
+                <div className='page-header-white-box z-1'></div>
+                <Container className='position-relative z-3' style={{ height: '100%', borderBottom: "1px solid #bfd9e2" }}>
+                    <div className='d-flex align-items-end h-100 '>
+                        <h1 className='page-header-title'>{viewTitle}</h1>
+                    </div>
+                </Container>
             </StyledPageHeader>
 
-            <WrapperComponent {...props as any}/>
+            <div className="position-relative z-3">
+                <WrapperComponent {...props as any} />
+            </div>
 
             <StyledPageFooter style={{
                 backgroundImage: `url(${pageFooterImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: pageFooterImagePosition,
+                backgroundAttachment: 'fixed',
             }}>
-                <div className='white-box'></div>
+                <div className='page-footer-white-box z-1'></div>
+                <Container className='position-relative z-3' style={{ borderTop: "1px solid #bfd9e2" }} />
             </StyledPageFooter>
         </>
     )
