@@ -7,7 +7,7 @@ function RootView() {
 	return (
 		<>
 			<Header />
-			<main className='flex-grow-1 bg-success'>
+			<main className='flex-grow-1 bg-white'>
 				<Outlet />
 			</main>
 
