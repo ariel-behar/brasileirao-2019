@@ -1,4 +1,7 @@
+import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
 import HelmetSEO from "../components/HelmetSEO"
+
+import soccerPlayersPlaying from '../assets/img/soccer-players-playing.jpg'
 
 function TeamsView() {
     return (
@@ -9,4 +12,8 @@ function TeamsView() {
     )
 }
 
-export default TeamsView
+export default hasPageHeaderFooter(TeamsView, {
+    viewTitle: 'TEAMS',
+    pageHeaderImage: soccerPlayersPlaying,
+    pageFooterImage: soccerPlayersPlaying,    
+})
