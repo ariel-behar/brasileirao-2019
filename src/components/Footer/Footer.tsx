@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import arielbeharLogo from "../../assets/img/logos/arielbehar-logo.png"
 
 const StyledFooter = styled('footer')`
-    position: absolute;
+    position: sticky;
     bottom: 0;
 
     p {
