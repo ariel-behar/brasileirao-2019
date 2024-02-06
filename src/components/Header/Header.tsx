@@ -13,6 +13,7 @@ const StyledHeader = styled('header')`
     background-image: url(${grassPattern});
     background-repeat: repeat;
     position: fixed;
+    z-index: 4;
     width: 60vw;
     top: 0;
     left: 50%;
