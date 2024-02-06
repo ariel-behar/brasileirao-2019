@@ -6,4 +6,11 @@ $custom-theme-colors: (
     "custom-dark-gray" : #545454,
 );
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
