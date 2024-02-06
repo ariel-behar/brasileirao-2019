@@ -19,14 +19,16 @@ function EventsView() {
 
             <Container>
                 <section className='my-5'>
-                    <h3>Browse Upcoming Brasileirão Events</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae nobis aspernatur aut deleniti voluptatibus impedit, ipsa autem expedita illo. Odit.</p>
+                    <div className='mb-5'>
+                        <h3>Browse Upcoming Brasileirão Events</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae nobis aspernatur aut deleniti voluptatibus impedit, ipsa autem expedita illo. Odit.</p>
+                    </div>
 
                     <Row className='g-4'>
                         {
                             events.map((event: Event) => (
                                 <Col xs={12} md={4} key={uniqid()}>
-                                    <FootballMatchCard event={event} displayOnView='events'/>
+                                    <FootballMatchCard event={event} displayOnView='events' />
                                 </Col>
                             ))
                         }
@@ -40,5 +42,8 @@ function EventsView() {
 export default hasPageHeaderFooter(EventsView, {
     viewTitle: 'Events',
     pageHeaderImage: eventsBackgroundImage,
-    pageFooterImage: eventsBackgroundImage
+    pageHeaderBackgroundSize: 'contain',
+    pageFooterImage: eventsBackgroundImage,
+    pageFooterBackgroundSize: 'contain',
+    pageFooterBackgroundPosition: 'bottom'
 })
