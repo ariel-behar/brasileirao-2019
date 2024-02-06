@@ -6,6 +6,7 @@ import HelmetSEO from "../components/HelmetSEO"
 import Container from 'react-bootstrap/Container'
 import AboutLeague from "../components/LeagueViewComponents/AboutLeague"
 import LeagueStadiums from "../components/LeagueViewComponents/LeagueStadiums"
+import CompetitionFormat from "../components/LeagueViewComponents/CompetitionFormat"
 
 function LeagueView() {
     return (
@@ -15,6 +16,7 @@ function LeagueView() {
             <Container>
                 <AboutLeague />
                 <LeagueStadiums />
+                <CompetitionFormat />
             </Container>
         </>
     )
