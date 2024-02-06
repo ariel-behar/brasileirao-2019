@@ -2,8 +2,8 @@ import { Link as RouterLink } from 'react-router-dom'
 
 import styled from '@emotion/styled'
 
-import events from '../../data/events.json'
-import getImageUrl from '../../utils/getImageUrl'
+import events from '../../../data/events.json'
+import getImageUrl from '../../../utils/getImageUrl'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

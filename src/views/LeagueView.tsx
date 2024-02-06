@@ -4,9 +4,9 @@ import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
 import HelmetSEO from "../components/HelmetSEO"
 
 import Container from 'react-bootstrap/Container'
-import AboutLeague from "../components/LeagueViewComponents/AboutLeague"
-import LeagueStadiums from "../components/LeagueViewComponents/LeagueStadiums"
-import CompetitionFormat from "../components/LeagueViewComponents/CompetitionFormat"
+import AboutLeague from "../components/ViewSpecificComponents/LeagueView/AboutLeague"
+import LeagueStadiums from "../components/ViewSpecificComponents/LeagueView/LeagueStadiums"
+import CompetitionFormat from "../components/ViewSpecificComponents/LeagueView/CompetitionFormat"
 
 function LeagueView() {
     return (

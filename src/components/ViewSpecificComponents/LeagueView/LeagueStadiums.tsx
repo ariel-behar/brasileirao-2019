@@ -2,8 +2,8 @@ import { useState } from "react"
 import uniqid from "uniqid"
 import styled from "@emotion/styled"
 
-import { Identifiable } from "../../types/shared-types"
-import stadiums from '../../data/stadiums.json'
+import { Identifiable } from "../../../types/shared-types"
+import stadiums from '../../../data/stadiums.json'
 
 import grassPattern from '../../assets/img/grass-patten.jpg'
 import soccerField from '../../assets/img/backgrounds/soccer-field.jpg'
@@ -13,7 +13,7 @@ import Col from 'react-bootstrap/Col'
 import Dropdown from 'react-bootstrap/Dropdown'
 import DropdownButton from 'react-bootstrap/DropdownButton'
 import Image from 'react-bootstrap/Image'
-import getImageUrl from "../../utils/getImageUrl"
+import getImageUrl from "../../../utils/getImageUrl"
 
 const StyledLeagueSection = styled('section')`
 	background-image: url(${grassPattern});

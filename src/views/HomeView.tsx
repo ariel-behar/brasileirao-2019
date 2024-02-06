@@ -1,13 +1,13 @@
 import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
 
 import HelmetSEO from '../components/HelmetSEO'
-import PlayerKicking from '../components/HomeViewComponents/PlayerKicking'
+import PlayerKicking from '../components/ViewSpecificComponents/HomeView/PlayerKicking'
 
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
-import NextMatchDisplay from '../components/HomeViewComponents/NextMatchDisplay';
-import RankingDisplay from '../components/HomeViewComponents/RankingDisplay';
+import NextMatchDisplay from '../components/ViewSpecificComponents/HomeView/NextMatchDisplay';
+import RankingDisplay from '../components/ViewSpecificComponents/HomeView/RankingDisplay';
 
 function HomeView() {
 	return (

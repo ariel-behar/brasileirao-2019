@@ -1,8 +1,8 @@
 
 import styled from '@emotion/styled'
 
-import teams from '../../data/teams.json'
-import getImageUrl from '../../utils/getImageUrl'
+import teams from '../../../data/teams.json'
+import getImageUrl from '../../../utils/getImageUrl'
 
 const StyledRankingDisplay = styled('div')`
     background-color: rgba(42,83,26,0.6);
