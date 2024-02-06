@@ -1,5 +1,5 @@
-import soccerPlayer from "../../assets/img/soccer-player.png"
-import ball from "../../assets/img/ball.png"
+import soccerPlayer from "../../../assets/img/soccer-player.png"
+import ball from "../../../assets/img/ball.png"
 
 
 import Image from "react-bootstrap/Image";
