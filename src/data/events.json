@@ -1,5 +1,6 @@
 [
     {
+        "_id": 1,
         "teamOne": "Avaí",
         "imageTeamOne": "avai.png",
         "teamTwo": "São Paulo",
@@ -12,6 +13,7 @@
         "price": 20.99
     },
     {
+        "_id": 2,
         "teamOne": "Palmeiras",
         "imageTeamOne": "palmeiras.png",
         "teamTwo": "Vasco da Gama",
@@ -24,6 +26,7 @@
         "price": 22.99
     },
     {
+        "_id": 3,
         "teamOne": "Grêmio",
         "imageTeamOne": "gremio.png",
         "teamTwo": "Fluminense",
@@ -36,6 +39,7 @@
         "price": 23.99
     },
     {
+        "_id": 4,
         "teamOne": "Cruzeiro",
         "imageTeamOne": "cruzeiro.png",
         "teamTwo": "Corinthians",
@@ -48,6 +52,7 @@
         "price": 24.99
     },
     {
+        "_id": 5,
         "teamOne": "Bahia",
         "imageTeamOne": "bahia.png",
         "teamTwo": "Atlético Mineiro",
@@ -60,6 +65,7 @@
         "price": 21.99
     },
     {
+        "_id": 6,
         "teamOne": "Athletico Paranaense",
         "imageTeamOne": "athletico-paranaense.png",
         "teamTwo": "Botafogo",
