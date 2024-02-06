@@ -1,6 +1,6 @@
 [{
         "_id": 1,
-        "stadium": "Maracanã",
+        "stadiumName": "Maracanã",
         "stadiumImage": "maracana.jpg",
         "capacity": 78838,
         "city": "Rio de Janeiro",
@@ -10,7 +10,7 @@
     },
     {
         "_id": 2,
-        "stadium": "Mané Garrincha",
+        "stadiumName": "Mané Garrincha",
         "stadiumImage": "mane-garrincha.jpg",
         "capacity": 72888,
         "city": "Brasília",
@@ -20,7 +20,7 @@
     },
     {
         "_id": 3,
-        "stadium": "Morumbi",
+        "stadiumName": "Morumbi",
         "stadiumImage": "morumbi.jpg",
         "capacity": 67052,
         "city": "São Paulo",
@@ -30,7 +30,7 @@
     },
     {
         "_id": 4,
-        "stadium": "Castelão",
+        "stadiumName": "Castelão",
         "stadiumImage": "castelao.jpg",
         "capacity": 63903,
         "city": "Fortaleza",
@@ -40,7 +40,7 @@
     },
     {
         "_id": 5,
-        "stadium": "Mineirão",
+        "stadiumName": "Mineirão",
         "stadiumImage": "mineirao.jpg",
         "capacity": 61846,
         "city": "Belo Horizonte",
@@ -50,7 +50,7 @@
     },
     {
         "_id": 6,
-        "stadium": "Estádio do Arruda",
+        "stadiumName": "Estádio do Arruda",
         "stadiumImage": "estadio-do-arruda.jpg",
         "capacity": 60044,
         "city": "Recife",
@@ -60,7 +60,7 @@
     },
     {
         "_id": 7,
-        "stadium": "Arena do Grêmio",
+        "stadiumName": "Arena do Grêmio",
         "stadiumImage": "arena-do-gremio.jpg",
         "capacity": 55662,
         "city": "Porto Alegre",
@@ -70,7 +70,7 @@
     },
     {
         "_id": 8,
-        "stadium": "Parque do Sabiá",
+        "stadiumName": "Parque do Sabiá",
         "stadiumImage": "parque-do-sabia.jpg",
         "capacity": 5335,
         "city": "Uberlândia",
@@ -80,7 +80,7 @@
     },
     {
         "_id": 9,
-        "stadium": "Fonte Nova",
+        "stadiumName": "Fonte Nova",
         "stadiumImage": "fonte-nova.jpg",
         "capacity": 51708,
         "city": "Salvador",
@@ -90,7 +90,7 @@
     },
     {
         "_id": 10,
-        "stadium": "Beira-Rio",
+        "stadiumName": "Beira-Rio",
         "stadiumImage": "beira-rio.jpg",
         "capacity": 50128,
         "city": "Porto Alegre",
@@ -100,7 +100,7 @@
     },
     {
         "_id": 11,
-        "stadium": "Serra Dourada",
+        "stadiumName": "Serra Dourada",
         "stadiumImage": "serra-dourada.jpg",
         "capacity": 50049,
         "city": "Goiânia",
@@ -110,7 +110,7 @@
     },
     {
         "_id": 12,
-        "stadium": "Arena Corinthians",
+        "stadiumName": "Arena Corinthians",
         "stadiumImage": "arena-corinthians.jpg",
         "capacity": 48234,
         "city": "São Paulo",
@@ -120,7 +120,7 @@
     },
     {
         "_id": 13,
-        "stadium": "Estádio Olímpico Nilton Santos",
+        "stadiumName": "Estádio Olímpico Nilton Santos",
         "stadiumImage": "estadio-olimpico-nilton-santos.jpg",
         "capacity": 46931,
         "city": "Rio de Janeiro",
@@ -130,7 +130,7 @@
     },
     {
         "_id": 14,
-        "stadium": "Arena Pernambuco",
+        "stadiumName": "Arena Pernambuco",
         "stadiumImage": "arena-pernambuco.jpg",
         "capacity": 46154,
         "city": "Recife",
@@ -140,7 +140,7 @@
     },
     {
         "_id": 15,
-        "stadium": "Mangueirão",
+        "stadiumName": "Mangueirão",
         "stadiumImage": "mangueirao.jpg",
         "capacity": 45007,
         "city": "Belém",
@@ -150,7 +150,7 @@
     },
     {
         "_id": 16,
-        "stadium": "Morenão",
+        "stadiumName": "Morenão",
         "stadiumImage": "morenao.jpg",
         "capacity": 45000,
         "city": "Campo Grande",
@@ -160,7 +160,7 @@
     },
     {
         "_id": 17,
-        "stadium": "Farahzão",
+        "stadiumName": "Farahzão",
         "stadiumImage": "farahzao.jpg",
         "capacity": 44414,
         "city": "Presidente Prudente",
@@ -170,7 +170,7 @@
     },
     {
         "_id": 18,
-        "stadium": "Albertão",
+        "stadiumName": "Albertão",
         "stadiumImage": "albertao.jpg",
         "capacity": 44200,
         "city": "Teresina",
@@ -180,7 +180,7 @@
     },
     {
         "_id": 19,
-        "stadium": "Allianz Parque",
+        "stadiumName": "Allianz Parque",
         "stadiumImage": "allianz-parque.jpg",
         "capacity": 43600,
         "city": "São Paulo",
@@ -190,7 +190,7 @@
     },
     {
         "_id": 20,
-        "stadium": "Arena da Baixada",
+        "stadiumName": "Arena da Baixada",
         "stadiumImage": "arena-da-baixada.jpg",
         "capacity": 43000,
         "city": "Curitiba",
@@ -200,7 +200,7 @@
     },
     {
         "_id": 21,
-        "stadium": "Arena Pantanal",
+        "stadiumName": "Arena Pantanal",
         "stadiumImage": "arena-pantanal.jpg",
         "capacity": 42968,
         "city": "Cuiabá",
@@ -210,7 +210,7 @@
     },
     {
         "_id": 22,
-        "stadium": "Arena da Amazônia",
+        "stadiumName": "Arena da Amazônia",
         "stadiumImage": "arena-da-amazonia.jpg",
         "capacity": 41374,
         "city": "Manaus",
@@ -220,7 +220,7 @@
     },
     {
         "_id": 23,
-        "stadium": "Couto Pereira",
+        "stadiumName": "Couto Pereira",
         "stadiumImage": "couto-pereira.jpg",
         "capacity": 40310,
         "city": "Curitiba",
@@ -230,7 +230,7 @@
     },
     {
         "_id": 24,
-        "stadium": "Pacaembu",
+        "stadiumName": "Pacaembu",
         "stadiumImage": "pacaembu.jpg",
         "capacity": 40199,
         "city": "São Paulo",
@@ -240,7 +240,7 @@
     },
     {
         "_id": 25,
-        "stadium": "Castelão",
+        "stadiumName": "Castelão",
         "stadiumImage": "castelao.jpg",
         "capacity": 40,
         "city": "São Luís",
@@ -250,7 +250,7 @@
     },
     {
         "_id": 26,
-        "stadium": "Almeidão",
+        "stadiumName": "Almeidão",
         "stadiumImage": "almeidao.jpg",
         "capacity": 39,
         "city": "João Pessoa",
@@ -260,7 +260,7 @@
     },
     {
         "_id": 27,
-        "stadium": "Barradão",
+        "stadiumName": "Barradão",
         "stadiumImage": "barradao.jpg",
         "capacity": 35632,
         "city": "Salvador",
@@ -270,7 +270,7 @@
     },
     {
         "_id": 28,
-        "stadium": "Ilha do Retiro",
+        "stadiumName": "Ilha do Retiro",
         "stadiumImage": "ilha-do-retiro.jpg",
         "capacity": 35020,
         "city": "Recife",
@@ -280,7 +280,7 @@
     },
     {
         "_id": 29,
-        "stadium": "Amigão",
+        "stadiumName": "Amigão",
         "stadiumImage": "amigao.jpg",
         "capacity": 35000,
         "city": "Campina Grande",
@@ -290,7 +290,7 @@
     },
     {
         "_id": 30,
-        "stadium": "JK",
+        "stadiumName": "JK",
         "stadiumImage": "jk.jpg",
         "capacity": 33000,
         "city": "Itumbiara",
@@ -300,7 +300,7 @@
     },
     {
         "_id": 31,
-        "stadium": "Teixeirão",
+        "stadiumName": "Teixeirão",
         "stadiumImage": "teixeirao.jpg",
         "capacity": 32936,
         "city": "São José do Rio Preto",
@@ -310,7 +310,7 @@
     },
     {
         "_id": 32,
-        "stadium": "Estádio Brinco de Ouro",
+        "stadiumName": "Estádio Brinco de Ouro",
         "stadiumImage": "estadio-brinco-de-ouro.jpg",
         "capacity": 32453,
         "city": "Campinas",
@@ -320,7 +320,7 @@
     },
     {
         "_id": 33,
-        "stadium": "Estádio de Pituaçu",
+        "stadiumName": "Estádio de Pituaçu",
         "stadiumImage": "estadio-de-pituacu.jpg",
         "capacity": 31667,
         "city": "Salvador",
@@ -330,7 +330,7 @@
     },
     {
         "_id": 34,
-        "stadium": "Arena das Dunas",
+        "stadiumName": "Arena das Dunas",
         "stadiumImage": "arena-das-dunas.jpg",
         "capacity": 31375,
         "city": "Natal",
@@ -341,7 +341,7 @@
     },
     {
         "_id": 35,
-        "stadium": "Estádio do Café",
+        "stadiumName": "Estádio do Café",
         "stadiumImage": "estadio-do-cafe.jpg",
         "capacity": 31019,
         "city": "Londrina",
@@ -351,7 +351,7 @@
     },
     {
         "_id": 36,
-        "stadium": "Estádio Centenário",
+        "stadiumName": "Estádio Centenário",
         "stadiumImage": "estadio-centenario.jpg",
         "capacity": 30822,
         "city": "Caxias do Sul",
@@ -361,7 +361,7 @@
     },
     {
         "_id": 37,
-        "stadium": "Alfredo Jaconi",
+        "stadiumName": "Alfredo Jaconi",
         "stadiumImage": "alfredo-jaconi.jpg",
         "capacity": 30519,
         "city": "Caxias do Sul",
