@@ -1,5 +1,5 @@
 
-import flyingKick from '../../assets/img/flying-kick.png'
+import flyingKick from '../../../assets/img/flying-kick.jpg'
 
 function CompetitionFormat() {
     return (

@@ -1,4 +1,4 @@
-import brasileiraoCup from '../../assets/img/brasileirao-cup.png'
+import brasileiraoCup from '../../../assets/img/brasileirao-cup.png'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'

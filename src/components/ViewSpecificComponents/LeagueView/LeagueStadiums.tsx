@@ -5,8 +5,8 @@ import styled from "@emotion/styled"
 import { Identifiable } from "../../../types/shared-types"
 import stadiums from '../../../data/stadiums.json'
 
-import grassPattern from '../../assets/img/grass-patten.jpg'
-import soccerField from '../../assets/img/backgrounds/soccer-field.jpg'
+import grassPattern from '../../../assets/img/grass-patten.jpg'
+import soccerField from '../../../assets/img/backgrounds/soccer-field.jpg'
 
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
