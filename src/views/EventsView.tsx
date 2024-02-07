@@ -21,7 +21,7 @@ function EventsView() {
                 <section className='my-5'>
                     <div className='mb-5'>
                         <h3>Browse Upcoming Brasileirão Events</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae nobis aspernatur aut deleniti voluptatibus impedit, ipsa autem expedita illo. Odit.</p>
+                        <p style={{textAlign: 'justify'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae nobis aspernatur aut deleniti voluptatibus impedit, ipsa autem expedita illo. Odit.</p>
                     </div>
 
                     <Row className='g-4'>

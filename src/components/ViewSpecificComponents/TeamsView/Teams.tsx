@@ -47,7 +47,7 @@ function Teams() {
                     </Row>
                 </Col>
                 
-                <p className='my-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nesciunt, quos corrupti quod nam distinctio et cumque doloremque iusto dolore tempore consequatur nostrum sequi aliquam blanditiis. Sint dolorem consequuntur maxime.</p>
+                <p className='my-5' style={{textAlign: 'justify'}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores nesciunt, quos corrupti quod nam distinctio et cumque doloremque iusto dolore tempore consequatur nostrum sequi aliquam blanditiis. Sint dolorem consequuntur maxime.</p>
             </Row>
 
         </section>
