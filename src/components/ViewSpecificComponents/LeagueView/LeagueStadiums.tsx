@@ -22,6 +22,7 @@ const StyledLeagueSection = styled('section')`
 	position: relative;
 	border-radius: 20px;
 	padding: 30px;
+	min-height: 430px;
 
 	.league-section-title-div {
 		position: absolute;
@@ -41,7 +42,7 @@ const StyledLeagueSection = styled('section')`
 
 	.stadiums-list-div {
 		border-right: 3px solid #fff;
-
+		height: 100%;
 		color: white;
 
 		h6 {
@@ -51,7 +52,7 @@ const StyledLeagueSection = styled('section')`
 		ul {
 			list-style-type: none;
 			padding-left: 20px;
-			max-height: 310px;
+			max-height: 320px;
 			overflow-y: scroll;
 			direction:rtl;
 
@@ -166,9 +167,9 @@ function LeagueStadiums() {
 				</Col>
 
 				<Col xs={12} lg={9}>
-					<Row className="pt-3 pb-1">
-						<Col xs={12} lg={3}>
-							<ul className="selected-stadium-details-list">
+					<Row className="pt-3 pb-1 h-100">
+						<Col xs={12} lg={3} className="d-flex flex-column justify-content-start">
+							<ul className="selected-stadium-details-list mb-0">
 								<li>
 									<p>
 										Name:
@@ -202,7 +203,7 @@ function LeagueStadiums() {
 
 							</ul>
 						</Col>
-						<Col xs={12} lg={9}>
+						<Col xs={12} lg={9} className="h-100 d-flex">
 							<Image className="selected-stadium-image" src={selectedStadium ? getImageUrl('stadiums', selectedStadium.stadiumImage)  : soccerField} alt={selectedStadium ? selectedStadium.stadiumName : 'Soccer Field'} fluid />
 						</Col>
 					</Row>
