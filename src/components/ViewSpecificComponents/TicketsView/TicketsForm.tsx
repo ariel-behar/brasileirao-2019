@@ -15,7 +15,7 @@ import Button from 'react-bootstrap/Button'
 function TicketsForm() {
     const [totalPrice, setTotalPrice] = useState<number>(0)
     const [selectedEvent, setSelectedEvent] = useState<Event>(events[0])
-    const [selectedQuantity, setSelectedQuantity] = useState<number>(0)
+    const [selectedQuantity, setSelectedQuantity] = useState<number>(1)
     const [orderSuccess, setOrderSuccess] = useState<boolean>(false)
 
     const handleChangeSelectedEvent = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -34,8 +34,6 @@ function TicketsForm() {
     const calculatePrice = () => {
         let price: number = selectedEvent.price * selectedQuantity
         setTotalPrice(() => price)
-
-        console.log(totalPrice);
     }
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

@@ -12,7 +12,7 @@ function TicketsView() {
             <HelmetSEO title="TICKETS" description="Tickets page of the fictional website about the Brasileirao 2019 Soccer Championship" />
 
             <Container style={{minHeight: '50vh'}}>
-                <div className='my-5' >
+                <div className='my-5'>
                     <h3>Order Your Tickets With Ease</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae.</p>
                 </div>
@@ -20,7 +20,8 @@ function TicketsView() {
                 <section style={{
                     backgroundColor: '#e4efff',
                     borderRadius: '20px',
-                    padding: '30px'
+                    padding: '30px',
+                    height: '100%'
                 }} className="my-5">
                     <TicketsForm />
                 </section>
