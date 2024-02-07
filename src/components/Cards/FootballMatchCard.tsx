@@ -64,19 +64,19 @@ function FootballMatchCard({
                 onMouseLeave={isHovered}
             >
                 <Card.Body className={`d-flex flex-column ${displayOnView === 'home' ? '' : 'py-2 px-0'}`}>
-                    <Row className={` g-0 flex-grow-1 ${displayOnView === 'home' ? 'p-3' : 'px-1'}`} >
-                        <Col xs={3} className='d-flex flex-column justify-content-between align-items-center'>
+                    <Row className={` g-0 flex-grow-1 ${displayOnView === 'home' ? 'p-0 p-xxl-3' : 'px-1'}`} >
+                        <Col xs={{span: 2}} lg={3} className='d-flex flex-column justify-content-between align-items-center'>
                             <Image style={displayOnView === 'home' ? { maxHeight: '100px' } : { maxHeight: '50px' }} className='team-logo' src={getImageUrl('teams', event.imageTeamOne)} alt={event.teamOne} fluid />
                             <p className='text-center'>{event.teamOne}</p>
                         </Col>
-                        <Col xs={6} className='d-flex flex-column justify-content-around align-items-center'>
+                        <Col xs={{span: 6, offset: 1}} lg={{span: 6, offset: 0}} className='d-flex flex-column justify-content-around align-items-center'>
                             <Card.Title className='fw-bold'>Upcoming Match</Card.Title>
                             <p>
                                 <FontAwesomeIcon size='lg' icon="calendar" className='me-2' />
                                 {event.date}
                             </p>
                         </Col>
-                        <Col xs={3} className='d-flex flex-column justify-content-between align-items-center'>
+                        <Col xs={{span: 2, offset: 1}} lg={{span: 3, offset: 0}} className='d-flex flex-column justify-content-between align-items-center'>
                             <Image style={displayOnView === 'home' ? { maxHeight: '100px' } : { maxHeight: '50px' }} className='team-logo' src={getImageUrl('teams', event.imageTeamTwo)} alt={event.teamTwo} fluid />
                             <p className='text-center'>{event.teamTwo}</p>
                         </Col>
