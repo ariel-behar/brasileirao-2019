@@ -22,7 +22,7 @@ function TicketsView() {
                     borderRadius: '20px',
                     padding: '30px',
                     height: '100%'
-                }} className="my-5">
+                }} className="my-5 shadow">
                     <TicketsForm />
                 </section>
 

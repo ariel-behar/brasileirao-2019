@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom'
 
 import { Identifiable } from '../../types/shared-types';
@@ -16,11 +17,14 @@ const homeStyles = {
     border: 'none',
     boxShadow: '0 0 40px 10px #f2fafc',
     borderRadius: '20px',
-    padding: '10px 20px'
+    padding: '10px 20px',
+
+    transition: 'box-shadow 0.3s ease'
 }
 
 const eventStyles = {
-    minHeight: '100%'
+    minHeight: '100%',
+    transition: 'box-shadow 0.3s ease'
 }
 
 export interface Event extends Identifiable {
@@ -45,9 +49,20 @@ function FootballMatchCard({
     event,
     displayOnView
 }: Props) {
+    const [hovered, setHovered] = useState<boolean>(false)
+
+    const isHovered = () => {
+        setHovered((prevState:boolean) => !prevState)
+    }
+
     return (
         <>
-            <Card className='shadow' style={displayOnView === 'home' ? homeStyles : eventStyles}>
+            <Card
+                className={`${hovered && displayOnView === 'events' ? 'shadow' : ''}`}
+                style={displayOnView === 'home' ? homeStyles : eventStyles}
+                onMouseEnter={isHovered}
+                onMouseLeave={isHovered}
+            >
                 <Card.Body className={`d-flex flex-column ${displayOnView === 'home' ? '' : 'py-2 px-0'}`}>
                     <Row className={` g-0 flex-grow-1 ${displayOnView === 'home' ? 'p-3' : 'px-1'}`} >
                         <Col xs={3} className='d-flex flex-column justify-content-between align-items-center'>

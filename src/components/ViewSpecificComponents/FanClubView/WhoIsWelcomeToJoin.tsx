@@ -28,7 +28,7 @@ function WhoIsWelcomeToJoin() {
             backgroundColor: '#e4efff',
             borderRadius: '30px',
             padding: '30px 0'
-        }} className="my-5">
+        }} className="my-5 shadow">
             <h4 className="text-center fw-bold">Who Is Welcome To Join?</h4>
             <p className="text-center">Our fan club is a MUST for people answering to ONE of the below criteria:</p>
 

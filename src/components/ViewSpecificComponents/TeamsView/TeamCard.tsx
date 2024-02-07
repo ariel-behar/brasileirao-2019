@@ -16,7 +16,7 @@ function TeamCard({
 
     return (
         <Card
-            className={`w-100 h-100 p-3  ${hovered ? 'shadow' : ''}`}
+            className={`w-100 h-100 p-3 ${hovered ? 'shadow' : ''}`}
             style={{ width: '18rem', transition: 'box-shadow 0.3s ease' }}
             onMouseEnter={isHovered}
             onMouseLeave={isHovered}
