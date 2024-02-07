@@ -16,9 +16,18 @@ const StyledPageHeader = styled('div')`
         transform: rotate(5deg);
     }
 
-    .page-header-title {
-
+    @media(max-width: 992px) {
+        &.Events {
+            background-size: 200%!important;
+        }
     }
+
+    @media(max-width: 768px) {
+        &.Events {
+            background-size: 350%!important;
+        }
+    }
+
 `
 
 const StyledPageHeaderTitleDiv = styled('div')`
@@ -41,6 +50,22 @@ const StyledPageFooter = styled('div')`
         background-color: white;
         transform: rotate(-4.5deg);
     }
+
+    @media(max-width: 992px) {
+        &.Events {
+            background-size: 230%!important;
+            background-position: bottom right!important;
+        }
+    }
+
+    @media(max-width: 768px) {
+        &.Events {
+            background-size: 200%!important;
+            background-position: bottom right!important;
+        }
+    }
+
+
 `
 
 interface Props {
@@ -65,7 +90,7 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
 }: Props) {
     return (props: T) => (
         <>
-            <StyledPageHeader style={{
+            <StyledPageHeader className={viewTitle} style={{
                 backgroundImage: `url(${pageHeaderImage})`,
                 backgroundSize: pageHeaderBackgroundSize,
                 backgroundPosition: pageHeaderBackgroundPosition,
@@ -87,7 +112,7 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
                 <WrapperComponent {...props as any} />
             </div>
 
-            <StyledPageFooter style={{
+            <StyledPageFooter className={viewTitle} style={{
                 backgroundImage: `url(${pageFooterImage})`,
                 backgroundSize: pageFooterBackgroundSize,
                 backgroundPosition: pageFooterBackgroundPosition,
