@@ -117,7 +117,8 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
                 backgroundSize: pageFooterBackgroundSize,
                 backgroundPosition: pageFooterBackgroundPosition,
                 backgroundAttachment: 'fixed',
-                backgroundRepeat: 'no-repeat'
+                backgroundRepeat: 'no-repeat',
+                position: 'relative'
             }}>
                 <div className='page-footer-white-box z-1'></div>
                 <Container className='position-relative z-3' style={{ borderTop: "1px solid #bfd9e2" }} />
