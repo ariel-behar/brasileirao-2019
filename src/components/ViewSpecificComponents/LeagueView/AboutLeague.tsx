@@ -8,7 +8,8 @@ function AboutLeague() {
     return (
         <Row as='section' className='pt-5'>
             <Col
-                xs={12}
+                style={{ textAlign: 'justify' }}
+                xs={{ span: 12, order: 1 }}
                 md={{ span: 4, order: 1 }}
                 lg={{ span: 3, offset: 1 }}
                 className="p-4 d-flex flex-column justify-content-around ">
@@ -17,14 +18,15 @@ function AboutLeague() {
                 <p>At the top of the Brazilian football league system, it is the country's primary football competition.</p>
             </Col>
             <Col
-                xs={{ span: 6, offset: 3, order: 'last' }}
+                xs={{ span: 6, offset: 3, order: 2 }}
                 md={{ span: 4, offset: 0, order: 2 }}
                 lg={{ span: 4 }}
-                className="d-flex justify-content-center">
+                className="d-flex justify-content-center align-items-end">
                 <Image src={brasileiraoCup} alt="Brasileirao Cup" fluid />
             </Col>
             <Col
-                xs={12}
+                style={{ textAlign: 'justify' }}
+                xs={{ span: 12, order: 3 }}
                 md={{ span: 4, order: 3 }}
                 lg={{ span: 3 }}
                 className="p-4 d-flex flex-column justify-content-around ">

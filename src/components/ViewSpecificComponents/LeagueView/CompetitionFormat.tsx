@@ -10,7 +10,7 @@ function CompetitionFormat() {
             backgroundPosition: 'center'
         }}>
             <h3 className="text-center mb-4">Competition Format</h3>
-            <div className='p-3'>
+            <div className='p-3' style={{textAlign:'justify'}}>
                 <p>There are 20 clubs in the Brasileirão. During the course of a season, each club plays the others twice, once at their home stadium and once at that of their opponents', for a total of 38 games. Teams receive three points for a win and one point for a draw. No points are awarded for a loss. Teams are ranked by total points, victories, goal difference, and goals scored. At the end of each season, the club with the most points is crowned champion. If points are equal between two or more clubs, the rules are:</p>
                 <div className="ps-4">
                     <p>If the tie is between more than two clubs, not competing for the national title or relegation, then the tie is broken using the games the clubs have played against each other in the following way:</p>

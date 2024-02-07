@@ -168,7 +168,7 @@ function LeagueStadiums() {
 
 				<Col xs={12} lg={9}>
 					<Row className="pt-3 pb-1 h-100">
-						<Col xs={12} lg={3} className="d-flex flex-column justify-content-start">
+						<Col xs={12} md={3} className="d-flex flex-column justify-content-start">
 							<ul className="selected-stadium-details-list mb-0">
 								<li>
 									<p>
@@ -203,7 +203,7 @@ function LeagueStadiums() {
 
 							</ul>
 						</Col>
-						<Col xs={12} lg={9} className="h-100 d-flex">
+						<Col xs={12} md={9} className=" d-flex">
 							<Image className="selected-stadium-image" src={selectedStadium ? getImageUrl('stadiums', selectedStadium.stadiumImage)  : soccerField} alt={selectedStadium ? selectedStadium.stadiumName : 'Soccer Field'} fluid />
 						</Col>
 					</Row>
