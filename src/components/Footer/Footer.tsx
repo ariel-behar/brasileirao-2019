@@ -5,8 +5,14 @@ const StyledFooter = styled('footer')`
     position: absolute;
     bottom: 0;
     p {
+        text-shadow: 1px 1px 1px #353535;
         a {
             text-decoration: none;
+            text-shadow: 1px 1px 1px #353535;
+            color: #969696;
+            &:hover {
+                color: #b6b5b5;
+            }
         }
     }
 `
