@@ -1,5 +1,5 @@
 import uniqid from "uniqid"
-import { Link as RouterLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 import getImageUrl from "../../utils/getImageUrl"
 import grassPattern from "../../assets/img/grass-patten.jpg"
@@ -12,31 +12,74 @@ import Image from "react-bootstrap/Image"
 const StyledHeader = styled('header')`
     background-image: url(${grassPattern});
     background-repeat: repeat;
+    width: 95vw;
     position: fixed;
     z-index: 4;
-    width: 60vw;
     top: 0;
     left: 50%;
+    
     transform: translateX(-50%);
     box-shadow: 0 0 40px 10px #f2fafc;
 
     margin-top: 35px;
     padding: 0 20px;
-    border-radius: 50px;
+    border-radius: 30px;
     border: 3px solid #fff;
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
 
     .nav-link {
         font-family: 'copperplate', sans-serif;
         text-transform: uppercase;
+        &:hover {
+            color: #dedede!important;
+        }
+        &.active {
+            color: #fff!important;
+        }
     }
 
     .header-logo {
-        max-height: 120px;
-        position: absolute;
+        img {
+            max-height: 50px;
+            padding-left: 10px;
+        }
+    }
 
-        top: -80%;
-        left: 50%;
-        transform: translateX(-50%);
+    @media(min-width: 768px) {
+        width: 95vw;
+        .header-logo {
+            position: absolute;
+            top: -80%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                max-height: 80px;
+                padding-left: 0;
+
+            }
+        }
+    }
+
+    @media(min-width: 992px) {
+        width: 80vw;
+        .header-logo {
+            img {
+                max-height: 100px;
+            }
+        }
+    }
+
+    @media(min-width: 1200px) {
+        width: 70vw;
+        .header-logo {
+            img {
+                max-height: 120px;
+            }
+        }
     }
 `
 
@@ -68,50 +111,52 @@ const routes = [
 ]
 
 function Header() {
+
     return (
         <>
             {/* <Container> */}
-                <StyledHeader>
-                    <Navbar expand="lg" as='nav'>
-                        <Navbar.Collapse id="navbar-nav">
-                            
-                            <Navbar.Toggle aria-controls="navbar-nav" />
+            <StyledHeader>
+                <Navbar expand="md" as='nav' className="navbar-dark">
+                    <Navbar.Brand className="header-logo">
+                        <NavLink to="/">
+                            <Image src={getImageUrl('logos', 'brasileirao-logo.png')} alt="Brasileirao Logo" fluid />
+                        </NavLink>
+                    </Navbar.Brand>
 
-                            <Navbar.Brand as={RouterLink} to='/'>
-                                <Image className="header-logo" src={getImageUrl('logos', 'brasileirao-logo.png')} alt="Brasileirao Logo" />
-                            </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-                            <Nav className="me-auto">
-                                {
-                                    routes.map((route, index) => {
-                                        if (index <= 2) {
-                                            return (
-                                                <Nav.Link className="py-0 nav-link text-custom-light-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
-                                                    {route.route}
-                                                </Nav.Link>
-                                            )
-                                        }
-                                    })
-                                }
+                    <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0">
+                        <Nav className="me-auto">
+                            {
+                                routes.map((route, index) => {
+                                    if (index <= 2) {
+                                        return (
+                                            <Nav.Link className="py-1 py-md-0 px-1 px-lg-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                                {route.route}
+                                            </Nav.Link>
+                                        )
+                                    }
+                                })
+                            }
 
-                            </Nav>
+                        </Nav>
 
-                            <Nav className="ms-auto">
-                                {
-                                    routes.map((route, index) => {
-                                        if (index >= 3) {
-                                            return (
-                                                <Nav.Link className="py-0 nav-link text-custom-light-gray mx-2 fw-bold" as={RouterLink} to={route.path} key={uniqid()}>
-                                                    {route.route}
-                                                </Nav.Link>
-                                            )
-                                        }
-                                    })
-                                }
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
-                </StyledHeader>
+                        <Nav className="ms-auto">
+                            {
+                                routes.map((route, index) => {
+                                    if (index >= 3) {
+                                        return (
+                                            <Nav.Link className="py-1 py-md-0 px-lg-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                                {route.route}
+                                            </Nav.Link>
+                                        )
+                                    }
+                                })
+                            }
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </StyledHeader>
             {/* </Container> */}
 
         </>
