@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import Container from 'react-bootstrap/Container'
+import Footer from '../components/Footer/Footer'
 
 const StyledPageHeader = styled('div')`
     position: relative;
@@ -85,6 +86,8 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
             }}>
                 <div className='page-footer-white-box z-1'></div>
                 <Container className='position-relative z-3' style={{ borderTop: "1px solid #bfd9e2" }} />
+
+                <Footer />
             </StyledPageFooter>
         </>
     )

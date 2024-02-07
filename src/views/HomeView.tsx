@@ -10,6 +10,7 @@ import RankingDisplay from '../components/ViewSpecificComponents/HomeView/Rankin
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
+import Footer from '../components/Footer/Footer'
 
 const upcomingMatch: Event = events[0];
 
@@ -20,6 +21,7 @@ function HomeView() {
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
 			height: '100%',
+			position: 'relative'
 		}}>
 			<HelmetSEO title="HOME" description="Home page of the fictional website about the Brasileirao 2019 Soccer Championship" />
 
@@ -37,7 +39,7 @@ function HomeView() {
 				</Col>
 			</Row>
 
-
+			<Footer />
 		</Container>
 
 	)
