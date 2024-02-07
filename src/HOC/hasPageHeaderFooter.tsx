@@ -21,6 +21,14 @@ const StyledPageHeader = styled('div')`
     }
 `
 
+const StyledPageHeaderTitleDiv = styled('div')`
+    position: absolute;
+    width: 70%;
+    left: 10vw;
+    bottom: 5vh;
+    z-index: 3;
+`
+
 const StyledPageFooter = styled('div')`
     position: relative;
     height: 350px;
@@ -62,15 +70,17 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
                 backgroundSize: pageHeaderBackgroundSize,
                 backgroundPosition: pageHeaderBackgroundPosition,
                 backgroundAttachment: 'fixed',
-                backgroundRepeat: 'no-repeat'
+                backgroundRepeat: 'no-repeat',
+                position: 'relative'
 
             }}>
                 <div className='page-header-white-box z-1'></div>
-                <Container className='position-relative z-3' style={{ height: '100%', borderBottom: "1px solid #bfd9e2" }}>
-                    <div className='d-flex align-items-end h-100 '>
-                        <h2 className='page-header-title'>{viewTitle}</h2>
-                    </div>
-                </Container>
+
+                <StyledPageHeaderTitleDiv className='d-flex align-items-end h-100' >
+                    <h2 className='page-header-title'>{viewTitle}</h2>
+                </StyledPageHeaderTitleDiv>
+
+                <Container className='position-relative z-3' style={{ height: '100%', borderBottom: "1px solid #bfd9e2" }} />
             </StyledPageHeader>
 
             <div className="position-relative z-3">
