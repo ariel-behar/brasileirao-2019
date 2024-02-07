@@ -8,6 +8,7 @@ import styled from "@emotion/styled"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import Image from "react-bootstrap/Image"
+import TranslationIcons from "./TranslationIcons"
 
 const StyledHeader = styled('header')`
     background-image: url(${grassPattern});
@@ -114,8 +115,23 @@ function Header() {
 
     return (
         <>
-            {/* <Container> */}
             <StyledHeader>
+                <span 
+                    style={{
+                        position: 'absolute',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        top: '-15px',
+                        zIndex: 5,
+                        backgroundImage: `url(${grassPattern})`,
+                        padding: '5px 10px',
+                        borderRadius: '15px',
+                        border: '2px solid #fff'
+                    
+                    }}
+                className="d-block d-md-none">
+                    <TranslationIcons />
+                </span>
                 <Navbar expand="md" as='nav' className="navbar-dark">
                     <Navbar.Brand className="header-logo">
                         <NavLink to="/">
@@ -157,8 +173,6 @@ function Header() {
                     </Navbar.Collapse>
                 </Navbar>
             </StyledHeader>
-            {/* </Container> */}
-
         </>
     )
 }
