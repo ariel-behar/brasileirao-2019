@@ -1,14 +1,15 @@
 import uniqid from "uniqid"
 import { NavLink } from "react-router-dom"
+import styled from "@emotion/styled"
+import { useTranslation } from "react-i18next"
 
 import getImageUrl from "../../utils/getImageUrl"
 import grassPattern from "../../assets/img/grass-patten.jpg"
+import TranslationIcons from "./TranslationIcons"
 
-import styled from "@emotion/styled"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import Image from "react-bootstrap/Image"
-import TranslationIcons from "./TranslationIcons"
 
 const StyledHeader = styled('header')`
     background-image: url(${grassPattern});
@@ -84,38 +85,58 @@ const StyledHeader = styled('header')`
     }
 `
 
-const routes = [
-    {
-        path: "/",
-        route: "Home"
-    },
-    {
-        path: "/league",
-        route: "League"
-    },
-    {
-        path: "/teams",
-        route: "Teams"
-    },
-    {
-        path: "/fan-club",
-        route: "Fan Club"
-    },
-    {
-        path: "/events",
-        route: "Events"
-    },
-    {
-        path: "/tickets",
-        route: "Tickets"
+const locales: {
+    [key: string]: {
+        title: string
     }
-]
+} = {
+    en: { title: 'English'},
+    pt: { title: 'Portuguese'},
+}
 
 function Header() {
+    const { t, i18n} = useTranslation();
+
+    const routes = [
+        {
+            path: "/",
+            route: t('header.navbar.routes.home')
+        },
+        {
+            path: "/league",
+            route: t('header.navbar.routes.league')
+        },
+        {
+            path: "/teams",
+            route: t('header.navbar.routes.teams')
+        },
+        {
+            path: "/fan-club",
+            route: t('header.navbar.routes.fan-club')
+        },
+        {
+            path: "/events",
+            route: t('header.navbar.routes.events')
+        },
+        {
+            path: "/tickets",
+            route: t('header.navbar.routes.tickets')
+        }
+    ]
 
     return (
         <>
             <StyledHeader>
+                {
+                    Object.keys(locales).map((locale) => {
+                        return (
+                            <button key={uniqid()} onClick={() => i18n.changeLanguage(locale)}>
+                                {locales[locale].title}
+                            </button>
+                        )
+                    })
+                }
+
                 <span 
                     style={{
                         position: 'absolute',
