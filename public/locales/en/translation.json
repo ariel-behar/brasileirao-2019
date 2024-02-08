@@ -1,0 +1,14 @@
+{
+    "header": {
+        "navbar":{
+            "routes":{
+                "home":"Home",
+                "league":"League",
+                "teams":"Teams",
+                "fan-club":"Fan Club",
+                "events": "Events",
+                "tickets": "Tickets"
+            }
+        }
+    }
+}
