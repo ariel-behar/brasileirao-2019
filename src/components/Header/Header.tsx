@@ -85,17 +85,8 @@ const StyledHeader = styled('header')`
     }
 `
 
-const locales: {
-    [key: string]: {
-        title: string
-    }
-} = {
-    en: { title: 'English'},
-    pt: { title: 'Portuguese'},
-}
-
 function Header() {
-    const { t, i18n} = useTranslation();
+    const { t } = useTranslation();
 
     const routes = [
         {
@@ -127,16 +118,6 @@ function Header() {
     return (
         <>
             <StyledHeader>
-                {
-                    Object.keys(locales).map((locale) => {
-                        return (
-                            <button key={uniqid()} onClick={() => i18n.changeLanguage(locale)}>
-                                {locales[locale].title}
-                            </button>
-                        )
-                    })
-                }
-
                 <span 
                     style={{
                         position: 'absolute',
