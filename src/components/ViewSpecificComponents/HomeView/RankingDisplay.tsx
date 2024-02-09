@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 
 import teams from '../../../data/teams.json'
 import getImageUrl from '../../../utils/getImageUrl'
+import uniqid from 'uniqid'
 
 const StyledRankingDisplay = styled('div')`
     background-color: rgba(42,83,26,0.6);
@@ -35,7 +36,7 @@ function RankingDisplay() {
                 {
                     teams.slice(0, 10).map(team => {
                         return (
-                            <li className='d-flex justify-content-between'>
+                            <li className='d-flex justify-content-between' key={uniqid()}>
                                 <img className='team-logo' src={`${getImageUrl('teams', team.image)}`} alt={`${team.name} LOGO`} />
                                 <span className="fw-bold ">{team.name}</span>
                                 <span className="fw-bold">{team.ranking}</span>
