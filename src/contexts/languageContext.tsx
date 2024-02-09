@@ -4,17 +4,18 @@ import { useTranslation } from "react-i18next";
 interface ILanguageContext {
     locales: {
         [key: string]: {
-            title: string
+            code: 'en' | 'pt'
+            title: 'English' | 'Portuguese'
         }
     },
     appLanguage: string,
-    changeAppLanguage: (language: string) => void
+    changeAppLanguage: (language: this['locales'][keyof this['locales']]['code']) => void
 
 }
 
 const locales: ILanguageContext['locales'] = {
-    en: { title: 'English' },
-    pt: { title: 'Portuguese' },
+    en: { code: 'en', title: 'English' },
+    pt: { code: 'pt', title: 'Portuguese' },
 }
 
 const LanguageContext = createContext<ILanguageContext>({
@@ -29,18 +30,23 @@ interface Props {
 
 export function LanguageProvider({ children }: Props) {
     const { i18n } = useTranslation();
-    const [appLanguage, setAppLanguage] = useState("en");
+    const [appLanguage, setAppLanguage] = useState<ILanguageContext['locales'][keyof ILanguageContext['locales']]['code']>(locales.en.code);
 
     useEffect(() => {
-        const navigatorLanguage = navigator.language.split('-')[0];
+        const navigatorLanguageCode = navigator.language.split('-')[0];
 
-        setAppLanguage(navigatorLanguage);
-        i18n.changeLanguage(navigatorLanguage);
+        if(navigatorLanguageCode !== 'en' && navigatorLanguageCode !== 'pt') {
+            return setAppLanguage('en');
+        } 
+        else{
+            setAppLanguage(navigatorLanguageCode);
+            i18n.changeLanguage(navigatorLanguageCode);
+        }
     }, [])
 
-    const changeAppLanguage = (language: string) => {
-        setAppLanguage(prevState => language);
-        i18n.changeLanguage(language);
+    const changeAppLanguage = (languageCode: ILanguageContext['locales'][keyof ILanguageContext['locales']]['code']) => {
+        setAppLanguage(languageCode);
+        i18n.changeLanguage(languageCode);
     }
 
     return (
