@@ -9,7 +9,8 @@ import router from './router/router'
 
 import Loader from './components/Loader'
 
-import {faCalendar, faClock, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { LanguageProvider } from './contexts/languageContext'
 
 library.add(faCalendar, faClock, faLocationDot)
 
@@ -17,9 +18,11 @@ function App() {
 	return (
 		<>
 			<HelmetProvider>
-				<Suspense fallback={<Loader />}>
-					<RouterProvider router={router} />
-				</Suspense>
+				<LanguageProvider >
+					<Suspense fallback={<Loader />}>
+						<RouterProvider router={router} />
+					</Suspense>
+				</LanguageProvider>
 			</HelmetProvider>
 		</>
 	)
