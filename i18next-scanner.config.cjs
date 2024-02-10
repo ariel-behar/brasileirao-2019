@@ -20,10 +20,11 @@ module.exports = {
 		},
 		lngs: ["en", "pt"],
 		ns: [
-			"Header", "FootballMatchCard", "RankingDisplay", 
-			"AboutLeague", "LeagueStadiums", "CompetitionFormat", 
-			"GetToKnowThem", "WhoIsWelcomeToJoin", "EventsView", 
-			"TicketsView", "TicketsForm", "Footer"
+			"Header", "FootballMatchCard", "RankingDisplay",
+			"AboutLeague", "LeagueStadiums", "CompetitionFormat",
+			"GetToKnowThem", "WhoIsWelcomeToJoin", 
+			"EventsView", "LeagueView", "TeamsView", "FanClubView", "TicketsView", 
+			"TicketsForm", "Footer"
 		],
 		defaultLng: "en",
 		defaultNs: "translation",
