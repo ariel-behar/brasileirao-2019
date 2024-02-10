@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import ticket from '../assets/img/ticket.jpg'
 
 import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
+import ViewTitle from '../components/ViewTitle'
 import HelmetSEO from "../components/HelmetSEO"
 
 import Container from 'react-bootstrap/Container'
@@ -9,9 +10,12 @@ import TicketsForm from '../components/ViewSpecificComponents/TicketsView/Ticket
 
 function TicketsView() {
     const { t } = useTranslation('TicketsView')
+
     return (
         <>
             <HelmetSEO title="TICKETS" description="Tickets page of the fictional website about the Brasileirao 2019 Soccer Championship" />
+
+            <ViewTitle viewTitle={t('viewTitle', {ns: 'TicketsView', defaultValue: "Tickets"})} />
 
             <Container style={{minHeight: '50vh'}}>
                 <div className='my-5'>

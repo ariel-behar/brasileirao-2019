@@ -5,19 +5,23 @@ import eventsBackgroundImage from '../assets/img/events.jpg'
 
 import events from '../data/events.json'
 
-import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
 import HelmetSEO from "../components/HelmetSEO"
+import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
+import FootballMatchCard, { Event } from '../components/Cards/FootballMatchCard'
+import ViewTitle from '../components/ViewTitle'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import FootballMatchCard, { Event } from '../components/Cards/FootballMatchCard'
 
 function EventsView() {
     const { t } = useTranslation('EventsView')
+
     return (
         <>
             <HelmetSEO title="EVENTS" description="Events page of the fictional website about the Brasileirao 2019 Soccer Championship" />
+
+            <ViewTitle viewTitle={t('viewTitle', {ns: 'EventsView', defaultValue: "Events"})} />
 
             <Container>
                 <section className='my-5'>

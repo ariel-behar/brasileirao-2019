@@ -1,17 +1,24 @@
+import { useTranslation } from "react-i18next"
 import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
 
 import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
-import HelmetSEO from "../components/HelmetSEO"
 
-import Container from 'react-bootstrap/Container'
+import HelmetSEO from "../components/HelmetSEO"
 import AboutLeague from "../components/ViewSpecificComponents/LeagueView/AboutLeague"
 import LeagueStadiums from "../components/ViewSpecificComponents/LeagueView/LeagueStadiums"
 import CompetitionFormat from "../components/ViewSpecificComponents/LeagueView/CompetitionFormat"
+import ViewTitle from "../components/ViewTitle"
+
+import Container from 'react-bootstrap/Container'
 
 function LeagueView() {
+    const { t } = useTranslation('LeagueView')
+
     return (
         <>
             <HelmetSEO title="LEAGUE" description="League page of the fictional website about the Brasileirao 2019 Soccer Championship" />
+            
+            <ViewTitle viewTitle={t('viewTitle', {ns: 'LeagueView', defaultValue: "League"})} />
 
             <Container>
                 <AboutLeague />
@@ -23,7 +30,7 @@ function LeagueView() {
 }
 
 export default hasPageHeaderFooter(LeagueView, {
-    viewTitle: 'LEAGUE',
+    viewTitle: 'League',
     pageHeaderImage: soccerField,
     pageHeaderBackgroundPosition: 'center',
     pageFooterImage: soccerField,
