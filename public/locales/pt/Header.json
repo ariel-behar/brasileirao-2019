@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "routes": {
+            "home": "Página Inicial",
+            "league": "Liga",
+            "teams": "Equipes",
+            "fanClub": "Clube de Fãs",
+            "events": "Eventos",
+            "tickets": "Ingressos"
+        }
+    }
+}

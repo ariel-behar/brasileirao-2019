@@ -86,32 +86,32 @@ const StyledHeader = styled('header')`
 `
 
 function Header() {
-    const { t } = useTranslation();
+    const { t } = useTranslation('Header');
 
     const routes = [
         {
             path: "/",
-            route: t('header.navbar.routes.home')
+            route: t('Header:navbar.routes.home')
         },
         {
             path: "/league",
-            route: t('header.navbar.routes.league')
+            route: t('Header:navbar.routes.league')
         },
         {
             path: "/teams",
-            route: t('header.navbar.routes.teams')
+            route: t('Header:navbar.routes.teams')
         },
         {
             path: "/fan-club",
-            route: t('header.navbar.routes.fan-club')
+            route: t('Header:navbar.routes.fanClub')
         },
         {
             path: "/events",
-            route: t('header.navbar.routes.events')
+            route: t('Header:navbar.routes.events')
         },
         {
             path: "/tickets",
-            route: t('header.navbar.routes.tickets')
+            route: t('Header:navbar.routes.tickets')
         }
     ]
 

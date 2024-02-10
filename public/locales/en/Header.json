@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "routes": {
+            "home": "Home",
+            "league": "League",
+            "teams": "Teams",
+            "fanClub": "Fan Club",
+            "events": "Events",
+            "tickets": "Tickets"
+        }
+    }
+}
