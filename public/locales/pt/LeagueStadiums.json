@@ -1,0 +1,9 @@
+{
+    "title": "Estádios da Liga",
+    "pickStadium": "Escolha um estádio",
+    "name": "Nome",
+    "city": "Cidade",
+    "capacity": "Capacidade",
+    "yearOpened": "Ano de Inauguração",
+    "homeTeam": "Time Mandante"
+}

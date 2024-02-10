@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import { useState } from "react"
 import uniqid from "uniqid"
 import styled from "@emotion/styled"
@@ -121,6 +122,7 @@ interface Stadium extends Identifiable {
 }
 
 function LeagueStadiums() {
+	const { t } = useTranslation('LeagueStadiums')
 	const [selectedStadium, setSelectedStadium] = useState<Stadium | null>(null)
 
 	const handleStadiumClick = (stadium: Stadium) => {
@@ -130,13 +132,13 @@ function LeagueStadiums() {
 	return (
 		<StyledLeagueSection>
 			<div className="league-section-title-div">
-				<h6 className="mb-0">League's Stadiums</h6>
+				<h6 className="mb-0">{t('LeagueStadiums:title')}</h6>
 			</div>
 
 			<Row>
 				<Col xs={12} lg={3}>
 					<div className="stadiums-list-div d-none d-lg-block">
-						<h6>PICK A STADIUM</h6>
+						<h6 className="text-uppercase">{t('LeagueStadiums:pickStadium')}</h6>
 						<ul>
 							{
 								stadiums.map((stadium: Stadium) => {
@@ -172,31 +174,31 @@ function LeagueStadiums() {
 							<ul className="selected-stadium-details-list mb-0">
 								<li>
 									<p>
-										Name:
+										{t('LeagueStadiums:name')}:
 										<span>{selectedStadium ? selectedStadium.stadiumName : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										City:
+										{t('LeagueStadiums:city')}:
 										<span>{selectedStadium ? selectedStadium.city : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										Capacity:
+										{t('LeagueStadiums:capacity')}:
 										<span>{selectedStadium ? selectedStadium.capacity : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										Year Opened:
+										{t('LeagueStadiums:yearOpened')}:
 										<span>{selectedStadium ? selectedStadium.yearOpened : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										Home Team:
+									{t('LeagueStadiums:homeTeam')}:
 										<span>{selectedStadium ? selectedStadium.homeTeam : ''}</span>
 									</p>
 								</li>

@@ -1,0 +1,9 @@
+{
+    "title": "League's Stadiums",
+    "pickStadium": "Pick a stadium",
+    "name": "Name",
+    "city": "City",
+    "capacity": "Capacity",
+    "yearOpened": "Year Opened",
+    "homeTeam": "Home Team"
+}
