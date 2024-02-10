@@ -9,25 +9,23 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 
-const thumbnails = [
-    {
-        title: i18next.t('thumbnails.thumbnail-1.title', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'You and your friends are into video games...'}),
-        imageSrc: friendsPlayingVideoGames
-    },
-    {
-        title: i18next.t('WhoIsWelcomeToJoin:thumbnails.thumbnail-2.title', 'Your dog is an inseparate part of your team...'),
-        imageSrc: dogPlayingSoccer
-    },
-    {
-        title: i18next.t('WhoIsWelcomeToJoin:thumbnails.thumbnail-3.title', 'OR football is simply what you do and love...'),
-        imageSrc: soccerFriends
-    }
-]
-
 function WhoIsWelcomeToJoin() {
     const { t } = useTranslation('WhoIsWelcomeToJoin')
 
-
+    const thumbnails = [
+        {
+            title: i18next.t('thumbnails.thumbnail-1.title', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'You and your friends are into video games...'}),
+            imageSrc: friendsPlayingVideoGames
+        },
+        {
+            title: i18next.t('WhoIsWelcomeToJoin:thumbnails.thumbnail-2.title', 'Your dog is an inseparate part of your team...'),
+            imageSrc: dogPlayingSoccer
+        },
+        {
+            title: i18next.t('WhoIsWelcomeToJoin:thumbnails.thumbnail-3.title', 'OR football is simply what you do and love...'),
+            imageSrc: soccerFriends
+        }
+    ]
 
     return (
         <section style={{
@@ -53,7 +51,6 @@ function WhoIsWelcomeToJoin() {
 
             <p className="text-center">{t('paragraph-2', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'Let it be clear...' } )}</p>
             <h4 className="text-center fw-bold text-uppercase">{t('paragraph-3', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'We are looking for you!'})}</h4>
-
         </section>
     )
 }
