@@ -22,7 +22,7 @@ module.exports = {
 		ns: [
 			"Header", "FootballMatchCard", "RankingDisplay", 
 			"AboutLeague", "LeagueStadiums", "CompetitionFormat", 
-			"GetToKnowThem", "WhoIsWelcomeToJoin"
+			"GetToKnowThem", "WhoIsWelcomeToJoin", "EventsView", "TicketsView"
 		],
 		defaultLng: "en",
 		defaultNs: "translation",
