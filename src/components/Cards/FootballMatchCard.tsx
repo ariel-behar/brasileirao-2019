@@ -11,6 +11,7 @@ import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
+import { useTranslation } from 'react-i18next';
 
 const homeStyles = {
     backgroundColor: 'rgba(242, 250, 252, 0.8)',
@@ -49,7 +50,9 @@ function FootballMatchCard({
     event,
     displayOnView
 }: Props) {
+    const {t} = useTranslation('FootballMatchCard')
     const [hovered, setHovered] = useState<boolean>(false)
+
 
     const isHovered = () => {
         setHovered((prevState:boolean) => !prevState)
@@ -70,7 +73,7 @@ function FootballMatchCard({
                             <p className='text-center'>{event.teamOne}</p>
                         </Col>
                         <Col xs={{span: 6, offset: 1}} lg={{span: 6, offset: 0}} className='d-flex flex-column justify-content-around align-items-center'>
-                            <Card.Title className='fw-bold'>Upcoming Match</Card.Title>
+                            <Card.Title className='fw-bold'>{t('FootballMatchCard:title')}</Card.Title>
                             <p>
                                 <FontAwesomeIcon size='lg' icon="calendar" className='me-2' />
                                 {event.date}
@@ -85,12 +88,12 @@ function FootballMatchCard({
                     <Row>
                         <Col xs={12} className='d-flex flex-column justify-content-center align-items-center '>
                             <Card.Img src={getImageUrl('stadiums', event.stadiumImage)} alt={event.stadium} />
-                            <p className='mt-1'>Stadium: <span className='fw-bold'>{event.stadium}</span></p>
+                            <p className='mt-1'>{t('FootballMatchCard:stadium')}: <span className='fw-bold'>{event.stadium}</span></p>
                         </Col>
                     </Row>
 
                     <Row>
-                        <Col xs={12} md={6} className='ps-4'>
+                        <Col xs={12} md={displayOnView === 'home' ? 5 : 6} className='ps-4'>
                             <p>
                                 <FontAwesomeIcon size='lg' icon="clock" className='me-2' />
                                 {event.hour}
@@ -101,12 +104,15 @@ function FootballMatchCard({
                             </p>
                         </Col>
 
-                        <Col xs={12} md={6} className='d-flex flex-row justify-content-center align-items-center'>
+                        <Col xs={12} md={displayOnView === 'home' ? 7 : 6} className='d-flex flex-row justify-content-center align-items-center'>
                             <RouterLink to="/tickets">
                                 <Button
                                     size={displayOnView === 'home' ? 'lg' : 'sm'}
-                                    variant='primary'>
-                                    GET YOUR TICKET!
+                                    variant='primary'
+                                    className='text-uppercase'
+                                    >
+                                        {t('FootballMatchCard:button')}
+                                    
                                 </Button>
                             </RouterLink>
 
