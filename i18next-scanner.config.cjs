@@ -18,7 +18,7 @@ module.exports = {
 			extensions: [".js", ".jsx", ".ts", ".tsx"],
 		},
 		lngs: ["en", "pt"],
-		ns: ["Header", "FootballMatchCard", "RankingDisplay", "AboutLeague", "LeagueStadiums", "CompetitionFormat"],
+		ns: ["Header", "FootballMatchCard", "RankingDisplay", "AboutLeague", "LeagueStadiums", "CompetitionFormat", "GetToKnowThem"],
 		defaultLng: "en",
 		defaultNs: "translation",
 		resource: {
