@@ -32,8 +32,8 @@ function RankingDisplay() {
 
     return (
         <StyledRankingDisplay>
-            <h5 className='fw-bold'>{t('RankingDisplay:title-series')}</h5>
-            <h5 className='fw-bold'>{t('RankingDisplay:title-ranking')}</h5>
+            <h5 className='fw-bold'>{t('title-series', {ns: "RankingDisplay", defaultValue: "Series A" })}</h5>
+            <h5 className='fw-bold'>{t('title-ranking', {ns: "RankingDisplay", defaultValue: "Current Ranking" })}</h5>
             <hr />
             <ul>
                 {

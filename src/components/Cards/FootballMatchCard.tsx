@@ -73,7 +73,7 @@ function FootballMatchCard({
                             <p className='text-center'>{event.teamOne}</p>
                         </Col>
                         <Col xs={{span: 6, offset: 1}} lg={{span: 6, offset: 0}} className='d-flex flex-column justify-content-around align-items-center'>
-                            <Card.Title className='fw-bold'>{t('FootballMatchCard:title')}</Card.Title>
+                            <Card.Title className='fw-bold'>{t('title', { ns: 'FootballMatchCard', defaultValue: "Upcoming Match"})}</Card.Title>
                             <p>
                                 <FontAwesomeIcon size='lg' icon="calendar" className='me-2' />
                                 {event.date}
@@ -88,7 +88,7 @@ function FootballMatchCard({
                     <Row>
                         <Col xs={12} className='d-flex flex-column justify-content-center align-items-center '>
                             <Card.Img src={getImageUrl('stadiums', event.stadiumImage)} alt={event.stadium} />
-                            <p className='mt-1'>{t('FootballMatchCard:stadium')}: <span className='fw-bold'>{event.stadium}</span></p>
+                            <p className='mt-1'>{t('stadium', { ns: 'FootballMatchCard', defaultValue: "Stadium"})}: <span className='fw-bold'>{event.stadium}</span></p>
                         </Col>
                     </Row>
 
@@ -111,7 +111,7 @@ function FootballMatchCard({
                                     variant='primary'
                                     className='text-uppercase'
                                     >
-                                        {t('FootballMatchCard:button')}
+                                        {t('button', { ns: 'FootballMatchCard', defaultValue: "Get your ticket!"})}
                                     
                                 </Button>
                             </RouterLink>

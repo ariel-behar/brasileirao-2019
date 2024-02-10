@@ -91,27 +91,27 @@ function Header() {
     const routes = [
         {
             path: "/",
-            route: t('Header:navbar.routes.home')
+            route: t('navbar.routes.home', {ns: 'Header', defaultValue: 'Home'})
         },
         {
             path: "/league",
-            route: t('Header:navbar.routes.league')
+            route: t('navbar.routes.league', {ns: 'Header', defaultValue: 'League'})
         },
         {
             path: "/teams",
-            route: t('Header:navbar.routes.teams')
+            route: t('navbar.routes.teams', {ns: 'Header', defaultValue: 'Teams'})
         },
         {
             path: "/fan-club",
-            route: t('Header:navbar.routes.fanClub')
+            route: t('navbar.routes.fanClub', {ns: 'Header', defaultValue: 'Fan Club'})
         },
         {
             path: "/events",
-            route: t('Header:navbar.routes.events')
+            route: t('navbar.routes.events', {ns: 'Header', defaultValue: 'Events'})
         },
         {
             path: "/tickets",
-            route: t('Header:navbar.routes.tickets')
+            route: t('navbar.routes.tickets', {ns: 'Header', defaultValue: 'Tickets'})
         }
     ]
 

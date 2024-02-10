@@ -132,13 +132,13 @@ function LeagueStadiums() {
 	return (
 		<StyledLeagueSection>
 			<div className="league-section-title-div">
-				<h6 className="mb-0">{t('LeagueStadiums:title')}</h6>
+				<h6 className="mb-0">{t('title', { ns: 'LeagueStadiums', defaultValue: "League's Stadiums"})}</h6>
 			</div>
 
 			<Row>
 				<Col xs={12} lg={3}>
 					<div className="stadiums-list-div d-none d-lg-block">
-						<h6 className="text-uppercase">{t('LeagueStadiums:pickStadium')}</h6>
+						<h6 className="text-uppercase">{t('pickStadium', { ns: 'LeagueStadiums', defaultValue: "Pick a stadium"})}</h6>
 						<ul>
 							{
 								stadiums.map((stadium: Stadium) => {
@@ -174,31 +174,31 @@ function LeagueStadiums() {
 							<ul className="selected-stadium-details-list mb-0">
 								<li>
 									<p>
-										{t('LeagueStadiums:name')}:
+										{t('name', { ns: 'LeagueStadiums', defaultValue: "Name"})}:
 										<span>{selectedStadium ? selectedStadium.stadiumName : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										{t('LeagueStadiums:city')}:
+										{t('city', { ns: 'LeagueStadiums', defaultValue: "City"})}:
 										<span>{selectedStadium ? selectedStadium.city : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										{t('LeagueStadiums:capacity')}:
+										{t('capacity', { ns: 'LeagueStadiums', defaultValue: "Capacity"})}:
 										<span>{selectedStadium ? selectedStadium.capacity : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-										{t('LeagueStadiums:yearOpened')}:
+										{t('yearOpened', { ns: 'LeagueStadiums', defaultValue: "Year Opened"})}:
 										<span>{selectedStadium ? selectedStadium.yearOpened : ''}</span>
 									</p>
 								</li>
 								<li>
 									<p>
-									{t('LeagueStadiums:homeTeam')}:
+									{t('homeTeam', { ns: 'LeagueStadiums', defaultValue: "Home Team"})}:
 										<span>{selectedStadium ? selectedStadium.homeTeam : ''}</span>
 									</p>
 								</li>
