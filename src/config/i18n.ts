@@ -13,7 +13,7 @@ i18n
         debug: true,
         fallbackLng: 'en',
         detection: {
-            order: ['path', 'querystring','cookie', 'localStorage', 'sessionStorage', 'navigator', 'subdomain', 'htmlTag' ]
+            order: ['navigator', 'path', 'querystring','cookie', 'localStorage', 'sessionStorage',  'subdomain', 'htmlTag' ]
         }
     })
 
