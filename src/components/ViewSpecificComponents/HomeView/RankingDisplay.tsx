@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import teams from '../../../data/teams.json'
 import getImageUrl from '../../../utils/getImageUrl'
 import uniqid from 'uniqid'
+import { useTranslation } from 'react-i18next'
 
 const StyledRankingDisplay = styled('div')`
     background-color: rgba(42,83,26,0.6);
@@ -27,10 +28,12 @@ const StyledRankingDisplay = styled('div')`
 `
 
 function RankingDisplay() {
+    const { t } = useTranslation('RankingDisplay')
+
     return (
         <StyledRankingDisplay>
-            <h5 className='fw-bold'>Series A</h5>
-            <h5 className='fw-bold'>Current Ranking</h5>
+            <h5 className='fw-bold'>{t('RankingDisplay:title-series')}</h5>
+            <h5 className='fw-bold'>{t('RankingDisplay:title-ranking')}</h5>
             <hr />
             <ul>
                 {
