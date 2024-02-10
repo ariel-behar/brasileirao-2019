@@ -1,0 +1,18 @@
+{
+    "title": "Formato da Competição",
+    "paragraph-1": "Há 20 clubes no Brasileirão. Durante o decorrer de uma temporada, cada clube joga duas vezes contra os outros, uma vez em seu estádio e outra no estádio dos oponentes, totalizando 38 jogos. As equipes recebem três pontos por vitória e um ponto por empate. Nenhum ponto é concedido por derrota. As equipes são classificadas por pontos totais, vitórias, diferença de gols e gols marcados. No final de cada temporada, o clube com mais pontos é coroado campeão. Se os pontos forem iguais entre dois ou mais clubes, as regras são:",
+    "paragraph-2": "Se o empate for entre mais de dois clubes, não competindo pelo título nacional ou rebaixamento, então o empate é quebrado usando os jogos que os clubes jogaram entre si da seguinte forma:",
+    "list-1": {
+        "list-item-1": "mais jogos vencidos",
+        "list-item-2": "diferença de gols total",
+        "list-item-3": "gols totais marcados",
+        "list-item-4": "histórico de confrontos diretos (com a regra de gols fora de casa em vigor se apenas dois clubes forem considerados)"
+    },
+    "paragraph-3": "Se o empate ainda não for quebrado, o vencedor será determinado pelas escalas de Fair Play:",
+    "list-2": {
+        "list-item-1": "menor número de cartões amarelos",
+        "list-item-2": "menor número de cartões vermelhos"
+    },
+    "paragraph-4": "Se houver empate para o campeonato, para o rebaixamento ou para a qualificação para outras competições, as escalas de Fair Play não serão levadas em consideração; um jogo de playoff em um local neutro decide a classificação. Caso contrário, um sorteio determinará as posições finais.",
+    "paragraph-5": "Um sistema de promoção e rebaixamento existe entre o Brasileirão e a Série B. Os quatro últimos colocados no Brasileirão são rebaixados para a Série B, e os quatro primeiros colocados da Série B são promovidos para o Brasileirão."
+}
