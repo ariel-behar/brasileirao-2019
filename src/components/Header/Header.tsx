@@ -125,13 +125,8 @@ function Header() {
                         transform: 'translateX(-50%)',
                         top: '-15px',
                         zIndex: 5,
-                        backgroundImage: `url(${grassPattern})`,
-                        padding: '5px 10px',
-                        borderRadius: '15px',
-                        border: '2px solid #fff'
-                    
                     }}
-                className="d-block d-md-none">
+                className="d-block d-md-none ">
                     <TranslationIcons />
                 </span>
                 <Navbar expand="md" as='nav' className="navbar-dark">
