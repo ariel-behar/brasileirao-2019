@@ -15,7 +15,8 @@ module.exports = {
 			extensions: [".js", ".jsx", ".ts", ".tsx"],
 		},
 		trans: {
-			extensions: [".js", ".jsx", ".ts", ".tsx"],
+			// Trans function not being checked in .ts and .tsx files, because it causes SyntaxErrors. Preferably, typescript code should be transpiled to javascript before running i18next-scanner
+			extensions: [".js", ".jsx"],
 		},
 		lngs: ["en", "pt"],
 		ns: [
