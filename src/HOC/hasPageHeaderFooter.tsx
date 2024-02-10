@@ -1,5 +1,6 @@
-import styled from '@emotion/styled'
 import React from 'react'
+import styled from '@emotion/styled'
+
 import Container from 'react-bootstrap/Container'
 import Footer from '../components/Footer/Footer'
 
@@ -28,14 +29,6 @@ const StyledPageHeader = styled('div')`
         }
     }
 
-`
-
-const StyledPageHeaderTitleDiv = styled('div')`
-    position: absolute;
-    width: 70%;
-    left: 10vw;
-    bottom: 5vh;
-    z-index: 3;
 `
 
 const StyledPageFooter = styled('div')`
@@ -88,6 +81,7 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
     pageFooterBackgroundPosition,
     pageFooterBackgroundSize = 'cover',
 }: Props) {
+
     return (props: T) => (
         <>
             <StyledPageHeader className={viewTitle} style={{
@@ -100,10 +94,6 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
 
             }}>
                 <div className='page-header-white-box z-1'></div>
-
-                <StyledPageHeaderTitleDiv className='d-flex align-items-end h-100' >
-                    <h2 className='page-header-title'>{viewTitle}</h2>
-                </StyledPageHeaderTitleDiv>
 
                 <Container className='position-relative z-3' style={{ height: '100%', borderBottom: "1px solid #bfd9e2" }} />
             </StyledPageHeader>
