@@ -11,8 +11,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import { useTranslation } from 'react-i18next'
 
 function TicketsForm() {
+    const {t} = useTranslation('TicketsForm')
     const [totalPrice, setTotalPrice] = useState<number>(0)
     const [selectedEvent, setSelectedEvent] = useState<Event>(events[0])
     const [selectedQuantity, setSelectedQuantity] = useState<number>(1)
@@ -53,7 +55,7 @@ function TicketsForm() {
                                     {
                                         events.map((event: Event) => {
                                             return (
-                                                <option key={uniqid()} value={event._id} className='my-1'>${event.price} - {event.date} - {event.teamOne} VS {event.teamTwo} (Football Match)</option>
+                                                <option key={uniqid()} value={event._id} className='my-1'>${event.price} - {event.date} - {event.teamOne} VS {event.teamTwo} ({t('footballMatch', {ns: "TicketsForm", defaultValue: "Football Match"})})</option>
                                             )
                                         })
                                     }
@@ -72,10 +74,10 @@ function TicketsForm() {
                                 </Form.Select>
                             </Col>
                             <Col xs={12} lg={3} className='d-flex flex-column'>
-                                <Button variant="success" className='mt-4' onClick={calculatePrice}>CALCULATE PRICE</Button>
-                                <p className='mt-3'>Total: <span className='fw-bold'>{totalPrice ? totalPrice : `$${totalPrice.toFixed(2)}`}</span></p>
+                                <Button variant="success" className='mt-4 text-uppercase' onClick={calculatePrice}>{t('calculatePrice', {ns: "TicketsForm", defaultValue: "Calculate Price"})}</Button>
+                                <p className='mt-3'>{t('total', {ns: "TicketsForm", defaultValue: "Total"})}: <span className='fw-bold'>{totalPrice ? totalPrice : `$${totalPrice.toFixed(2)}`}</span></p>
 
-                                <Button variant="primary" type="submit" className='mt-4' disabled={totalPrice ? false : true}>ORDER NOW</Button>
+                                <Button variant="primary" type="submit" className='mt-4 text-uppercase' disabled={totalPrice ? false : true}>{t('orderNow', {ns: "TicketsForm", defaultValue: "Order Now"})}</Button>
                             </Col>
                         </Row>
                     </form>
