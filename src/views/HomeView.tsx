@@ -1,10 +1,12 @@
+import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
+
 import soccerField from '../assets/img/backgrounds/soccer-field.jpg'
-import PlayerKicking from '../components/ViewSpecificComponents/HomeView/PlayerKicking'
 
 import events from '../data/events.json'
 
 import HelmetSEO from '../components/HelmetSEO'
+import PlayerKicking from '../components/ViewSpecificComponents/HomeView/PlayerKicking'
 import FootballMatchCard, { Event } from '../components/Cards/FootballMatchCard'
 import RankingDisplay from '../components/ViewSpecificComponents/HomeView/RankingDisplay';
 
@@ -12,25 +14,23 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container";
 import Footer from '../components/Footer/Footer'
-import styled from '@emotion/styled'
 
 const StyledContainer = styled(Container)`
 	background-image: url(${soccerField});
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	height: 100%;
 	position: relative;
 
 	padding: 150px 10px 70px 10px;
-
-	@media (min-width: 768px) {
-		background-position: 'center';
-	}
 `
 
 const upcomingMatch: Event = events[0];
 
 function HomeView() {
+	const isXsSmMd = window.innerWidth < 992;
+
 	return (
 		<StyledContainer fluid >
 			<HelmetSEO title="HOME" description="Home page of the fictional website about the Brasileirao 2019 Soccer Championship" />
@@ -44,7 +44,7 @@ function HomeView() {
 					<motion.div
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 1, delay: 2 }}
+						transition={{ duration: 1, delay: isXsSmMd ? 0 : 2}}
 					>
 						<FootballMatchCard event={upcomingMatch} displayOnView='home' />
 					</motion.div>
@@ -57,7 +57,6 @@ function HomeView() {
 
 			<Footer />
 		</StyledContainer>
-
 	)
 }
 
