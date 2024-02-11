@@ -17,8 +17,8 @@ function TicketsView() {
 
             <ViewTitle viewTitle={t('viewTitle', {ns: 'TicketsView', defaultValue: "Tickets"})} />
 
-            <Container style={{minHeight: '50vh'}}>
-                <div className='py-5'>
+            <Container style={{minHeight: '70vh'}}>
+                <div className='pt-5 pb-3'>
                     <h3>{t('title', {ns: 'TicketsView', defaultValue: "Order Your Tickets With Ease"})}</h3>
                     <p style={{textAlign: 'justify'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia cumque beatae, alias rerum a eum repellendus accusantium recusandae.</p>
                 </div>

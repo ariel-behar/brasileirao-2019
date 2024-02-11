@@ -14,7 +14,7 @@ function WhoIsWelcomeToJoin() {
 
     const thumbnails = [
         {
-            title: i18next.t('thumbnails.thumbnail-1.title', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'You and your friends are into video games...'}),
+            title: i18next.t('thumbnails.thumbnail-1.title', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'You and your friends are into video games...' }),
             imageSrc: friendsPlayingVideoGames
         },
         {
@@ -33,15 +33,15 @@ function WhoIsWelcomeToJoin() {
             borderRadius: '30px',
             padding: '30px 0'
         }} className="my-5 shadow-sm">
-            <h4 className="text-center fw-bold">{t('title', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'Who Is Welcome To Join?'} )}</h4>
-            <p className="text-center">{t('paragraph-1', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'Our fan club is a MUST for people answering to ONE of the below criteria:'})}</p>
+            <h4 className="text-center fw-bold">{t('title', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Who Is Welcome To Join?' })}</h4>
+            <p className="text-center">{t('paragraph-1', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Our fan club is a MUST for people answering to ONE of the below criteria:' })}</p>
 
-            <Row className='mt-5 g-0'>
+            <Row className='my-4 g-0'>
                 {
                     thumbnails.map((thumbnail, index) => {
                         return (
                             <Col key={index} className="col-12 col-md-4">
-                                <Image src={thumbnail.imageSrc} alt={thumbnail.title} fluid loading='lazy'/>
+                                <Image src={thumbnail.imageSrc} alt={thumbnail.title} fluid loading='lazy' />
                                 <p className="text-center pt-3 fst-italic px-2">{thumbnail.title}</p>
                             </Col>
                         )
@@ -49,8 +49,11 @@ function WhoIsWelcomeToJoin() {
                 }
             </Row>
 
-            <p className="text-center">{t('paragraph-2', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'Let it be clear...' } )}</p>
-            <h4 className="text-center fw-bold text-uppercase">{t('paragraph-3', {ns: 'WhoIsWelcomeToJoin', defaultValue: 'We are looking for you!'})}</h4>
+            <h4 className="text-center text-uppercase">
+                {t('paragraph-2', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Let it be clear...' })}
+                &nbsp;
+                {t('paragraph-3', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'We are looking for you!' })}
+            </h4>
         </section>
     )
 }

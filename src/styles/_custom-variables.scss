@@ -20,4 +20,13 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
+$display-font-sizes: (
+  1: 4.5rem,
+  2: 4rem,
+  3: 2.5rem,
+  4: 2rem,
+  5: 1.5rem,
+  6: 1.25rem
+);
+
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);

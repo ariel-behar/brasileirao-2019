@@ -77,14 +77,11 @@ const StyledLeagueSection = styled('section')`
 					color: #b6b5b5;
 				}
 				p {
-					font-weight: bold;
 					text-align: left;
 					margin-bottom: 0;
 				}
 			}
-
 		}
-		
 	}
 
 	.stadiums-dropdown {
@@ -95,7 +92,6 @@ const StyledLeagueSection = styled('section')`
 	}
 
 	.selected-stadium-details-list {
-		font-weight: bold;
 		color: #b6b5b5;
 		list-style-type: none;
 		padding-left: 0;

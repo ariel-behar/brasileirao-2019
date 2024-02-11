@@ -32,8 +32,8 @@ function RankingDisplay() {
 
     return (
         <StyledRankingDisplay>
-            <h5 className='fw-bold'>{t('title-series', {ns: "RankingDisplay", defaultValue: "Series A" })}</h5>
-            <h5 className='fw-bold'>{t('title-ranking', {ns: "RankingDisplay", defaultValue: "Current Ranking" })}</h5>
+            <h4 >{t('title-series', {ns: "RankingDisplay", defaultValue: "Series A" })}</h4>
+            <h4 >{t('title-ranking', {ns: "RankingDisplay", defaultValue: "Current Ranking" })}</h4>
             <hr />
             <ul>
                 {
@@ -41,8 +41,8 @@ function RankingDisplay() {
                         return (
                             <li className='d-flex justify-content-between' key={uniqid()}>
                                 <img className='team-logo' src={`${getImageUrl('teams', team.image)}`} alt={`${team.name} LOGO`} />
-                                <span className="fw-bold ">{team.name}</span>
-                                <span className="fw-bold">{team.ranking}</span>
+                                <span >{team.name}</span>
+                                <span >{team.ranking}</span>
                             </li>
                         )
                     })

@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 function FanClubOpeningSection() {
     return (
         <section className='px-md-5 py-md-5'>
-            <h3 className="text-center fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem optio temporibus repellat cumque nemo!</h3>
+            <h3 className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem optio temporibus repellat cumque nemo!</h3>
 
             <Row className='mt-5 gx-5'>
                 <Col xs={12} md={4}>
