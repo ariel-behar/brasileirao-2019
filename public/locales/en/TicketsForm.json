@@ -2,5 +2,7 @@
     "footballMatch": "Football Match",
     "calculatePrice": "Calculate Price",
     "total": "Total",
-    "orderNow": "Order Now"
+    "orderNow": "Order Now",
+    "selectEvent": "Select your event from the list:",
+    "ticketsQuantity": "Select the amount of tickets:"
 }

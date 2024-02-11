@@ -2,5 +2,7 @@
     "footballMatch": "Jogo de Futebol",
     "calculatePrice": "Calcular Preço",
     "total": "Total",
-    "orderNow": "Pedir Agora"
+    "orderNow": "Encomendar Agora",
+    "selectEvent": "Selecione o seu evento da lista:",
+    "ticketsQuantity": "Selecione a quantidade de bilhetes:"
 }

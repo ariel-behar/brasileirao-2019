@@ -50,7 +50,7 @@ function TicketsForm() {
                     <form onSubmit={handleSubmit}>
                         <Row>
                             <Col xs={12} lg={6} >
-                                <Form.Label htmlFor="name" className='fw-bold'>Select your event from the list:</Form.Label>
+                                <Form.Label htmlFor="name" className='fw-bold'>{t('selectEvent', { ns: 'TicketsForm', defaultValue: "Select your event from the list:" })}</Form.Label>
                                 <Form.Select onChange={handleChangeSelectedEvent} defaultValue={selectedEvent._id} aria-label="event-select" id="event-select">
                                     {
                                         events.map((event: Event) => {
@@ -62,7 +62,7 @@ function TicketsForm() {
                                 </Form.Select>
                             </Col>
                             <Col xs={12} lg={3}>
-                                <Form.Label htmlFor="tickets-quantity" className='fw-bold'>Select your event from the list:</Form.Label>
+                                <Form.Label htmlFor="tickets-quantity" className='fw-bold'>{t('ticketsQuantity', { ns: 'TicketsForm', defaultValue: "Select the amount of tickets:" })}</Form.Label>
                                 <Form.Select onChange={handleChangeSelectedQuantity} defaultValue={selectedQuantity} aria-label="tickets-quantity" id="tickets-quantity">
                                     {
                                         Array(9).fill('').map((el, index) => {
