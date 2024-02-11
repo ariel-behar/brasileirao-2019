@@ -1,7 +1,7 @@
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import uniqid from "uniqid"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import styled from "@emotion/styled"
 
 import getImageUrl from "../../utils/getImageUrl"
@@ -92,6 +92,9 @@ const StyledHeader = styled('header')`
 `
 
 function Header() {
+    const location = useLocation()
+    const [numRender, setNumRender] = useState<number>(0)
+    const [expanded, setExpanded] = useState<boolean>(false)
     const navButton = useRef<HTMLButtonElement | null>(null);
     const navbarCollapseRef = useRef<HTMLDivElement | null>(null);
     const { t } = useTranslation('Header');
@@ -123,6 +126,16 @@ function Header() {
         }
     ]
 
+    useEffect(() => {
+        if (numRender < 1) {
+            setNumRender(numRender + 1);
+            setExpanded(false)
+        } else {
+            setExpanded(false)
+            collapseNav()
+        }
+    }, [location])
+
     function collapseNav() {
         if (navButton.current !== null) {
             navButton.current.click();
@@ -131,7 +144,10 @@ function Header() {
         if (navbarCollapseRef.current !== null) {
             navbarCollapseRef.current.click();
         }
+
+        setExpanded(false)
     }
+
 
     return (
         <>
@@ -147,14 +163,14 @@ function Header() {
                     className="d-block d-lg-none ">
                     <TranslationIcons />
                 </span>
-                <Navbar expand="lg" as='nav' className="navbar-dark py-0 py-md-2">
+                <Navbar expand="lg" expanded={expanded} className="navbar-dark py-0 py-md-2" onMouseLeave={collapseNav}>
                     <Navbar.Brand className="header-logo">
                         <NavLink to="/">
                             <Image src={getImageUrl('logos', 'brasileirao-logo.png')} alt="Brasileirao Logo" fluid />
                         </NavLink>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} onClick={() => setExpanded(true)} />
 
                     <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0" ref={navbarCollapseRef}>
                         <Nav className="me-auto">
