@@ -25,7 +25,7 @@ function AboutLeague() {
                 md={{ span: 4, offset: 0, order: 2 }}
                 lg={{ span: 4 }}
                 className="d-flex justify-content-center align-items-end">
-                <Image src={brasileiraoCup} alt="Brasileirao Cup" fluid />
+                <Image src={brasileiraoCup} alt="Brasileirao Cup" fluid loading='lazy'/>
             </Col>
             <Col
                 style={{ textAlign: 'justify' }}

@@ -21,7 +21,7 @@ function TeamCard({
             onMouseEnter={isHovered}
             onMouseLeave={isHovered}
         >
-            <Card.Img variant="top" src={getImageUrl('teams', props.image)} alt={`${props.name} Logo`} className='img-fluid' />
+            <Card.Img variant="top" src={getImageUrl('teams', props.image)} alt={`${props.name} Logo`} className='img-fluid' loading='lazy' />
             <Card.Body className='flex-grow-1 d-flex justify-content-end align-items-end'>
                 <Card.Text >
                     {props.name}

@@ -30,7 +30,7 @@ function FanClubView() {
                 height: '100%',
                 maxHeight: '500px',
                 objectPosition: 'top'
-            }} src={stadiumFans} alt="Stadium Fans" fluid />
+            }} src={stadiumFans} alt="Stadium Fans" fluid loading='lazy' />
 
             <Container>
                 <WhoIsWelcomeToJoin />

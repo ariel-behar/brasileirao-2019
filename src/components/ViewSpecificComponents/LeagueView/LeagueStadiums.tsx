@@ -206,7 +206,7 @@ function LeagueStadiums() {
 							</ul>
 						</Col>
 						<Col xs={12} md={9} className=" d-flex">
-							<Image className="selected-stadium-image" src={selectedStadium ? getImageUrl('stadiums', selectedStadium.stadiumImage)  : soccerField} alt={selectedStadium ? selectedStadium.stadiumName : 'Soccer Field'} fluid />
+							<Image className="selected-stadium-image" src={selectedStadium ? getImageUrl('stadiums', selectedStadium.stadiumImage)  : soccerField} alt={selectedStadium ? selectedStadium.stadiumName : 'Soccer Field'} fluid loading="lazy" />
 						</Col>
 					</Row>
 

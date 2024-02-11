@@ -41,7 +41,7 @@ function WhoIsWelcomeToJoin() {
                     thumbnails.map((thumbnail, index) => {
                         return (
                             <Col key={index} className="col-12 col-md-4">
-                                <Image src={thumbnail.imageSrc} alt={thumbnail.title} fluid />
+                                <Image src={thumbnail.imageSrc} alt={thumbnail.title} fluid loading='lazy'/>
                                 <p className="text-center pt-3 fst-italic px-2">{thumbnail.title}</p>
                             </Col>
                         )

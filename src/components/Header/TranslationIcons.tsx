@@ -29,6 +29,7 @@ function TranslationIcons() {
 					className='mx-2'
 					src={flagBrasil}
 					alt="Brasilian Flag button"
+					loading='lazy'
 				/>
 
 				<StyledImage
@@ -36,6 +37,7 @@ function TranslationIcons() {
 					className='mx-2'
 					src={flagBritain}
 					alt="British Flag button"
+					loading='lazy'
 				/>
 			</div>
 		</>
