@@ -1,9 +1,18 @@
+import styled from '@emotion/styled'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
 
 import flagBrasil from '../../assets/img/flags/brazil.png'
 import flagBritain from '../../assets/img/flags/britain.png'
 import grassPattern from "../../assets/img/grass-patten.jpg"
+
+const StyledImage = styled('img')`
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+`
 
 function TranslationIcons() {
 	const { i18n } = useTranslation()
@@ -15,19 +24,15 @@ function TranslationIcons() {
 				borderRadius: '20px',
 				border: '2px solid #fff',
 			}}>
-				<motion.img
-					whileHover={{ scale: 1.1 }}
+				<StyledImage
 					onClick={() => i18n.changeLanguage('pt')}
-					style={{ cursor: 'pointer' }}
 					className='mx-2'
 					src={flagBrasil}
 					alt="Brasilian Flag button"
 				/>
 
-				<motion.img
-					whileHover={{ scale: 1.1 }}
+				<StyledImage
 					onClick={() => i18n.changeLanguage('en')}
-					style={{ cursor: 'pointer' }}
 					className='mx-2'
 					src={flagBritain}
 					alt="British Flag button"
