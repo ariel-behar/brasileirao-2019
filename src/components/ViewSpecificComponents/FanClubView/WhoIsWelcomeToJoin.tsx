@@ -33,26 +33,28 @@ function WhoIsWelcomeToJoin() {
             borderRadius: '30px',
             padding: '30px 0'
         }} className="my-5 shadow-sm">
-            <h4 className="text-center fw-bold">{t('title', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Who Is Welcome To Join?' })}</h4>
-            <p className="text-center">{t('paragraph-1', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Our fan club is a MUST for people answering to ONE of the below criteria:' })}</p>
+            <h4 className="text-center display-3">{t('title', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Who Is Welcome To Join?' })}</h4>
+            <p className="text-center px-2">{t('paragraph-1', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Our fan club is a MUST for people answering to ONE of the below criteria:' })}</p>
 
-            <Row className='my-4 g-0'>
+            <Row className='mt-4 g-0'>
                 {
                     thumbnails.map((thumbnail, index) => {
                         return (
-                            <Col key={index} className="col-12 col-md-4">
+                            <Col key={index} xs={12} md={4} className='text-center'>
                                 <Image src={thumbnail.imageSrc} alt={thumbnail.title} fluid loading='lazy' />
-                                <p className="text-center pt-3 fst-italic px-2">{thumbnail.title}</p>
+                                <p className="text-center mt-lg-1 pt-1 pt-lg-3 mb-5 mb-md-0 md-lg-0 px-2 fst-italic ">{thumbnail.title}</p>
                             </Col>
                         )
                     })
                 }
             </Row>
 
-            <h4 className="text-center text-uppercase">
+            <h4 className="text-center mb-4 my-md-4 mt-md-5 flex-wrap display-4">
                 {t('paragraph-2', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'Let it be clear...' })}
                 &nbsp;
-                {t('paragraph-3', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'We are looking for you!' })}
+                <span className='text-uppercase'>
+                    {t('paragraph-3', { ns: 'WhoIsWelcomeToJoin', defaultValue: 'We are looking for you!' })}
+                </span>
             </h4>
         </section>
     )

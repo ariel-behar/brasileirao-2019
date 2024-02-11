@@ -20,7 +20,7 @@ function FanClubView() {
 
             <ViewTitle viewTitle={t('viewTitle', {ns: 'FanClubView', defaultValue: "Fan Club"})} />
 
-            <Container>
+            <Container className='pt-3 pt-md-5'>
                 <FanClubOpeningSection />
             </Container>
 

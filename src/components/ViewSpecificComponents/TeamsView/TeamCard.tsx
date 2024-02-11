@@ -16,14 +16,15 @@ function TeamCard({
 
     return (
         <Card
-            className={`w-100 h-100 p-3 ${hovered ? 'shadow' : ''}`}
+            className={`w-100 h-100  ${hovered ? 'shadow' : ''}`}
             style={{ width: '18rem', transition: 'box-shadow 0.3s ease' }}
             onMouseEnter={isHovered}
             onMouseLeave={isHovered}
         >
-            <Card.Img variant="top" src={getImageUrl('teams', props.image)} alt={`${props.name} Logo`} className='img-fluid' loading='lazy' />
-            <Card.Body className='flex-grow-1 d-flex justify-content-end align-items-end'>
-                <Card.Text >
+            <Card.Img variant="top" src={getImageUrl('teams', props.image)} alt={`${props.name} Logo`} className='img-fluid p-2 p-md-3' loading='lazy' />
+
+            <Card.Body className='flex-grow-1 d-flex flex-row justify-content-end align-items-end p-2 p-lg-3'>
+                <Card.Text className='text-end'>
                     {props.name}
                 </Card.Text>
             </Card.Body>

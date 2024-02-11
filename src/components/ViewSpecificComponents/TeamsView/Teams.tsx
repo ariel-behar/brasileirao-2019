@@ -38,9 +38,9 @@ function Teams() {
 
                 }} />
                 <Col xs={12} lg={10} className='ps-4'>
-                    <Row className='gx-3'>
+                    <Row className='g-2 gx-md-3'>
                         {teams.map((team: Team) => (
-                            <Col xs={4} md={3} className='p-2' key={uniqid()}>
+                            <Col xs={4} md={3} key={uniqid()}>
                                 <TeamCard  {...team} />
                             </Col>
                         ))}
