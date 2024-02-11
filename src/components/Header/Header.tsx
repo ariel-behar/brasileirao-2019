@@ -1,3 +1,4 @@
+import { useRef } from "react"
 import { useTranslation } from "react-i18next"
 import uniqid from "uniqid"
 import { NavLink } from "react-router-dom"
@@ -23,7 +24,7 @@ const StyledHeader = styled('header')`
     transform: translateX(-50%);
     box-shadow: 0 0 40px 10px #f2fafc;
 
-    margin-top: 35px;
+    margin-top: 15px;
     padding: 0 20px;
     border-radius: 30px;
     border: 3px solid #fff;
@@ -52,14 +53,10 @@ const StyledHeader = styled('header')`
 
     @media(min-width: 768px) {
         width: 95vw;
+        margin-top: 35px;
         .header-logo {
-            position: absolute;
-            top: -80%;
-            left: 50%;
-            transform: translateX(-50%);
-
             img {
-                max-height: 80px;
+                max-height: 60px;
                 padding-left: 0;
             }
         }
@@ -67,7 +64,13 @@ const StyledHeader = styled('header')`
 
     @media(min-width: 992px) {
         width: 85vw;
+        
         .header-logo {
+            position: absolute;
+            top: -80%;
+            left: 50%;
+            transform: translateX(-50%);
+
             img {
                 max-height: 90px;
             }
@@ -89,39 +92,51 @@ const StyledHeader = styled('header')`
 `
 
 function Header() {
+    const navButton = useRef<HTMLButtonElement | null>(null);
+    const navbarCollapseRef = useRef<HTMLDivElement | null>(null);
     const { t } = useTranslation('Header');
 
     const routes = [
         {
             path: "/",
-            route: t('navbar.routes.home', {ns: 'Header', defaultValue: 'Home'})
+            route: t('navbar.routes.home', { ns: 'Header', defaultValue: 'Home' })
         },
         {
             path: "/league",
-            route: t('navbar.routes.league', {ns: 'Header', defaultValue: 'League'})
+            route: t('navbar.routes.league', { ns: 'Header', defaultValue: 'League' })
         },
         {
             path: "/teams",
-            route: t('navbar.routes.teams', {ns: 'Header', defaultValue: 'Teams'})
+            route: t('navbar.routes.teams', { ns: 'Header', defaultValue: 'Teams' })
         },
         {
             path: "/fan-club",
-            route: t('navbar.routes.fanClub', {ns: 'Header', defaultValue: 'Fan Club'})
+            route: t('navbar.routes.fanClub', { ns: 'Header', defaultValue: 'Fan Club' })
         },
         {
             path: "/events",
-            route: t('navbar.routes.events', {ns: 'Header', defaultValue: 'Events'})
+            route: t('navbar.routes.events', { ns: 'Header', defaultValue: 'Events' })
         },
         {
             path: "/tickets",
-            route: t('navbar.routes.tickets', {ns: 'Header', defaultValue: 'Tickets'})
+            route: t('navbar.routes.tickets', { ns: 'Header', defaultValue: 'Tickets' })
         }
     ]
+
+    function collapseNav() {
+        if (navButton.current !== null) {
+            navButton.current.click();
+        }
+
+        if (navbarCollapseRef.current !== null) {
+            navbarCollapseRef.current.click();
+        }
+    }
 
     return (
         <>
             <StyledHeader>
-                <span 
+                <span
                     style={{
                         position: 'absolute',
                         left: '50%',
@@ -129,7 +144,7 @@ function Header() {
                         top: '-15px',
                         zIndex: 5,
                     }}
-                className="d-block d-md-none ">
+                    className="d-block d-lg-none ">
                     <TranslationIcons />
                 </span>
                 <Navbar expand="lg" as='nav' className="navbar-dark py-0 py-md-2">
@@ -139,15 +154,15 @@ function Header() {
                         </NavLink>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} />
 
-                    <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0">
+                    <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0" ref={navbarCollapseRef}>
                         <Nav className="me-auto">
                             {
                                 routes.map((route, index) => {
                                     if (index <= 2) {
                                         return (
-                                            <Nav.Link className="py-1 py-md-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                            <Nav.Link onClick={collapseNav} className="py-1 py-lg-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
                                                 {route.route}
                                             </Nav.Link>
                                         )
@@ -161,7 +176,7 @@ function Header() {
                                 routes.map((route, index) => {
                                     if (index >= 3) {
                                         return (
-                                            <Nav.Link className="py-1 py-md-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                            <Nav.Link onClick={collapseNav} className="py-1 py-lg-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
                                                 {route.route}
                                             </Nav.Link>
                                         )
