@@ -24,7 +24,11 @@ const StyledPageHeader = styled('div')`
     }
 
     @media(max-width: 768px) {
-        &.Events {
+        &.Tickets {
+            background-size: 150%!important;
+        }
+
+        &.Events{
             background-size: 350%!important;
         }
     }
@@ -56,6 +60,12 @@ const StyledPageFooter = styled('div')`
             background-size: 200%!important;
             background-position: bottom right!important;
         }
+
+        &.Tickets {
+            background-size: 150%!important;
+            background-position: bottom center!important;
+        }
+        
     }
 
 
