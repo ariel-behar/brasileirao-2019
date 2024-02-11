@@ -13,7 +13,7 @@ function RootView() {
 					top: '10px',
 					zIndex: 5,
 				}}
-				className='d-none d-md-block'>
+				className='d-none d-lg-block'>
 				<TranslationIcons />
 			</span>
 			
