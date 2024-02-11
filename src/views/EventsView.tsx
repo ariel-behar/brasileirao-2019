@@ -47,9 +47,8 @@ function EventsView() {
 
 export default hasPageHeaderFooter(EventsView, {
     viewTitle: 'Events',
-    pageHeaderBackgroundImage: eventsBackgroundImage,
+    backgroundImage: eventsBackgroundImage,
     pageHeaderBackgroundSize: 'contain',
-    pageFooterBackgroundImage: eventsBackgroundImage,
     pageFooterBackgroundSize: 'contain',
     pageFooterBackgroundPosition: 'bottom'
 })

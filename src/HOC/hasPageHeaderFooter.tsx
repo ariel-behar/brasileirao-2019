@@ -98,24 +98,21 @@ const StyledPageFooter = styled('div')`
 
 interface Props {
     viewTitle: string
+    backgroundImage: string
 
-    pageHeaderBackgroundImage: string
     pageHeaderBackgroundPosition?: string
     pageHeaderBackgroundSize?: string
 
-    pageFooterBackgroundImage: string
     pageFooterBackgroundPosition?: string
     pageFooterBackgroundSize?: string
 }
 
 function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
     viewTitle,
-
-    pageHeaderBackgroundImage,
+    backgroundImage,
     pageHeaderBackgroundPosition,
     pageHeaderBackgroundSize = 'cover',
 
-    pageFooterBackgroundImage,
     pageFooterBackgroundPosition,
     pageFooterBackgroundSize = 'cover',
 }: Props) {
@@ -124,7 +121,7 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
     return (props: T) => (
         <>
             <StyledPageHeader className={viewTitle.split(' ').join('-')} style={{
-                backgroundImage: `url(${pageHeaderBackgroundImage})`,
+                backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: pageHeaderBackgroundSize,
                 backgroundPosition: pageHeaderBackgroundPosition,
                 backgroundAttachment: isXsSmMd ? 'initial' : 'fixed',
@@ -142,7 +139,7 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
             </div>
 
             <StyledPageFooter className={viewTitle.split(' ').join('-')} style={{
-                backgroundImage: `url(${pageFooterBackgroundImage})`,
+                backgroundImage: `url(${backgroundImage})`,
                 backgroundSize: pageFooterBackgroundSize,
                 backgroundPosition: pageFooterBackgroundPosition,
                 backgroundAttachment: isXsSmMd ? 'initial' : 'fixed',
