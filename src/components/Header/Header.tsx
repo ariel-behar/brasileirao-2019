@@ -171,7 +171,7 @@ function Header() {
                         </NavLink>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} onClick={() => setExpanded(true)} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} onClick={() => setExpanded(() => !expanded)} />
 
                     <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0" ref={navbarCollapseRef}>
                         <Nav className="me-auto">
