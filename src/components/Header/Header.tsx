@@ -94,6 +94,7 @@ const StyledHeader = styled('header')`
 
 function Header() {
     const location = useLocation()
+    const isXsSmMd = window.innerWidth < 992;
     const [numRender, setNumRender] = useState<number>(0)
     const [expanded, setExpanded] = useState<boolean>(false)
     const navButton = useRef<HTMLButtonElement | null>(null);
@@ -138,11 +139,11 @@ function Header() {
     }, [location])
 
     function collapseNav() {
-        if (navButton.current !== null) {
+        if (navButton.current !== null && isXsSmMd) {
             navButton.current.click();
         }
 
-        if (navbarCollapseRef.current !== null) {
+        if (navbarCollapseRef.current !== null && isXsSmMd) {
             navbarCollapseRef.current.click();
         }
 
