@@ -22,7 +22,7 @@ const StyledHeader = styled('header')`
     left: 50%;
     
     transform: translateX(-50%);
-    box-shadow: 0 0 40px 10px #f2fafc;
+    
 
     margin-top: 15px;
     padding: 0 20px;
@@ -64,6 +64,7 @@ const StyledHeader = styled('header')`
 
     @media(min-width: 992px) {
         width: 85vw;
+        box-shadow: 0 0 40px 10px #f2fafc;
         
         .header-logo {
             position: absolute;
