@@ -38,5 +38,8 @@ function TicketsView() {
 
 export default hasPageHeaderFooter(TicketsView, {
     viewTitle: 'Tickets',
-    backgroundImage: ticket,
+    pageHeaderBackgroundImage: ticket,
+    pageHeaderBackgroundPosition: 'top center',
+    pageFooterBackgroundImage: ticket,
+    pageFooterBackgroundPosition: 'bottom center'
 })

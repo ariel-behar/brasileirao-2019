@@ -30,5 +30,8 @@ function TeamsView() {
 
 export default hasPageHeaderFooter(TeamsView, {
     viewTitle: 'Teams',
-    backgroundImage: soccerPlayersPlaying,
+    pageHeaderBackgroundImage: soccerPlayersPlaying,
+    pageHeaderBackgroundPosition: 'top center',
+    pageFooterBackgroundImage: soccerPlayersPlaying,
+    pageFooterBackgroundPosition: 'bottom center'
 })

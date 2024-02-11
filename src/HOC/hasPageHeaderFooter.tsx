@@ -17,9 +17,18 @@ const StyledPageHeader = styled('div')`
         transform: rotate(5deg);
     }
 
+    @media(max-width: 1200px) {
+        
+    }
+
     @media(max-width: 992px) {
         &.Events {
-            background-size: 200%!important;
+            background-size: 150%!important;
+            background-position: top center!important;
+        }
+
+        &.Fan-Club{
+            background-size: 180%!important;
         }
     }
 
@@ -29,7 +38,11 @@ const StyledPageHeader = styled('div')`
         }
 
         &.Events{
-            background-size: 350%!important;
+            background-size: 250%!important;
+        }
+
+        &.Teams {
+            background-size: 150%!important;
         }
     }
 
@@ -50,14 +63,14 @@ const StyledPageFooter = styled('div')`
 
     @media(max-width: 992px) {
         &.Events {
-            background-size: 230%!important;
+            background-size: 180%!important;
             background-position: bottom right!important;
         }
     }
 
     @media(max-width: 768px) {
         &.Events {
-            background-size: 200%!important;
+            background-size: 150%!important;
             background-position: bottom right!important;
         }
 
@@ -65,41 +78,56 @@ const StyledPageFooter = styled('div')`
             background-size: 150%!important;
             background-position: bottom center!important;
         }
+
+        &.Fan-Club{
+            background-size: 250%!important;
+        }
+
+        &.Teams {
+            background-size: 150%!important;
         
+        }
     }
 
-
+    @media(max-width: 576px) {
+        &.Events {
+            background-size: 300%!important;
+        }
+    }
 `
 
 interface Props {
     viewTitle: string
-    backgroundImage: string
 
+    pageHeaderBackgroundImage: string
     pageHeaderBackgroundPosition?: string
     pageHeaderBackgroundSize?: string
 
+    pageFooterBackgroundImage: string
     pageFooterBackgroundPosition?: string
     pageFooterBackgroundSize?: string
 }
 
 function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
     viewTitle,
-    backgroundImage,
-    
+
+    pageHeaderBackgroundImage,
     pageHeaderBackgroundPosition,
     pageHeaderBackgroundSize = 'cover',
 
+    pageFooterBackgroundImage,
     pageFooterBackgroundPosition,
     pageFooterBackgroundSize = 'cover',
 }: Props) {
+    const isXsSmMd = window.innerWidth < 992;
 
     return (props: T) => (
         <>
-            <StyledPageHeader className={viewTitle} style={{
-                backgroundImage: `url(${backgroundImage})`,
+            <StyledPageHeader className={viewTitle.split(' ').join('-')} style={{
+                backgroundImage: `url(${pageHeaderBackgroundImage})`,
                 backgroundSize: pageHeaderBackgroundSize,
                 backgroundPosition: pageHeaderBackgroundPosition,
-                backgroundAttachment: 'fixed',
+                backgroundAttachment: isXsSmMd ? 'initial' : 'fixed',
                 backgroundRepeat: 'no-repeat',
                 position: 'relative'
 
@@ -113,11 +141,11 @@ function hasPageHeaderFooter<T>(WrapperComponent: React.ComponentType<T>, {
                 <WrapperComponent {...props as any} />
             </div>
 
-            <StyledPageFooter className={viewTitle} style={{
-                backgroundImage: `url(${backgroundImage})`,
+            <StyledPageFooter className={viewTitle.split(' ').join('-')} style={{
+                backgroundImage: `url(${pageFooterBackgroundImage})`,
                 backgroundSize: pageFooterBackgroundSize,
                 backgroundPosition: pageFooterBackgroundPosition,
-                backgroundAttachment: 'fixed',
+                backgroundAttachment: isXsSmMd ? 'initial' : 'fixed',
                 backgroundRepeat: 'no-repeat',
                 position: 'relative'
             }}>

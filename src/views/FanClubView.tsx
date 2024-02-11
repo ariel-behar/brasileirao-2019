@@ -41,5 +41,9 @@ function FanClubView() {
 
 export default hasPageHeaderFooter(FanClubView, {
     viewTitle: 'Fan Club',
-    backgroundImage: soccerFans,
+    pageHeaderBackgroundImage: soccerFans,
+    pageHeaderBackgroundSize: '100%',
+    pageHeaderBackgroundPosition: 'top center',
+    pageFooterBackgroundImage: soccerFans,
+    pageFooterBackgroundPosition: 'bottom center',
 }) 
