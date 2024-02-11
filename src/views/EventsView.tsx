@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import uniqid from 'uniqid'
 
-import eventsBackgroundImage from '../assets/img/events.jpg'
+import eventsBackgroundImage from '../assets/img/backgrounds/events.jpg'
 
 import events from '../data/events.json'
 
@@ -47,9 +47,8 @@ function EventsView() {
 
 export default hasPageHeaderFooter(EventsView, {
     viewTitle: 'Events',
-    pageHeaderImage: eventsBackgroundImage,
+    backgroundImage: eventsBackgroundImage,
     pageHeaderBackgroundSize: 'contain',
-    pageFooterImage: eventsBackgroundImage,
     pageFooterBackgroundSize: 'contain',
     pageFooterBackgroundPosition: 'bottom'
 })

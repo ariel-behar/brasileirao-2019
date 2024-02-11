@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import soccerFans from '../assets/img/soccer-fans.jpg'
+import soccerFans from '../assets/img/backgrounds/soccer-fans.jpg'
 import stadiumFans from '../assets/img/stadium-fans.jpg'
 
 import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
@@ -41,6 +41,5 @@ function FanClubView() {
 
 export default hasPageHeaderFooter(FanClubView, {
     viewTitle: 'Fan Club',
-    pageHeaderImage: soccerFans,
-    pageFooterImage: soccerFans
+    backgroundImage: soccerFans,
 }) 

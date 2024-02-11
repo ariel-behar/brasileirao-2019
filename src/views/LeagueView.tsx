@@ -31,8 +31,7 @@ function LeagueView() {
 
 export default hasPageHeaderFooter(LeagueView, {
     viewTitle: 'League',
-    pageHeaderImage: soccerField,
+    backgroundImage: soccerField,
     pageHeaderBackgroundPosition: 'center',
-    pageFooterImage: soccerField,
     pageFooterBackgroundPosition: 'center',
 }) 

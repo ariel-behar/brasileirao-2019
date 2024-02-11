@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
 import HelmetSEO from "../components/HelmetSEO"
 
-import soccerPlayersPlaying from '../assets/img/soccer-players-playing.jpg'
+import soccerPlayersPlaying from '../assets/img/backgrounds/soccer-players-playing.jpg'
 
 import GetToKnowThem from "../components/ViewSpecificComponents/TeamsView/GetToKnowThem"
 import Teams from "../components/ViewSpecificComponents/TeamsView/Teams"
@@ -30,6 +30,5 @@ function TeamsView() {
 
 export default hasPageHeaderFooter(TeamsView, {
     viewTitle: 'Teams',
-    pageHeaderImage: soccerPlayersPlaying,
-    pageFooterImage: soccerPlayersPlaying,
+    backgroundImage: soccerPlayersPlaying,
 })

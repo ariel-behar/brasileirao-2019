@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import ticket from '../assets/img/ticket.jpg'
+import ticket from '../assets/img/backgrounds/ticket.jpg'
 
 import hasPageHeaderFooter from "../HOC/hasPageHeaderFooter"
 import ViewTitle from '../components/ViewTitle'
@@ -38,6 +38,5 @@ function TicketsView() {
 
 export default hasPageHeaderFooter(TicketsView, {
     viewTitle: 'Tickets',
-    pageHeaderImage: ticket,
-    pageFooterImage: ticket
+    backgroundImage: ticket,
 })
