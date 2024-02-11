@@ -1,7 +1,7 @@
+import { useTranslation } from "react-i18next"
 import uniqid from "uniqid"
 import { NavLink } from "react-router-dom"
 import styled from "@emotion/styled"
-import { useTranslation } from "react-i18next"
 
 import getImageUrl from "../../utils/getImageUrl"
 import grassPattern from "../../assets/img/grass-patten.jpg"
@@ -61,12 +61,20 @@ const StyledHeader = styled('header')`
             img {
                 max-height: 80px;
                 padding-left: 0;
-
             }
         }
     }
 
     @media(min-width: 992px) {
+        width: 85vw;
+        .header-logo {
+            img {
+                max-height: 90px;
+            }
+        }
+    }
+
+    @media(min-width: 1200px) {
         width: 80vw;
         .header-logo {
             img {
@@ -75,13 +83,8 @@ const StyledHeader = styled('header')`
         }
     }
 
-    @media(min-width: 1200px) {
+    @media(min-width: 1400px) {
         width: 70vw;
-        .header-logo {
-            img {
-                max-height: 120px;
-            }
-        }
     }
 `
 
@@ -129,7 +132,7 @@ function Header() {
                 className="d-block d-md-none ">
                     <TranslationIcons />
                 </span>
-                <Navbar expand="md" as='nav' className="navbar-dark">
+                <Navbar expand="lg" as='nav' className="navbar-dark py-0 py-md-2">
                     <Navbar.Brand className="header-logo">
                         <NavLink to="/">
                             <Image src={getImageUrl('logos', 'brasileirao-logo.png')} alt="Brasileirao Logo" fluid />
@@ -144,14 +147,13 @@ function Header() {
                                 routes.map((route, index) => {
                                     if (index <= 2) {
                                         return (
-                                            <Nav.Link className="py-1 py-md-0 px-1 px-lg-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                            <Nav.Link className="py-1 py-md-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
                                                 {route.route}
                                             </Nav.Link>
                                         )
                                     }
                                 })
                             }
-
                         </Nav>
 
                         <Nav className="ms-auto">
@@ -159,7 +161,7 @@ function Header() {
                                 routes.map((route, index) => {
                                     if (index >= 3) {
                                         return (
-                                            <Nav.Link className="py-1 py-md-0 px-lg-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
+                                            <Nav.Link className="py-1 py-md-0 px-md-0 px-xl-2 nav-link text-custom-light-gray mx-2 fw-bold" as={NavLink} to={route.path} key={uniqid()}>
                                                 {route.route}
                                             </Nav.Link>
                                         )
