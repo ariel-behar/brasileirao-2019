@@ -9,14 +9,13 @@ const LazyTeamsView = lazy(() => import('../views/TeamsView'))
 const LazyFanClubView = lazy(() => import('../views/FanClubView'))
 const LazyEventsView = lazy(() => import('../views/EventsView'))
 const LazyTicketsView = lazy(() => import('../views/TicketsView'))
-
-import ErrorView from '../views/ErrorView';
+const LazyErrorView = lazy(() => import('../views/ErrorView'))
 
 const router = createBrowserRouter([
     {
 		path: "/",
 		element: <LazyRootView />,
-		errorElement: <ErrorView />,
+		errorElement: <LazyErrorView />,
 		children: [
 			{
 				path: "/",
