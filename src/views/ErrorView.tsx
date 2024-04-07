@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import brasileraoLogo from '../assets/img/logos/brasileirao-logo.png'
 
@@ -20,11 +20,11 @@ function ErrorView() {
 						<Col xs={12} md={4} className='d-flex flex-column justify-content-center text-center'>
 							<h3 className='text-danger'>Oops... 404 Error </h3>
 							<h4 className='mb-3'>(Page not found)</h4>
-							<Link to='/' >
+							<NavLink to='/' >
 								<Button variant='outline-primary text-uppercase' size='sm'>
 									Click here to go back home
 								</Button>
-							</Link>
+							</NavLink>
 						</Col>
 					</Row>
 				</Container>
