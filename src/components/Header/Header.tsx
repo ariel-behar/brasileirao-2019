@@ -97,7 +97,7 @@ function Header() {
     const isXsSmMd = window.innerWidth < 992;
     const [numRender, setNumRender] = useState<number>(0)
     const [expanded, setExpanded] = useState<boolean>(false)
-    const navButton = useRef<HTMLButtonElement | null>(null);
+    const navButtonRef = useRef<HTMLButtonElement | null>(null);
     const navbarCollapseRef = useRef<HTMLDivElement | null>(null);
     const { t } = useTranslation('Header');
 
@@ -139,8 +139,8 @@ function Header() {
     }, [location])
 
     function collapseNav() {
-        if (navButton.current !== null && isXsSmMd) {
-            navButton.current.click();
+        if (navButtonRef.current !== null && isXsSmMd) {
+            navButtonRef.current.click();
         }
 
         if (navbarCollapseRef.current !== null && isXsSmMd) {
@@ -172,7 +172,7 @@ function Header() {
                         </NavLink>
                     </Navbar.Brand>
 
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButton} onClick={() => setExpanded(() => !expanded)} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" ref={navButtonRef} onClick={() => setExpanded(() => !expanded)} />
 
                     <Navbar.Collapse id="navbar-nav" className="pt-3 pt-md-0" ref={navbarCollapseRef}>
                         <Nav className="me-auto">
