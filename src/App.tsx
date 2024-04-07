@@ -1,3 +1,4 @@
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 import { Suspense } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
@@ -12,6 +13,8 @@ import Loader from './components/Loader'
 import { faCalendar, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faCalendar, faClock, faLocationDot)
+
+if(process.env.NODE_ENV === 'production') disableReactDevTools();
 
 function App() {
 	return (
